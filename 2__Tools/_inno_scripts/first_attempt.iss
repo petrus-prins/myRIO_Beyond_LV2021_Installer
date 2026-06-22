@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 ; Non-commercial use only
 
-#define MyAppName "myRIO"
+#define MyAppName "myRIO_Beyond_LV2021_Installer"
 #define MyAppVersion "1"
 #define MyAppPublisher "Petrus Prins"
 
@@ -19,8 +19,8 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only).
 ;PrivilegesRequired=lowest
-OutputDir=C:\TEMP\__compiler_output
-OutputBaseFilename=mysetup
+OutputDir=F:\
+OutputBaseFilename=myRIO_Beyond_LV2021_Installer
 SolidCompression=yes
 WizardStyle=classic
 
@@ -31,7 +31,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Source: "C:\TEMP\resource\*"; DestDir: "{app}\resource"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "C:\TEMP\Targets\*"; DestDir: "{app}\Targets"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "C:\TEMP\vi.lib\*"; DestDir: "{app}\vi.lib"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\TEMP\Shared\*"; DestDir: "{app}\Shared"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\TEMP\Shared\*"; DestDir: "{base}\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
