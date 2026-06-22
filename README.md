@@ -2,7 +2,7 @@
 myRIO_Beyond_LV2021_Installer:
 =============================
 This is a tool to install the original myRIO 2021 SP1 Toolkit Files into any existing LabVIEW Installation.
-I tested it on LabVIEW 2022 Q3 (32 Bit). (Rumours have it that this can work 32/64 bit LV2022-LV2026)  
+I tested it on LabVIEW 2022 Q3 (32 Bit). (Rumours have it that this can work on 32 and 64 bit LV2022-LV2026)  
 
 Installation Instructions:
 ==========================
@@ -33,17 +33,16 @@ https://forums.ni.com/t5/Academic-Hardware-Products-myDAQ/myRIO-support-in-LabVI
 https://kreiseder.org/2026/04/using-the-myrio-toolkit-beyond-labview-2021-a-practical-patch-for-labview-2026-2022
 
 I really did not want to copy 1800+ files into my woking NI LV Dev Environment without an uninstall option!
-(That is the real reason why this installer was born). 
 I really hope this will be useful for some students/teachers out there. 
 (I wish NI had done this 5 years ago!)
 
 Thanks:
-======
+=======
 Many thanks to 'softball' on that NI community forum, he pointed me in the right direction. 
 Many thanks to Andreas Kreiseder for his VERY generous assistance.
 
-Disclaimer
-==========
+Disclaimer:
+===========
 This is experimental and carries no guarantees. 
 Use at your own risk. :)
 
