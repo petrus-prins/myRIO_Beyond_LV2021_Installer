@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Getting Started with myRIO Programming</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<![if !IE]>
+<link rel="stylesheet" type="text/css" href="../common/tutoriallayout.css"/>  
+<![endif]>
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="../common/IEtutoriallayout.css"/> 
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="../common/IEtutoriallayout.css"/> 
+<![endif]-->
+
+<!--[if gte IE 8]> 
+<link rel="stylesheet" type="text/css" href="../common/IE8tutoriallayout.css"/> 
+<![endif]--> 
+	
+</head>
+ 
+<body>
+<div id="wrapper">
+<div id="header">
+</div>
+
+<ul id="globalnav">
+  <li><a href="../myriotutorials.html">Home</a></li>
+  <li><a href="firstprogram1.html" class="here">Creating Your First myRIO Application</a>
+ <ul>
+      <li><a href="firstprogram1.html">Tutorial:&nbsp;&nbsp;&nbsp;1</a></li>
+      <li><a href="firstprogram2.html">&nbsp;&nbsp;2</a></li>
+      <li><a href="firstprogram3.html" class="here">&nbsp;&nbsp;3</a></li>
+	  <li><a href="firstprogram4.html">&nbsp;&nbsp;4</a></li>
+    </ul>
+</li>
+  <li><a href="../ConfigureWiFi/configurewifi1.html">Configuring a Wireless Network on the myRIO</a></li>
+</ul>
+
+
+<div id="content">
+
+<h2>Part 3: Controlling the LEDs</h2>
+
+<p class="Body">Remember how you toggled buttons in the <strong>Getting Started with myRIO</strong> wizard to change the myRIO onboard LED states? This part of the tutorial teaches you how to create an application to control the onboard LEDs. Before starting this part, make sure you have completed the previous parts of the tutorial.</p>
+
+<table>
+	<tr>
+		<td valign="top"><img src="images/ledexpvi.gif" alt=""/></td>
+		<td valign="top">
+			<ol>
+				<li>On the block diagram of the Main VI, select <strong>View&#0187;Functions Palette</strong> to display the Functions palette. You can find the myRIO VIs on this palette.</li>
+				<li>Navigate to <strong>Functions&#0187;myRIO</strong> to locate the LED Express VI.</li>
+				<li>Click the LED Express VI and add this VI to the Main Loop in the Main VI.</li>
+                <li>In the configuration dialog box of the LED Express VI, select the LEDs to control and click <strong>OK</strong> to apply your configuration. This tutorial teaches you to control all the onboard LEDs.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="images/ledbd.gif" alt=""/></td>
+		<td valign="top">
+			<ol start="5">
+                <li>Right-click each block diagram input of the LED Express VI and select <strong>Create&#0187;Control</strong> to create Boolean controls for the LEDs. You can click a Boolean control to toggle between the TRUE and FALSE states, which determines the ON and OFF states of an onboard LED.</li>
+                <li>Press &lt;Ctrl-E&gt; to switch to the front panel of the Main VI.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="images/ledfp.gif" alt=""/></td>
+		<td valign="top">
+			<ol start="7">
+				<li>Click <strong>Run</strong>.</li>
+                <li>Toggle the Boolean controls and observe the state changes of the onboard LEDs.</li>
+				<li>Click <strong>Stop</strong>.</li>
+				<li>Click <strong>File&#0187;Save</strong> to save the VI.</li>
+			</ol>
+		</td>
+	</tr>
+</table>
+
+
+<p class="Body">Congratulations! You have successfully programmed to control the onboard LEDs.</p>
+
+<p class="Body">Before you proceed to the next part, let's talk about error checking in LabVIEW. Error checking is important because it identifies why and where errors occur in your VI.</p>
+
+<p class="Body">The current Main VI checks errors in the Accelerometer Express VI. If the Accelerometer Express VI returns an error, the Main VI stops. To ensure that the Main VI also stops when the LED Express VI returns an error, you must add code to check errors in the LED Express VI. Use the Merge Errors function to merge errors from the Accelerometer and LED Express VIs. You can access the Merge Errors function by navigating to <strong>Functions&#0187;Programming&#0187;Dialog &amp; User Interface&#0187;Merge Errors</strong>.</p>
+<p class="Body">The following figure shows the block diagram after you add the Merge Errors function. The Main VI stops if the Accelerometer Express VI or the LED Express VI returns an error.</p>
+
+<img src="images/errorhandling.gif" alt=""/>
+
+<p class="Body">Now, proceed to control the onboard user button.</p>
+                    
+<p align="center"><a href="firstprogram2.html" style="text-decoration:none;"><img src="../common/noloc_backarrow.gif" title="previous" border="0" alt=""/>&nbsp;&nbsp;&nbsp;Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="firstprogram4.html" style="text-decoration:none;">Next&nbsp;&nbsp;&nbsp;<img src="../common/noloc_nextarrow.gif" border="0" alt=""/></a></p>
+
+<br></br>
+
+</div>
+
+
+<div id="footer">
+&#0169; 2013&ndash;2015 National Instruments. All rights reserved.
+</div>
+
+</div>
+</body>
+</html>

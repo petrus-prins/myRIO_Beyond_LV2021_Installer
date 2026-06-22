@@ -1,0 +1,32 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>10.0f1</Version>
+<Cluster>
+<Name>Device</Name>
+<NumElts>6</NumElts>
+<String>
+<Name>Device Name</Name>
+<Val>LED - Onboard Device</Val>
+</String>
+<String>
+<Name>Peripheral Name</Name>
+<Val>DIO - LED</Val>
+</String>
+<String>
+<Name>Title Name</Name>
+<Val>LED</Val>
+</String>
+<String>
+<Name>Config Pane VI Name</Name>
+<Val>LED Config Pane.vi</Val>
+</String>
+<String>
+<Name>Help Topic Name</Name>
+<Val>myrioref_led.html</Val>
+</String>
+<String>
+<Name>Help File</Name>
+<Val>myrioreference.chm</Val>
+</String>
+</Cluster>
+</LVData>

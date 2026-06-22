@@ -1,0 +1,2092 @@
+<?xml version="1.0" standalone="yes"?>
+<LVData xmlns="http://www.ni.com/LVData">
+	<Version>13.0.1</Version>
+	<Cluster>
+		<Name>output cluster</Name>
+		<NumElts>11</NumElts>
+		<String>
+			<Name>Name</Name>
+			<Val>Custom FPGA</Val>
+		</String>
+		<String>
+			<Name>Device Code</Name>
+			<Val>762F</Val>
+		</String>
+		<String>
+			<Name>Tag</Name>
+			<Val>myRIO_FP_Custom</Val>
+		</String>
+		<String>
+			<Name>VI Postfix</Name>
+			<Val/>
+		</String>
+		<String>
+			<Name>Description</Name>
+			<Val/>
+		</String>
+		<String>
+			<Name>Bitfile</Name>
+			<Val>..\myRIO v1.1 FPGA Custom.lvbitx</Val>
+		</String>
+		<String>
+			<Name>Weight</Name>
+			<Val>2</Val>
+		</String>
+		<String>
+			<Name>CHM</Name>
+			<Val>myriohelp.chm</Val>
+		</String>
+		<String>
+			<Name>HTML</Name>
+			<Val>myrio_hardware_bd.html</Val>
+		</String>
+		<String>
+			<Name>Customized</Name>
+			<Val>0</Val>
+		</String>
+		<Array>
+			<Name>Supported Peripherals</Name>
+			<Dimsize>21</Dimsize>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>AI</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>12</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AI0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 3)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AI1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 5)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AI2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 7)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AI3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 9)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/AI0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 3)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/AI1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 5)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/AI2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 7)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/AI3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 9)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/AI0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(AI0)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/AI1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(AI1)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioIn/Left</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioIn/Right</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>AI (N Samples)</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>1</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AI0 (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 3)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>AudioIn (N Samples)</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>2</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioIn/Left (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioIn/Right (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>AO</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>8</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 2)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 4)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/AO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 2)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/AO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 4)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/AO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(AO0)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/AO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(AO1)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioOut/Left</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioOut/Right</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>AO (N Samples)</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>1</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AO0 (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 2)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>AudioOut (N Samples)</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>2</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioOut/Left (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>AudioOut/Right (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>DIO</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val>DI</Val>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>40</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 11)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 13)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 15)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 17)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO4</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 19)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO5</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 21)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO6</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 23)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO7</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 25)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO8</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 27)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO9</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 29)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO10</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 31)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO11</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 18)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO12</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 22)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO13</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 26)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO14</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 32)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO15</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 34)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 11)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 13)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 15)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 17)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO4</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 19)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO5</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 21)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO6</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 23)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO7</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 25)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO8</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 27)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO9</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 29)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO10</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 31)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO11</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 18)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO12</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 22)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO13</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 26)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO14</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 32)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO15</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 34)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO0)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO1)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO2)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO3)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO4</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO4)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO5</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO5)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO6</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO6)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO7</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO7)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>DIO</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val>DO</Val>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>40</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 11)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 13)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 15)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 17)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO4</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 19)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO5</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 21)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO6</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 23)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO7</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 25)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO8</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 27)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO9</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 29)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO10</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 31)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO11</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 18)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO12</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 22)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO13</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 26)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO14</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 32)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO15</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 34)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 11)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 13)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 15)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 17)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO4</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 19)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO5</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 21)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO6</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 23)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO7</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 25)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO8</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 27)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO9</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 29)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO10</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 31)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO11</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 18)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO12</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 22)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO13</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 26)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO14</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 32)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/DIO15</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 34)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO0)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO1)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO2)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO3)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO4</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO4)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO5</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO5)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO6</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO6)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/DIO7</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO7)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>DIO</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val>LED</Val>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>4</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>LED0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>LED1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>LED2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>LED3</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>DIO</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val>Button</Val>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>1</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>Button0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>DI (N Samples)</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>1</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DI0 (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 11)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>DO (N Samples)</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>1</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DO1 (N Samples)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 13)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>PWM</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>8</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/PWM0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 27)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/PWM1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 29)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/PWM2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 31)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/PWM0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 27)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/PWM1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 29)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/PWM2</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 31)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/PWM0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO3)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/PWM1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(DIO7)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>SPI</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>2</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/SPI</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>MISO: Pin 23,MOSI: Pin 25,CLK: Pin 21</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/SPI</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>MISO: Pin 23,MOSI: Pin 25,CLK: Pin 21</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>Encoder</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>4</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/ENC</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>Phase A: Pin 18,Phase B: Pin 22,Direction: Pin 18,Step: Pin 22</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/ENC</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>Phase A: Pin 18,Phase B: Pin 22,Direction: Pin 18,Step: Pin 22</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/ENC0</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>Phase A: DIO0,Phase B: DIO2,Direction: DIO0,Step: DIO2</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>C/ENC1</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>Phase A: DIO4,Phase B: DIO6,Direction: DIO4,Step: DIO6</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>I2C</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>2</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/I2C</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>SDA: Pin 34,SCL: Pin 32</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/I2C</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>SDA: Pin 34,SCL: Pin 32</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>UART</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>2</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/UART</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>RX: Pin 10,TX: Pin 14,ASRL1::INSTR</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>B/UART</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>RX: Pin 10,TX: Pin 14,ASRL2::INSTR</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>Accelerometer</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>3</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>X-Axis</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>Y-Axis</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>Z-Axis</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>AI IRQ</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>2</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AI0 (Interrupt)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 3)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/AI1 (Interrupt)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 5)</Val>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>DI IRQ</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>5</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO0 (Interrupt)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 11)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO1 (Interrupt)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 13)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO2 (Interrupt)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 15)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>A/DIO3 (Interrupt)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val>(Pin 17)</Val>
+						</String>
+					</Cluster>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val>Button0 (Interrupt)</Val>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+			<Cluster>
+				<Name>Supported Peripheral</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>Name</Name>
+					<Val>Timer IRQ</Val>
+				</String>
+				<String>
+					<Name>EVI</Name>
+					<Val/>
+				</String>
+				<Array>
+					<Name>Channel Informations</Name>
+					<Dimsize>1</Dimsize>
+					<Cluster>
+						<Name>Channel Information</Name>
+						<NumElts>2</NumElts>
+						<String>
+							<Name>Alias</Name>
+							<Val/>
+						</String>
+						<String>
+							<Name>PIN</Name>
+							<Val/>
+						</String>
+					</Cluster>
+				</Array>
+			</Cluster>
+		</Array>
+	</Cluster>
+</LVData>

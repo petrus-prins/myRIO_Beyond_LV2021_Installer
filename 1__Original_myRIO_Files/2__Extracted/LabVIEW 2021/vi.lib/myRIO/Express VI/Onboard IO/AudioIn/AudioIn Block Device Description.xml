@@ -1,0 +1,36 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>10.0f1</Version>
+<Cluster>
+<Name>Device</Name>
+<NumElts>7</NumElts>
+<String>
+<Name>Device Name</Name>
+<Val>Audio input (n samples)</Val>
+</String>
+<String>
+<Name>Peripheral Name</Name>
+<Val>AudioIn (N Samples)</Val>
+</String>
+<String>
+<Name>Title Name</Name>
+<Val>Audio Input</Val>
+</String>
+<String>
+<Name>Config Pane VI Name</Name>
+<Val>AudioIn Block Config Pane.vi</Val>
+</String>
+<String>
+<Name>Help Topic Name</Name>
+<Val>myrioref_exp_audio_input_ns.html</Val>
+</String>
+<String>
+<Name>Help File</Name>
+<Val>myrioreference.chm</Val>
+</String>
+<String>
+<Name>Context Help Pin Type</Name>
+<Val>Audio Input (N Samples)</Val>
+</String>
+</Cluster>
+</LVData>
