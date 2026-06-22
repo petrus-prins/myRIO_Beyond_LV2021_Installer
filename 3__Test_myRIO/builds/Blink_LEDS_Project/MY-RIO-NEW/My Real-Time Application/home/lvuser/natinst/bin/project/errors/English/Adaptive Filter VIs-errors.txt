@@ -1,0 +1,70 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Adaptive Filter VIs" displayname="Adaptive Filter VIs">
+</nifamily>
+</nicomment>
+<nierror code="-42155">
+Adaptive Filter VIs:  The LabVIEW FPGA code generation failed. You must save the .lvproj LabVIEW project file before generating LabVIEW FPGA code for the fixed-point adaptive filter.
+</nierror>
+<nierror code="-42154">
+Adaptive Filter VIs:  The LabVIEW FPGA code generation failed. The VIs that you want to overwrite already exist in memory. Close those VIs and generate code again.
+</nierror>
+<nierror code="-42151">
+Adaptive Filter VIs:  The fixed-point adaptive filter configuration is invalid. Use the AFT Simulate Fixed-Point FIR LMS Express VI to simulate the fixed-point adaptive filter and to determine appropriate configuration.
+</nierror>
+<nierror code="-42022">
+Adaptive Filter VIs:  The length of the <b>secondary path</b> array must be greater than zero.
+</nierror>
+<nierror code="-42021">
+Adaptive Filter VIs:  The specified adaptive filter is invalid. You cannot set the filter coefficients if the adaptive filter uses the QR decomposition-based recursive least squares (QR-RLS) algorithm.
+</nierror>
+<nierror code="-42020">
+Adaptive Filter VIs:  The length of the input signal does not equal the length of the adaptive filter.
+</nierror>
+<nierror code="-42019">
+Adaptive Filter VIs:  You must specify a real-valued adaptive filter for the <b>adaptive filter in</b> input.
+</nierror>
+<nierror code="-42018">
+Adaptive Filter VIs:  Either the sampling frequencies of the input signals do not match each other, or the sampling frequency of an input signal changed during the adaptive filtering process.
+</nierror>
+<nierror code="-42017">
+Adaptive Filter VIs:  The data type of the adaptive filter does not match the instance type of the AFT Get Coefficients VI or the AFT Set Coefficients VI. If the adaptive filter is real-valued, you must use the Real instance VIs. If the adaptive filter is complex-valued, you must use the Complex instance VIs.
+</nierror>
+<nierror code="-42016">
+Adaptive Filter VIs:  The data type of the adaptive filter does not match that of the input signal. If the input signal is real-valued, you must use real-valued adaptive filters. If the input signal is complex-valued, you must use complex-valued adaptive filters.
+</nierror>
+<nierror code="-42015">
+Adaptive Filter VIs:  The regularization factor must be greater than or equal to 2.22045E-16.
+</nierror>
+<nierror code="-42012">
+Adaptive Filter VIs:  The system is running out of memory. Try closing open applications to create more memory.
+</nierror>
+<nierror code="-42010">
+Adaptive Filter VIs:  The length of the input signal is zero. Verify that the input signal is not empty.
+</nierror>
+<nierror code="-42009">
+Adaptive Filter VIs:  The length of the input signal x(n) does not equal that of the input signal d(n).
+</nierror>
+<nierror code="-42008">
+Adaptive Filter VIs:  The length of the filter coefficients array does not equal the length of the adaptive filter.
+</nierror>
+<nierror code="-42006">
+Adaptive Filter VIs:  The length of the adaptive filter must be greater than 2.
+</nierror>
+<nierror code="-42005">
+Adaptive Filter VIs:  The leaky factor is out of range. The valid range is [0, 0.1].
+</nierror>
+<nierror code="-42004">
+Adaptive Filter VIs:  The forgetting factor is out of range. The valid range is (0, 1].
+</nierror>
+<nierror code="-42003">
+Adaptive Filter VIs:  The step size must be greater than zero. For adaptive filters with the normalized least mean squares (LMS) algorithm, the step size must be between zero and 2, exclusive.
+</nierror>
+<nierror code="-42002">
+Adaptive Filter VIs:  The specified adaptive filter does not exist.
+</nierror>
+<nierror code="42153">
+Adaptive Filter VIs:  The LabVIEW FPGA code generation was cancelled.
+</nierror>
+</nidocument>

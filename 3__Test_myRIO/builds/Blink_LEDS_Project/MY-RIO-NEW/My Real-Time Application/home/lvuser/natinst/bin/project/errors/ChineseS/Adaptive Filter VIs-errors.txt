@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="Adaptive Filter VIs" familyname="Adaptive Filter VIs">
+</nifamily>
+</nicomment>
+<nierror code="-42155">
+自适应过滤器VI: LabVIEW FPGA代码生成失败。在为定点自适应滤波器生成LabVIEW FPGA代码之前，必须先保存.lvproj LabVIEW项目文件。
+</nierror>
+<nierror code="-42154">
+自适应过滤器VI: LabVIEW FPGA代码生成失败。您要覆盖的VI已经存在于内存中。关闭这些VI并重新生成代码。
+</nierror>
+<nierror code="-42151">
+自适应过滤器VI: 定点自适应滤波器配置无效。使用AFT Simulate Fixed-Point FIR LMS Express VI，模拟定点自适应滤波器并确定适当的配置。
+</nierror>
+<nierror code="-42022">
+自适应过滤器VI: <b>次要路径</b>数组的长度必须大于零。
+</nierror>
+<nierror code="-42021">
+自适应过滤器VI: 指定的自适应滤波器无效。若自适应滤波器使用基于QR分解的递归最小二乘(QR-RLS)算法，则不能设置滤波器系数。
+</nierror>
+<nierror code="-42020">
+自适应过滤器VI: 输入信号的长度不等于自适应滤波器的长度。
+</nierror>
+<nierror code="-42019">
+自适应过滤器VI: 您必须在<b>自适应滤波器输入</b>输入端中指定实值自适应滤波器。
+</nierror>
+<nierror code="-42018">
+自适应过滤器VI: 输入信号的采样频率彼此不匹配，或者在自适应滤波处理期间输入信号的采样频率发生变化。
+</nierror>
+<nierror code="-42017">
+自适应过滤器VI: 自适应滤波器的数据类型与AFT Get Coefficients VI或AFT Set Coefficients VI的实例类型不匹配。如果自适应滤波器为实数，必须使用实数实例VI。如果自适应滤波器为复数，必须使用复数实例VI。
+</nierror>
+<nierror code="-42016">
+自适应过滤器VI: 自适应滤波器的数据类型与输入信号的数据类型不匹配。如果输入信号是实值，则必须使用实值自适应滤波器。如果输入信号是复值，则必须使用复值自适应滤波器。
+</nierror>
+<nierror code="-42015">
+自适应过滤器VI: 正则化因子必须大于等于2.22045E-16。
+</nierror>
+<nierror code="-42012">
+自适应过滤器VI: 系统内存不足。尝试关闭打开的应用程序，以创建更多的内存。
+</nierror>
+<nierror code="-42010">
+自适应过滤器VI: 输入信号的长度为零。确认输入信号不为空。
+</nierror>
+<nierror code="-42009">
+自适应过滤器VI: 输入信号x(n)的长度不等于输入信号d(n)的长度。
+</nierror>
+<nierror code="-42008">
+自适应过滤器VI: 滤波器系数数组的长度不等于自适应滤波器的长度。
+</nierror>
+<nierror code="-42006">
+自适应过滤器VI: 自适应滤波器的长度必须大于2。
+</nierror>
+<nierror code="-42005">
+自适应过滤器VI: 泄漏因子超出范围。有效范围是[0, 0.1]。
+</nierror>
+<nierror code="-42004">
+自适应过滤器VI: 遗忘因子超出范围。有效范围是(0, 1]。
+</nierror>
+<nierror code="-42003">
+自适应过滤器VI: 步长必须大于0。对于具有归一化最小均方(LMS)算法的自适应滤波器，步长必须在(0, 2)范围内。
+</nierror>
+<nierror code="-42002">
+自适应过滤器VI: 指定自适应滤波器不存在。
+</nierror>
+<nierror code="42153">
+自适应过滤器VI: 已取消LabVIEW FPGA代码生成。
+</nierror>
+</nidocument>

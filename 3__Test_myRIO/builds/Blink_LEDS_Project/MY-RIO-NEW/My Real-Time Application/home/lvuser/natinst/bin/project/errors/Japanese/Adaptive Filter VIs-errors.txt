@@ -1,0 +1,70 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Adaptive Filter VIs" displayname="Adaptive Filter VIs">
+</nifamily>
+</nicomment>
+<nierror code="-42155">
+Adaptive Filter VIs:  LabVIEW FPGAのコード生成が失敗しました。 固定小数点適応フィルタのLabVIEW FPGAコードを生成する前に、LabVIEWプロジェクトファイル（.lvproj）を保存する必要があります。
+</nierror>
+<nierror code="-42154">
+Adaptive Filter VIs:  LabVIEW FPGAのコード生成が失敗しました。 上書きしようとしているVIはメモリ内に存在しています。 VIを閉じてから再度コードを生成してください。
+</nierror>
+<nierror code="-42151">
+Adaptive Filter VIs:  固定小数点適応フィルタの構成が無効です。 「AFT Simulate Fixed-Point FIR LMS」Express VIを使用して、固定小数点適応フィルタをシミュレートし、適切な構成を決定します。
+</nierror>
+<nierror code="-42022">
+Adaptive Filter VIs:  <b>セカンダリパス</b>の長さ配列は0以上でなければなりません。
+</nierror>
+<nierror code="-42021">
+Adaptive Filter VIs:  指定した適応フィルタは無効です。 適応フィルタがQR-RLS（QR decomposition-based Recursive Least Squares）アルゴリズムを使用する場合は、フィルタ係数を設定できません。
+</nierror>
+<nierror code="-42020">
+Adaptive Filter VIs:  入力信号の長さは適応フィルタの長さと異なります。
+</nierror>
+<nierror code="-42019">
+Adaptive Filter VIs:  <b>adaptive filter in</b>入力には、実数の適応フィルタを指定する必要があります。
+</nierror>
+<nierror code="-42018">
+Adaptive Filter VIs:  入力信号のサンプル周波数が一致しないか、入力信号のサンプル周波数が適応フィルタ処理中に変更されました。
+</nierror>
+<nierror code="-42017">
+Adaptive Filter VIs:  適応フィルタのデータタイプが「AFT Get Coefficients」VIもしくは「AFT Set Coefficients」VIのインスタンスタイプと一致しません。 適応フィルタが実数の場合、「Real Instance」VIを使用する必要があります。適応フィルタが複素数の場合、「Complex Instance」VIを使用する必要があります。
+</nierror>
+<nierror code="-42016">
+Adaptive Filter VIs:  適応フィルタのデータタイプが入力信号のデータタイプと一致しません。 入力信号が実数の場合、実数値の適応フィルタを使用する必要があります。 入力信号が複素数の場合、複素数の適応フィルタを使用する必要があります。
+</nierror>
+<nierror code="-42015">
+Adaptive Filter VIs:  正則化係数は2.22045E-16よりも大きい値である必要があります。
+</nierror>
+<nierror code="-42012">
+Adaptive Filter VIs:  システムのメモリ容量が不足しています。 使用可能なメモリを増やすには開いているアプリケーションを閉じてください。
+</nierror>
+<nierror code="-42010">
+Adaptive Filter VIs:  入力信号の長さがゼロです。 入力信号が空でないことを確認してください。
+</nierror>
+<nierror code="-42009">
+Adaptive Filter VIs:  入力信号の長さ x(n) と入力信号の長さ d(n) が一致しません。
+</nierror>
+<nierror code="-42008">
+Adaptive Filter VIs:  フィルタ係数配列の長さは適応フィルタの長さと異なります。
+</nierror>
+<nierror code="-42006">
+Adaptive Filter VIs:  適応フィルタの長さは2よりも大きい値である必要があります。
+</nierror>
+<nierror code="-42005">
+Adaptive Filter VIs:  漏れ係数は範囲外です。 有効範囲は [0, 0.1]です。
+</nierror>
+<nierror code="-42004">
+Adaptive Filter VIs:  忘却係数は範囲外です。 有効範囲は(0, 1]です。
+</nierror>
+<nierror code="-42003">
+Adaptive Filter VIs:  ステップサイズは、0よりも大きい必要があります。 正規化された最小二乗平均（LMS）アルゴリズムを使用した適応フィルタは、ステップサイズが0～2の間（0と2は除く）である必要があります。
+</nierror>
+<nierror code="-42002">
+Adaptive Filter VIs:  指定された適応フィルタは存在しません。
+</nierror>
+<nierror code="42153">
+Adaptive Filter VIs:  LabVIEW FPGAのコード生成がキャンセルされました。
+</nierror>
+</nidocument>

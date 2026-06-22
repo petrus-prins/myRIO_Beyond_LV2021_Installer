@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="Unit Test Framework" familyname="Unit Test Framework">
+</nifamily>
+</nicomment>
+<nierror code="-25299">
+Unit Test Framework: Placeholder for the last Unit Test Framework error code.
+</nierror>
+<nierror code="-25288">
+Unit Test Framework: Cannot access a shared variable.
+</nierror>
+<nierror code="-25287">
+Unit Test Framework: An error occurred when creating test(s).
+</nierror>
+<nierror code="-25286">
+Unit Test Framework: This VI does not have a block diagram.
+</nierror>
+<nierror code="-25285">
+Unit Test Framework: Cannot execute tests while related VIs are running, including the VI under test, setup VI, teardown VI, user-defined comparison VI, and user-defined test VI.
+</nierror>
+<nierror code="-25284">
+Unit Test Framework: This VI is in a locked library. Unlock the library or add the password in the <b>Project Properties</b> dialog box.
+</nierror>
+<nierror code="-25283">
+Unit Test Framework: This VI is password-protected. Unlock the VI or add the password in the <b>Project Properties</b> dialog box.
+</nierror>
+<nierror code="-25282">
+Unit Test Framework: The path to the user-defined test VI is invalid.
+</nierror>
+<nierror code="-25281">
+Unit Test Framework: Index not found.
+</nierror>
+<nierror code="-25280">
+Unit Test Framework: Other error.
+</nierror>
+<nierror code="-25262">
+Unit Test Framework: The user-defined comparison VI is invalid.
+</nierror>
+<nierror code="-25261">
+Unit Test Framework: The path to the user-defined comparison VI is invalid.
+</nierror>
+<nierror code="-25260">
+Unit Test Framework: The .lvtest file is read-only.
+</nierror>
+<nierror code="-25259">
+Unit Test Framework: The .lvtest file is invalid.
+</nierror>
+<nierror code="-25258">
+Unit Test Framework: Test Case Data Error
+</nierror>
+<nierror code="-25257">
+Unit Test Framework: Test Case Data Missing
+</nierror>
+<nierror code="-25256">
+Unit Test Framework: An error occurred while setting input values to the VI under test.
+</nierror>
+<nierror code="-25255">
+Unit Test Framework: No control or indicator to process.
+</nierror>
+<nierror code="-25253">
+Unit Test Framework: If the VI under test is a reentrant VI, a dynamic dispatch member VI, a subroutine VI, or executes on a real-time (RT) target, LabVIEW can compare only the indicators on the connector pane or global variables.
+</nierror>
+<nierror code="-25252">
+Unit Test Framework: If the VI under test is a reentrant VI, a dynamic dispatch member VI, a subroutine VI, or executes on a real-time (RT) target, LabVIEW can set values only to controls on the connector pane or to global variables.
+</nierror>
+<nierror code="-25251">
+Unit Test Framework: LabVIEW cannot find the following control(s).
+</nierror>
+<nierror code="-25250">
+Unit Test Framework: The .lvtest file header information contains an error.
+</nierror>
+<nierror code="-25249">
+Unit Test Framework: The following control name is not unique.
+</nierror>
+<nierror code="-25248">
+Unit Test Framework: The control name cannot contain the following: \n, \r, tabs, array brackets, name separators, and decimal separators.
+</nierror>
+<nierror code="-25245">
+Unit Test Framework: An error occurred when running the setup and teardown VIs.
+</nierror>
+<nierror code="-25244">
+Unit Test Framework: The configuration between setup VI, teardown VI, and VI under test is invalid.
+</nierror>
+<nierror code="-25243">
+Unit Test Framework: Not a control reference.
+</nierror>
+<nierror code="-25242">
+Unit Test Framework: The user-defined test VI is invalid.
+</nierror>
+<nierror code="-25241">
+Unit Test Framework: The VI under test is invalid.
+</nierror>
+<nierror code="-25240">
+Unit Test Framework: The path to the VI under test is invalid.
+</nierror>
+<nierror code="-25232">
+Unit Test Framework: An error occurred with the teardown VI.
+</nierror>
+<nierror code="-25231">
+Unit Test Framework: The teardown VI is invalid.
+</nierror>
+<nierror code="-25230">
+Unit Test Framework: The path to the teardown VI is invalid.
+</nierror>
+<nierror code="-25222">
+Unit Test Framework: LabVIEW cannot find the following terminal(s).
+</nierror>
+<nierror code="-25221">
+Unit Test Framework: The setup VI is invalid.
+</nierror>
+<nierror code="-25220">
+Unit Test Framework: The path to the setup VI is invalid.
+</nierror>
+<nierror code="-25204">
+Unit Test Framework: Cannot load the class. Save the class before loading or executing tests.
+</nierror>
+<nierror code="-25201">
+Unit Test Framework: Cannot open multiple instances of the <b>Unit Test Framework Results</b> window. Close the window before executing tests.
+</nierror>
+<nierror code="-25200">
+Unit Test Framework: An unknown error occurred.
+</nierror>
+</nidocument>

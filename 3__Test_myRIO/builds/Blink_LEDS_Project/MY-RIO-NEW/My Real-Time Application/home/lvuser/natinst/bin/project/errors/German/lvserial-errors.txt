@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+<nifamily familyname="LVSERIAL" displayname="LVSERIAL">
+</nifamily>
+</nicomment>
+<nierror code="-65088">
+COMM: Die Ereignisverarbeitung ist deaktiviert.
+</nierror>
+<nierror code="-65087">
+COMM: Eine Zeitlimitüberschreitung trat auf einem parallelen Schnittstelle auf.
+</nierror>
+<nierror code="-65086">
+COMM: Eine parallele Schnittstelle signalisiert, dass kein Papier verfügbar ist.
+</nierror>
+<nierror code="-65085">
+COMM: Der geforderte Modus wird nicht unterstützt, oder der Handle ist ungültig.
+</nierror>
+<nierror code="-65084">
+COMM:Ein Ein/Ausgabe-Fehler trat während Kommunikation mit der Einheit auf.
+</nierror>
+<nierror code="-65083">
+COMM: Eine parallele Schnittstelle ist nicht ausgewählt.
+</nierror>
+<nierror code="-65082">
+COMM: Die Hardware nahm eine Unterbrechungsbedingung wahr.
+</nierror>
+<nierror code="-65081">
+COMM: Das empfangene Zeichen ist nicht identisch mit dem gesendeten Zeichen.
+</nierror>
+<nierror code="-65080">
+COMM: Die Applikation hat versucht ein Zeichen zu senden, jedoch war der Ausgangspuffer voll.
+</nierror>
+<nierror code="-65079">
+COMM: Ein Zeichenüberlauf ist aufgetreten. Das nächste Zeichen ging verloren.
+</nierror>
+<nierror code="-65078">
+COMM: Die geforderte Anzahl Bytes konnte nicht geschrieben werden.
+</nierror>
+<nierror code="-65077">
+COMM: Der serielle port ist nicht gelockt.
+</nierror>
+<nierror code="-65076">
+COMM: Der serielle port kann nicht gelockt werden (timeout).
+</nierror>
+<nierror code="-65075">
+COMM: Die Semaphore kann nicht erzeugt werden.
+</nierror>
+<nierror code="-65074">
+COMM: Die Operation wurde abgebrochen.
+</nierror>
+<nierror code="-65073">
+COMM: Es ist nicht genug Speicher für die Operation verfügbar.
+</nierror>
+<nierror code="-65072">
+COMM: Argumentfehler.
+</nierror>
+<nierror code="-65071">
+COMM: Das angegebene Gerät wurde nicht gefunden.
+</nierror>
+<nierror code="-65070">
+COMM: Unbekannter Systemfehler.
+</nierror>
+<nierror code="-65069">
+COMM: Die angegebene Gerätereferenznummer ist ungültig.
+</nierror>
+<nierror code="-65068">
+COMM: Timeout abgelaufen bevor die Operation beendet wurde.
+</nierror>
+<nierror code="-65067">
+COMM: Während der Übertragung ist ein Paritäts-Fehler aufgetreten.
+</nierror>
+<nierror code="-65066">
+COMM: Während der Übertragung ist ein Rahmensynchronisations-Fehler (framing error) aufgetreten.
+</nierror>
+<nierror code="-65065">
+COMM: Während der Übertragung ist ein Pufferüberlauf-Fehler aufgetreten.
+</nierror>
+<nierror code="-65064">
+COMM: Das angegebene Gerät wurde gefunden. Gegenwärtig kann jedoch nicht darauf zugegriffen werden.
+</nierror>
+<nierror code="-65063">
+COMM: Die angegebene Operation ist nicht implementiert.
+</nierror>
+<nierror code="-65062">
+COMM: Ungültige Länge oder Anzahl Bytes spezifiziert.
+</nierror>
+<nierror code="-65061">
+COMM: Keines der Abschlusszeichen wurde empfangen.
+</nierror>
+<nierror code="65060">
+COMM: Die Anzahl der übertragenen Bytes ist gleich der spezifizierten Maximalzahl.
+</nierror>
+<nierror code="65061">
+COMM: Eines der Abschlusszeichen wurde empfangen.
+</nierror>
+</nidocument>

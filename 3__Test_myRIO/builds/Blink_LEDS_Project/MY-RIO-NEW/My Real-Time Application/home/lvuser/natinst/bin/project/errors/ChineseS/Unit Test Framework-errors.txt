@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="Unit Test Framework" familyname="Unit Test Framework">
+</nifamily>
+</nicomment>
+<nierror code="-25299">
+Unit Test Framework: 最后一个Unit Test Framework错误代码的占位符。
+</nierror>
+<nierror code="-25288">
+Unit Test Framework: 无法访问共享变量。
+</nierror>
+<nierror code="-25287">
+Unit Test Framework: 创建测试时出错。
+</nierror>
+<nierror code="-25286">
+Unit Test Framework: 该VI没有程序框图。
+</nierror>
+<nierror code="-25285">
+Unit Test Framework: 相关VI运行时不能执行测试，包括被测VI、设置VI、拆卸VI、用户自定义比较VI和用户自定义测试VI。
+</nierror>
+<nierror code="-25284">
+Unit Test Framework: 该VI在锁定库中。解锁库，或在<b>项目属性</b>对话框中添加密码。
+</nierror>
+<nierror code="-25283">
+Unit Test Framework: 该VI已使用密码保护。解锁VI，或在<b>项目属性</b>对话框中添加密码。
+</nierror>
+<nierror code="-25282">
+Unit Test Framework: 用户定义的测试VI路径无效。
+</nierror>
+<nierror code="-25281">
+Unit Test Framework: 找不到索引。
+</nierror>
+<nierror code="-25280">
+Unit Test Framework: 其他错误。
+</nierror>
+<nierror code="-25262">
+Unit Test Framework: 用户定义的比较VI无效。
+</nierror>
+<nierror code="-25261">
+Unit Test Framework: 用户定义的比较VI路径无效。
+</nierror>
+<nierror code="-25260">
+Unit Test Framework: .lvtest文件为只读。
+</nierror>
+<nierror code="-25259">
+Unit Test Framework: .lvtest文件无效。
+</nierror>
+<nierror code="-25258">
+Unit Test Framework: 测试用例数据错误
+</nierror>
+<nierror code="-25257">
+Unit Test Framework: 测试用例数据丢失
+</nierror>
+<nierror code="-25256">
+Unit Test Framework: 为被测VI设置输入值时发生错误。
+</nierror>
+<nierror code="-25255">
+Unit Test Framework: 无可处理的输入控件或显示控件。
+</nierror>
+<nierror code="-25253">
+Unit Test Framework: 若被测VI是重入VI、动态分配成员VI、子程序VI或者在一个实时(RT)终端上执行，LabVIEW只能比较连接板上的显示控件或全局变量。
+</nierror>
+<nierror code="-25252">
+Unit Test Framework: 若被测VI是重入VI、动态分配成员VI、子程序VI或者在一个实时(RT)终端上执行，LabVIEW只能为连接板上的控制控件或全局变量设置值。
+</nierror>
+<nierror code="-25251">
+Unit Test Framework: LabVIEW找不到以下控件。
+</nierror>
+<nierror code="-25250">
+Unit Test Framework: .lvtest文件头信息包含错误。
+</nierror>
+<nierror code="-25249">
+Unit Test Framework: 以下控件名不唯一。
+</nierror>
+<nierror code="-25248">
+Unit Test Framework: 控件名称不能包含以下内容：\n、\r、制表符、数组括号、名称分隔符和小数点分隔符。
+</nierror>
+<nierror code="-25245">
+Unit Test Framework: 运行设置和拆卸VI时发生错误。
+</nierror>
+<nierror code="-25244">
+Unit Test Framework: 设置VI、拆卸VI和测试VI之间的配置无效。
+</nierror>
+<nierror code="-25243">
+Unit Test Framework: 不是控件引用。
+</nierror>
+<nierror code="-25242">
+Unit Test Framework: 用户定义的测试VI无效。
+</nierror>
+<nierror code="-25241">
+Unit Test Framework: 被测VI无效。
+</nierror>
+<nierror code="-25240">
+Unit Test Framework: 被测VI路径无效。
+</nierror>
+<nierror code="-25232">
+Unit Test Framework: 拆卸VI发生错误。
+</nierror>
+<nierror code="-25231">
+Unit Test Framework: 拆卸VI无效。
+</nierror>
+<nierror code="-25230">
+Unit Test Framework: 拆卸VI路径无效。
+</nierror>
+<nierror code="-25222">
+Unit Test Framework: LabVIEW找不到以下接线端。
+</nierror>
+<nierror code="-25221">
+Unit Test Framework: 设置VI无效。
+</nierror>
+<nierror code="-25220">
+Unit Test Framework: 设置VI路径无效。
+</nierror>
+<nierror code="-25204">
+Unit Test Framework: 无法加载类。加载或执行测试之前保存该类。
+</nierror>
+<nierror code="-25201">
+Unit Test Framework: 无法打开<b>单元测试框架结果</b>窗口的多个实例。在执行测试之前关闭窗口。
+</nierror>
+<nierror code="-25200">
+Unit Test Framework: 发生未知错误。
+</nierror>
+</nidocument>

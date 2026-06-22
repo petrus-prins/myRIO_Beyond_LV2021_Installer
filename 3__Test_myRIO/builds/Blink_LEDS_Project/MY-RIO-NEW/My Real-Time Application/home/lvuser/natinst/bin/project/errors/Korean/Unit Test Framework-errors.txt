@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="Unit Test Framework" familyname="Unit Test Framework">
+</nifamily>
+</nicomment>
+<nierror code="-25299">
+Unit Test Framework: 마지막 Unit Test Framework 에러 코드의 자리 표시자.
+</nierror>
+<nierror code="-25288">
+Unit Test Framework: 공유 변수에 접근할 수 없습니다.
+</nierror>
+<nierror code="-25287">
+Unit Test Framework: 테스트 생성 중 에러가 발생했습니다.
+</nierror>
+<nierror code="-25286">
+Unit Test Framework: 이 VI에는 블록 다이어그램이 없습니다.
+</nierror>
+<nierror code="-25285">
+Unit Test Framework: 테스트 대상 VI, 설정 VI, 해제 VI, 사용자 정의 비교 VI 및 사용자 정의 테스트 VI를 포함하여 관련 VI가 실행되는 동안 테스트를 실행할 수 없습니다.
+</nierror>
+<nierror code="-25284">
+Unit Test Framework: 이 VI는 잠겨 있는 라이브러리에 있습니다. <b>프로젝트 프로퍼티</b> 대화 상자에서 라이브러리의 잠금을 해제하거나 암호를 추가하십시오.
+</nierror>
+<nierror code="-25283">
+Unit Test Framework: 이 VI는 암호로 보호되어 있습니다. <b>프로젝트 프로퍼티</b> 대화 상자에서 VI의 잠금을 해제하거나 암호를 추가하십시오.
+</nierror>
+<nierror code="-25282">
+Unit Test Framework: 사용자 정의 테스트 VI의 경로가 유효하지 않습니다.
+</nierror>
+<nierror code="-25281">
+Unit Test Framework: 인덱스를 찾을 수 없습니다.
+</nierror>
+<nierror code="-25280">
+Unit Test Framework: 기타 에러.
+</nierror>
+<nierror code="-25262">
+Unit Test Framework: 사용자 정의 비교 VI가 유효하지 않습니다.
+</nierror>
+<nierror code="-25261">
+Unit Test Framework: 사용자 정의 비교 VI의 경로가 유효하지 않습니다.
+</nierror>
+<nierror code="-25260">
+Unit Test Framework: .lvtest 파일이 읽기 전용입니다.
+</nierror>
+<nierror code="-25259">
+Unit Test Framework: .lvtest 파일이 유효하지 않습니다.
+</nierror>
+<nierror code="-25258">
+Unit Test Framework: 테스트 케이스 데이터 에러
+</nierror>
+<nierror code="-25257">
+Unit Test Framework: 테스트 케이스 데이터 누락
+</nierror>
+<nierror code="-25256">
+Unit Test Framework: 테스트 대상 VI에 입력값을 설정하는 중에 오류가 발생했습니다.
+</nierror>
+<nierror code="-25255">
+Unit Test Framework: 처리할 컨트롤이나 인디케이터가 없습니다.
+</nierror>
+<nierror code="-25253">
+Unit Test Framework: 테스트 대상 VI가 재호출 VI, 다이나믹 디스패치 멤버 VI, 서브루틴 VI이거나, 리얼타임 (RT) 타겟에서 실행되는 경우, LabVIEW는 커넥터 팬의 인디케이터 또는 글로벌 변수만 비교할 수 있습니다.
+</nierror>
+<nierror code="-25252">
+Unit Test Framework: 테스트 대상 VI가 재호출 VI, 다이나믹 디스패치 멤버 VI, 서브루틴 VI이거나, 리얼타임 (RT) 타겟에서 실행되는 경우, LabVIEW는 커넥터 팬의 컨트롤 또는 글로벌 변수에만 값을 설정할 수 있습니다.
+</nierror>
+<nierror code="-25251">
+Unit Test Framework: LabVIEW가 다음 컨트롤을 찾을 수 없습니다.
+</nierror>
+<nierror code="-25250">
+Unit Test Framework: .lvtest 파일 헤더 정보가 에러를 포함합니다.
+</nierror>
+<nierror code="-25249">
+Unit Test Framework: 다음 컨트롤 이름은 고유하지 않습니다.
+</nierror>
+<nierror code="-25248">
+Unit Test Framework: 컨트롤 이름에 \n, \r, 탭, 대괄호, 이름 분리자, 소수점이 포함될 수 없습니다.
+</nierror>
+<nierror code="-25245">
+Unit Test Framework: 설정 및 해제 VI를 실행하는 중 에러가 발생했습니다.
+</nierror>
+<nierror code="-25244">
+Unit Test Framework: 설정 VI, 해제 VI, 테스트 대상 VI 사이의 설정이 유효하지 않습니다.
+</nierror>
+<nierror code="-25243">
+Unit Test Framework: 컨트롤 참조가 아닙니다.
+</nierror>
+<nierror code="-25242">
+Unit Test Framework: 사용자 정의 테스트 VI가 유효하지 않습니다.
+</nierror>
+<nierror code="-25241">
+Unit Test Framework: 테스트 대상 VI가 유효하지 않습니다.
+</nierror>
+<nierror code="-25240">
+Unit Test Framework: 테스트 대상 VI의 경로가 유효하지 않습니다.
+</nierror>
+<nierror code="-25232">
+Unit Test Framework: 해제 VI에 에러가 발생했습니다.
+</nierror>
+<nierror code="-25231">
+Unit Test Framework: 해제 VI가 유효하지 않습니다.
+</nierror>
+<nierror code="-25230">
+Unit Test Framework: 해제 VI의 경로가 유효하지 않습니다.
+</nierror>
+<nierror code="-25222">
+Unit Test Framework: LabVIEW가 다음 터미널을 찾을 수 없습니다.
+</nierror>
+<nierror code="-25221">
+Unit Test Framework: 설정 VI가 유효하지 않습니다.
+</nierror>
+<nierror code="-25220">
+Unit Test Framework: 설정 VI의 경로가 유효하지 않습니다.
+</nierror>
+<nierror code="-25204">
+Unit Test Framework: 클래스를 로드할 수 없습니다. 테스트를 로드하거나 실행하기 전에 클래스를 저장하십시오.
+</nierror>
+<nierror code="-25201">
+Unit Test Framework: <b>Unit Test Framework Results</b> 윈도우의 여러 인스턴스를 열 수 없습니다. 테스트를 실행하기 전에 윈도우를 닫으십시오.
+</nierror>
+<nierror code="-25200">
+Unit Test Framework: 알 수 없는 에러가 발생하였습니다.
+</nierror>
+</nidocument>

@@ -1,0 +1,460 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Digital Filter Design Toolkit" displayname="Digital Filter Design Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-24130">
+Digital Filter Design Toolkit:  Aucune cible FPGA valide n'est installée.
+</nierror>
+<nierror code="-24129">
+Digital Filter Design Toolkit:  La pondération doit se trouver dans la gamme (0; 1)
+</nierror>
+<nierror code="-24128">
+Digital Filter Design Toolkit:  L'ordre de filtre spécifié pour un banc de filtres reconstruit parfaitement avec M bandes à modulation cosinusoïdale doit remplir la condition suivante : N+1=2mM, N étant l'ordre, M le nombre de bandes, et m un entier positif.
+</nierror>
+<nierror code="-24127">
+Digital Filter Design Toolkit:  Ce VI ne peut pas reconstruire les signaux de sous-bande en entrée.
+</nierror>
+<nierror code="-24126">
+Digital Filter Design Toolkit:  L'ordre de filtre spécifié doit être un nombre impair supérieur ou égal à 3.
+</nierror>
+<nierror code="-24125">
+Digital Filter Design Toolkit:  Le banc de filtres en entrée doit être un banc de filtres à modulation cosinusoïdale.
+</nierror>
+<nierror code="-24124">
+Digital Filter Design Toolkit:  Le nombre de signaux de sous-bande doit être égal au nombre de sous-bandes du banc de filtres en entrée.
+</nierror>
+<nierror code="-24123">
+Digital Filter Design Toolkit:  Le nombre de bandes du banc de filtres doit être supérieur à 1. 
+</nierror>
+<nierror code="-24122">
+Digital Filter Design Toolkit:  L'indice de sous-bande doit se trouver dans la gamme [0, nombre de bandes-1].
+</nierror>
+<nierror code="-24121">
+Digital Filter Design Toolkit:  Objet de banc de filtres non valide.
+</nierror>
+<nierror code="-24120">
+Digital Filter Design Toolkit:  Vous pouvez générer le code FPGA LabVIEW pour un filtre multifréquence à plusieurs étages qui ne contient que des étages de décimation ou que des étages d'interpolation.
+</nierror>
+<nierror code="-24119">
+Digital Filter Design Toolkit:  Le filtre à moyenne mobile à virgule fixe supporte un maximum de 32 voies.
+</nierror>
+<nierror code="-24118">
+Digital Filter Design Toolkit:  Pour générer du code FPGA LabVIEW, le facteur de conversion de la fréquence d'échantillonnage du filtre à moyenne mobile doit être supérieur à 1.
+</nierror>
+<nierror code="-24117">
+Digital Filter Design Toolkit:  Vous devez utiliser le VI DFD FXP Moving Average Code Generator pour générer le code FPGA LabVIEW à partir d'un filtre CIC (Cascaded Integrator Comb) qui n'a pas de variation de fréquence.
+</nierror>
+<nierror code="-24116">
+Digital Filter Design Toolkit:  Les fréquences de front de bande doivent correspondre aux points de fréquence.
+</nierror>
+<nierror code="-24115">
+Digital Filter Design Toolkit:  La longueur de la chaîne en entrée doit être compatible avec celle des points de fréquence.
+</nierror>
+<nierror code="-24114">
+Digital Filter Design Toolkit:  La longueur du tableau en entrée doit être compatible avec celle des points de fréquence.
+</nierror>
+<nierror code="-24113">
+Digital Filter Design Toolkit:  Les points de fréquence doivent être en ordre ascendant.
+</nierror>
+<nierror code="-24112">
+Digital Filter Design Toolkit:  Le filtre que vous spécifiez doit avoir une réponse en phase zéro non négative.
+</nierror>
+<nierror code="-24111">
+Digital Filter Design Toolkit:  Le filtre en entrée n'est pas un filtre à moyenne mobile à point fixe valide. Reportez-vous à l'Aide LabVIEW pour obtenir de plus amples informations sur les filtres à moyenne mobile à point fixe.
+</nierror>
+<nierror code="-24110">
+Digital Filter Design Toolkit:  Le filtre en entrée doit être un filtre à point fixe ayant la structure IIR Cascaded Second-Order Sections Form.
+</nierror>
+<nierror code="-24109">
+Digital Filter Design Toolkit:  La génération de code a été annulée.
+</nierror>
+<nierror code="-24108">
+Digital Filter Design Toolkit:  Pour générer le code C à partir du filtre, vous devez traiter le gain sur la cible. Vous pouvez spécifier la cible qui traite le gain en utilisant le VI DFD FXP Quantize Coef.
+</nierror>
+<nierror code="-24107">
+Digital Filter Design Toolkit:  Le signal en entrée doit être dans la gamme spécifiée par la valeur de <b>input word length</b>. Reportez-vous à l'Aide LabVIEW pour obtenir des informations complémentaires sur la gamme valide du signal en entrée.
+</nierror>
+<nierror code="-24106">
+Digital Filter Design Toolkit:  La bande passante spécifiée doit être supérieure à 0 et inférieure à f0/2 pour la conception de filtre en peigne de type I. La bande passante doit être inférieure à f0 pour la conception de filtre en peigne de type II.
+</nierror>
+<nierror code="-24105">
+Digital Filter Design Toolkit:  La bande passante spécifiée doit être supérieure à 0 et inférieure à la valeur fn/N, fn représentant la fréquence de Nyquist et N, la valeur que vous spécifiez pour l'entrée <b># notches/peaks</b>.
+</nierror>
+<nierror code="-24104">
+Digital Filter Design Toolkit:  Le facteur Q spécifié doit être supérieur à la valeur de f0/fn, f0 correspondant à la fréquence centrale du pic et fn à la fréquence de Nyquist.
+</nierror>
+<nierror code="-24103">
+Digital Filter Design Toolkit:  Pour concevoir un filtre en utilisant le facteur Q, vous devez spécifier la valeur de la fréquence centrale f0 dans la gamme (0, fn), fn correspondant à la fréquence de Nyquist. Si vous voulez concevoir un filtre avec la fréquence centrale à DC, choisissez l'instance 'by Bandwith'.
+</nierror>
+<nierror code="-24102">
+Digital Filter Design Toolkit:  La bande passante spécifiée doit être supérieure à 0 et inférieure à la fréquence de Nyquist.
+</nierror>
+<nierror code="-24101">
+Digital Filter Design Toolkit:  La fréquence centrale spécifiée, f0, doit être supérieure ou égale à 0, et inférieure à la fréquence de Nyquist.
+</nierror>
+<nierror code="-24100">
+Digital Filter Design Toolkit:  Cette fonction ne s'applique pas aux filtrex CIC (cascaded integrator comb).
+</nierror>
+<nierror code="-24099">
+Digital Filter Design Toolkit:  Le filtre spécifié doit être un filtre à réponse impulsionnelle finie (RIF) à phase linéaire.
+</nierror>
+<nierror code="-24098">
+Digital Filter Design Toolkit:  Cette fonction n'a pas pu calculer le facteur de spectre du filtre. Assurez-vous que le filtre est un filtre à phase linéaire avec une réponse en phase zéro non négative.
+</nierror>
+<nierror code="-24097">
+Digital Filter Design Toolkit:  Si vous voulez générer le code à partir du filtre résultant, la longueur de mot de la partie entière que vous spécifiez pour le quantificateur du multiplicande doit être supérieure ou égale à la longueur de mot de la partie entière du quantificateur de retard.
+</nierror>
+<nierror code="-24096">
+Digital Filter Design Toolkit:  Si vous voulez générer le code à partir du filtre résultant, la longueur de mot de la partie entière que vous spécifiez pour le quantificateur du multiplicande doit être supérieure ou égale à la longueur de mot de la partie entière du quantificateur de retard.
+</nierror>
+<nierror code="-24095">
+Digital Filter Design Toolkit:  Le nombre de voies spécifié doit être supérieur à 0.
+</nierror>
+<nierror code="-24094">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur valide pour la longueur de mot. Reportez-vous à l'Aide LabVIEW pour obtenir des informations sur la gamme valide des longueurs de mots.
+</nierror>
+<nierror code="-24093">
+Digital Filter Design Toolkit:  Pour traiter le gain du filtre sur une cible à point fixe, vous devez spécifier la longueur de mot du gain du filtre dans la gamme [1, 32]
+</nierror>
+<nierror code="-24092">
+Digital Filter Design Toolkit:  Vous devez spécifier la longueur de mot d'au moins un ensemble de coefficients dans la gamme [1, 40].
+</nierror>
+<nierror code="-24091">
+Digital Filter Design Toolkit:  Les coefficients en entrée ne sont pas valides pour la structure en cascade spécifiée.
+</nierror>
+<nierror code="-24090">
+Digital Filter Design Toolkit:  La gamme valide pour la fréquence de bande d'arrêt est (%#.3g, %#.3g) Hz.
+</nierror>
+<nierror code="-24089">
+Digital Filter Design Toolkit:  La gamme valide pour la fréquence de bande passante est (0, %#.3g) Hz.
+</nierror>
+<nierror code="-24088">
+Digital Filter Design Toolkit:  Le filtre multifréquence en entrée n'est pas un filtre CIC valide.
+</nierror>
+<nierror code="-24087">
+Digital Filter Design Toolkit:  Le chemin de fichier spécifié n'est pas valide. Spécifiez un chemin de fichier valide.
+</nierror>
+<nierror code="-24086">
+Digital Filter Design Toolkit:  Un débordement de mémoire a eu lieu sur la cible FPGA (Field-Programmable Gate Array).
+</nierror>
+<nierror code="-24085">
+Digital Filter Design Toolkit:  La génération de code RIF(Finite Impulse Response) à point fixe ne supporte que les facteurs dans la gamme [1, 255]. Les taps par phase doivent se trouver dans la gamme [1, 32767].
+</nierror>
+<nierror code="-24084">
+Digital Filter Design Toolkit:  La génération de code de filtre CIC (Cascaded Integrator Comb) à virgule fixe ne supporte que les facteurs dans la gamme (1, 16383].
+</nierror>
+<nierror code="-24083">
+Digital Filter Design Toolkit:  La génération de code spécifiée ne supporte que le traitement de 1 à 255 voies.
+</nierror>
+<nierror code="-24082">
+Digital Filter Design Toolkit:  La génération de code de filtre CIC (Cascaded Integrator Comb) à virgule fixe supporte un maximum de 32 voies.
+</nierror>
+<nierror code="-24081">
+Digital Filter Design Toolkit:  Un projet de ce nom existe déjà en mémoire. Fermez le projet existant ou spécifiez un autre nom pour le nouveau projet.
+</nierror>
+<nierror code="-24080">
+Digital Filter Design Toolkit:  La fréquence spécifiée pour le front de la bande passante doit être supérieure à zéro et inférieure à la fréquence de Nyquist. Reportez-vous à l'Aide LabVIEW pour obtenir des informations complémentaires sur la spécification d'une valeur valide pour la fréquence de front de la bande passante.
+</nierror>
+<nierror code="-24079">
+Digital Filter Design Toolkit:  Vous devez spécifier un mode de filtrage valide. Reportez-vous à l'Aide LabVIEW pour obtenir de plus amples informations sur la spécification du mode de filtrage.
+</nierror>
+<nierror code="-24078">
+Digital Filter Design Toolkit:  Le tableau du filtre en entrée ne peut pas être vide.
+</nierror>
+<nierror code="-24077">
+Digital Filter Design Toolkit:  La taille de tableau spécifiée pour les valeurs de longueur de mot inter-étage doit être égale à <b>#stages-1</b>, <b>#stages</b> étant le nombre d'étages du filtre multifréquence à plusieurs étages.
+</nierror>
+<nierror code="-24076">
+Digital Filter Design Toolkit:  Le VI DFD Plot NStage MRate Freq Response ne supporte pas les filtres multifréquence à plusieurs étages qui contiennent un filtre de rééchantillonnage rationnel.
+</nierror>
+<nierror code="-24075">
+Digital Filter Design Toolkit:  La taille de tableau spécifiée pour les valeurs de longueur de mot de coefficient doit être la même que celle du filtre multifréquence en entrée.
+</nierror>
+<nierror code="-24074">
+Digital Filter Design Toolkit:  La fréquence de front de la bande d'arrêt doit être supérieure à la fréquence de front de la bande passante.
+</nierror>
+<nierror code="-24073">
+Digital Filter Design Toolkit:  Pour générer le code LabVIEW FPGA, vous devez installer le module LabVIEW FPGA et le driver NI-RIO avec support pour la série R. Pour exécuter le code FPGA, vous devez aussi avoir une cible FPGA pour y exécuter le code.
+</nierror>
+<nierror code="-24072">
+Digital Filter Design Toolkit:  Le filtre multifréquence à point fixe que vous avez spécifié n'est pas supporté par le générateur de code. Reportez-vous à l'Aide LabVIEW pour obtenir des détails supplémentaires.
+</nierror>
+<nierror code="-24071">
+Digital Filter Design Toolkit:  Le filtre CIC à point fixe ne supporte pas le mode <b>Highpass</b>. Vous devez définir les entrées <b>differential delay</b> et <b># stages</b> à 1 pour concevoir un filtre CIC à point fixe qui fonctionne comme un filtre à moyenne mobile (MA).
+</nierror>
+<nierror code="-24070">
+Digital Filter Design Toolkit:  La gamme dynamique en entrée spécifiée doit être supérieure à 0.
+</nierror>
+<nierror code="-24069">
+Digital Filter Design Toolkit:  La phase en sortie d'un filtre de décimation doit se trouver dans la gamme [0, <b>facteur</b>].
+</nierror>
+<nierror code="-24068">
+Digital Filter Design Toolkit:  L'objet filtre à fréquences multiples et à point fixe n'est pas valide.
+</nierror>
+<nierror code="-24067">
+Digital Filter Design Toolkit:  La valeur de <b>coefficients word length</b> que vous spécifiez doit être dans la gamme [1, 32].
+</nierror>
+<nierror code="-24066">
+Digital Filter Design Toolkit:  Le mode de filtrage du filtre multifréquence ne correspond pas à l'instance que vous avez choisie dans le VI polymorphe. Spécifiez l'instance appropriée du VI polymorphe.
+</nierror>
+<nierror code="-24065">
+Digital Filter Design Toolkit:  Les deux facteurs rationnels spécifiés ne peuvent pas être égaux.
+</nierror>
+<nierror code="-24064">
+Digital Filter Design Toolkit:  La séquence spécifiée pour les sous-facteurs rationnels n'est pas valide. Le facteur de décimation ne peut pas apparaître avant le facteur d'interpolation. Reportez-vous à l'Aide LabVIEW pour obtenir des détails supplémentaires.
+</nierror>
+<nierror code="-24063">
+Digital Filter Design Toolkit:  La valeur de fs/f0 doit être un entier pour la conception du filtre en peigne de type I, fs et f0 correspondent respectivement à la fréquence d'échantillonnage et à la fréquence centrale. La valeur de fs/(f0*2) doit être un entier pour la conception du filtre en peigne de type II.
+</nierror>
+<nierror code="-24062">
+Digital Filter Design Toolkit:  La valeur de délai doit être supérieure ou égale à zéro.
+</nierror>
+<nierror code="-24061">
+Digital Filter Design Toolkit:  La valeur de "roll off" doit être comprise dans la gamme [0, 1].
+</nierror>
+<nierror code="-24060">
+Digital Filter Design Toolkit:  La valeur de gain ne peut pas être égale à zéro.
+</nierror>
+<nierror code="-24059">
+Digital Filter Design Toolkit:  Les zéros spécifiés ne contiennent pas de valeurs NaN ou zéro. Les pôles spécifiés ne contiennent pas de valeurs NaN ou Inf.
+</nierror>
+<nierror code="-24058">
+Digital Filter Design Toolkit:  La valeur de la fréquence de front de la bande d'arrêt est trop élevée et peut introduire une distortion anti-repliement dans la bande passante.
+</nierror>
+<nierror code="-24057">
+Digital Filter Design Toolkit:  Le produit de tous les facteurs de l'entrée <b>manual factorization</b> doit être égal à la valeur en entrée <b>factor</b>. 
+</nierror>
+<nierror code="-24056">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur de facteur supérieure à 4 et multiple de 4 si vous utilisez le filtre CIC dans les filtres à fréquences multiples et plusieurs étages.
+</nierror>
+<nierror code="-24055">
+Digital Filter Design Toolkit:  L'entrée <b>overflow mode</b> est définie sur Saturation pour un quantificateur de somme. Définissez l'entrée <b>overflow mode</b> sur Wrap.
+</nierror>
+<nierror code="-24054">
+Digital Filter Design Toolkit:  Les paramètres <b>signal in</b> et <b>signal out</b> doivent utiliser des espaces mémoire différents dans le filtre à fréquences multiples.
+</nierror>
+<nierror code="-24053">
+Digital Filter Design Toolkit:  Le nombre de décalages dans les états n'est pas valide.
+</nierror>
+<nierror code="-24052">
+Digital Filter Design Toolkit:  La taille de diagonale doit correspondre à la taille de matrice.
+</nierror>
+<nierror code="-24051">
+Digital Filter Design Toolkit:  LabVIEW n'a pas pu allouer de l'espace aux données.
+</nierror>
+<nierror code="-24050">
+Digital Filter Design Toolkit:  Ce VI n'a pas pu charger le filtre à partir du fichier. Spécifiez un chemin de fichier valide.
+</nierror>
+<nierror code="-24049">
+Digital Filter Design Toolkit:  L'objet filtre à fréquences multiples n'est pas valide.
+</nierror>
+<nierror code="-24048">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur valide pour le décalage différentiel. Les valeurs valides sont 1 et 2.
+</nierror>
+<nierror code="-24047">
+Digital Filter Design Toolkit:  La conception du filtre a échoué avec les valeurs que vous avez spécifiées pour l'ordre du numérateur et du dénominateur. Utilisez des valeurs d'ordres inférieures.
+</nierror>
+<nierror code="-24046">
+Digital Filter Design Toolkit:  Les fréquences de gain exact spécifiées doivent se trouver dans les gammes de fréquences de l'entrée <b>band specs</b>.
+</nierror>
+<nierror code="-24045">
+Digital Filter Design Toolkit:  Le nombre d'étages doit être dans la gamme [1, 8].
+</nierror>
+<nierror code="-24044">
+Digital Filter Design Toolkit:  Vous devez spécifier des valeurs inférieures à 35 pour l'ordre de numérateur et l'ordre de dénominateur.
+</nierror>
+<nierror code="-24043">
+Digital Filter Design Toolkit:  Vous devez spécifier un facteur à fréquences multiples supérieur à zéro.
+</nierror>
+<nierror code="-24042">
+Digital Filter Design Toolkit:  Les filtres de bande passante et de bande d'arrêt requièrent un nombre pair pour la valeur d'ordre.
+</nierror>
+<nierror code="-24041">
+Digital Filter Design Toolkit:  La structure du filtre n'est pas valide. Reportez-vous à l'Aide LabVIEW pour obtenir de plus amples informations sur la sélection d'une structure de filtre.
+</nierror>
+<nierror code="-24040">
+Digital Filter Design Toolkit:  Vous devez définir l'entrée de <b>quantizer source</b> sur Coefficients a/k ou Coefficients b/v.
+</nierror>
+<nierror code="-24039">
+Digital Filter Design Toolkit:  Les coefficients d'entrée ne sont pas valides pour la structure de filtre en treillis spécifiée.
+</nierror>
+<nierror code="-24038">
+Digital Filter Design Toolkit:  La structure du filtre spécifié n'est pas une structure de filtre en treillis.
+</nierror>
+<nierror code="-24037">
+Digital Filter Design Toolkit:  Le filtre en entrée n'est pas un filtre FIR (Finite Impulse Response).
+</nierror>
+<nierror code="-24036">
+Digital Filter Design Toolkit:  Le filtre d'entrée n'est pas un filtre à point fixe quantifié.
+</nierror>
+<nierror code="-24035">
+Digital Filter Design Toolkit:  La conception du filtre a échoué avec les spécifications que vous avez entrées.
+</nierror>
+<nierror code="-24034">
+Digital Filter Design Toolkit:  La valeur de l'entrée <b>states in</b> doit correspondre à l'ordre du filtre.
+</nierror>
+<nierror code="-24033">
+Digital Filter Design Toolkit:  Erreurs internes : paramètres non valides.
+</nierror>
+<nierror code="-24032">
+Digital Filter Design Toolkit:  Vous devez spécifier un nombre pair pour la valeur d'ordre du filtre.
+</nierror>
+<nierror code="-24031">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur d'ordre de dénominateur supérieure ou égale à zéro. 
+</nierror>
+<nierror code="-24030">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur d'ordre de numérateur supérieure à zéro.
+</nierror>
+<nierror code="-24029">
+Digital Filter Design Toolkit:  Vous devez spécifier un facteur à fréquences multiples supérieur à un.
+</nierror>
+<nierror code="-24028">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur de "rolloff" comprise dans la gamme (0, 1).
+</nierror>
+<nierror code="-24027">
+Digital Filter Design Toolkit:  Les ondulations en échelle linéaire doivent se trouver dans la gamme (0, 1).
+</nierror>
+<nierror code="-24026">
+Digital Filter Design Toolkit:  Vous devez spécifier une séquence de fréquences valide dans l'entrée <b>freq specs</b>.
+</nierror>
+<nierror code="-24025">
+Digital Filter Design Toolkit:  Le modèle de filtre à point fixe spécifié n'est pas compatible avec les contraintes de génération de code. Reportez-vous à l'Aide LabVIEW pour obtenir des informations supplémentaires sur la génération de code avec les VIs de conception de filtres numériques.
+</nierror>
+<nierror code="-24024">
+Digital Filter Design Toolkit:  Le toolkit LabVIEW Digital Filter Design ne supporte pas la génération de code LabVIEW FPGA pour cette structure de filtre.
+</nierror>
+<nierror code="-24023">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur <b>Q factor</b> ou <b>Df</b> supérieure à zéro.
+</nierror>
+<nierror code="-24022">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur d'ordre supérieure à zéro.
+</nierror>
+<nierror code="-24021">
+Digital Filter Design Toolkit:  Vous devez spécifier des valeurs de fréquence supérieures à zéro et inférieures à la fréquence Nyquist.
+</nierror>
+<nierror code="-24020">
+Digital Filter Design Toolkit:  Chaque bande doit contenir au moins un point.
+</nierror>
+<nierror code="-24019">
+Digital Filter Design Toolkit:  Vous devez spécifier des valeurs de haute fréquence supérieures aux valeurs de basse fréquence.
+</nierror>
+<nierror code="-24018">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur fs supérieure à zéro pour la fréquence d'échantillonnage.
+</nierror>
+<nierror code="-24017">
+Digital Filter Design Toolkit:  Vous devez spécifier une valeur supérieure à 0 pour la valeur d'atténuation ou d'ondulation de la bande d'arrêt.
+</nierror>
+<nierror code="-24016">
+Digital Filter Design Toolkit:  Vous devez spécifier une ou plusieurs valeurs non négatives pour l'entrée <b>magnitude</b>.
+</nierror>
+<nierror code="-24015">
+Digital Filter Design Toolkit:  L'objet filtre n'est pas valide.
+</nierror>
+<nierror code="-24014">
+Digital Filter Design Toolkit:  La fonction de transfert n'est pas valide.
+</nierror>
+<nierror code="-24013">
+Digital Filter Design Toolkit:  Vous devez spécifier un rapport d'ondulation supérieur à zéro pour les fenêtres de Dolph-Tchebyshev.
+</nierror>
+<nierror code="-24012">
+Digital Filter Design Toolkit:  Le filtre ne peut pas être représenté par la structure spécifiée.
+</nierror>
+<nierror code="-24011">
+Digital Filter Design Toolkit:  L'ordre requis des spécifications du filtre est trop élevé pour l'option de recherche <b>minimum order</b>. Utilisez l'option <b>user defined</b>.
+</nierror>
+<nierror code="-24010">
+Digital Filter Design Toolkit:  Vous devez restreindre toutes les bandes pour des conceptions d'ordre minimum.
+</nierror>
+<nierror code="-24009">
+Digital Filter Design Toolkit:  Vous devez spécifier une réponse en fréquence non négative pour des conceptions de phase minimum ou maximum.
+</nierror>
+<nierror code="-24008">
+Digital Filter Design Toolkit:  La valeur d'amplitude à DC doit être zéro pour la conception de filtres RIF antisymétriques d'ordre impair.
+</nierror>
+<nierror code="-24007">
+Digital Filter Design Toolkit:  Les valeurs d'amplitude à DC et à la fréquence de Nyquist doivent être zéro pour la conception de filtres RIF (Finite Impulse Response) antisymétriques d'ordre pair.
+</nierror>
+<nierror code="-24006">
+Digital Filter Design Toolkit:  La valeur d'amplitude à la fréquence de Nyquist doit être zéro pour la conception de filtres RIF symétriques d'ordre impair.
+</nierror>
+<nierror code="-24005">
+Digital Filter Design Toolkit:  Vous devez définir au moins une bande valide.
+</nierror>
+<nierror code="-24004">
+Digital Filter Design Toolkit:  Toutes les valeurs de pondération doivent être positives.
+</nierror>
+<nierror code="-24003">
+Digital Filter Design Toolkit:  La fréquence des bandes doit être en ordre ascendant. Les bandes ne peuvent pas se chevaucher et doivent se situer entre les fréquences DC et Nyquist.
+</nierror>
+<nierror code="-24002">
+Digital Filter Design Toolkit:  Ce VI n'a pas réussi à concevoir un filtre qui répond à toutes les exigences. Spécifiez une valeur <b>ripple constraint</b> ou <b>order</b> plus grande.
+</nierror>
+<nierror code="-24001">
+Digital Filter Design Toolkit:  Le nombre d'itérations a atteint sa valeur maximale, ou une erreur numérique est survenue dans la conception Remez.
+</nierror>
+<nierror code="24001">
+Digital Filter Design Toolkit:  La fréquence d'échantillonnage réelle est différente de celle utilisée pour créer le filtre.
+</nierror>
+<nierror code="24002">
+Digital Filter Design Toolkit:  Les horodatages des deux blocs de données séquentiels ne sont pas cohérents.
+</nierror>
+<nierror code="24003">
+Digital Filter Design Toolkit:  La séquence en entrée est vide.
+</nierror>
+<nierror code="24004">
+Digital Filter Design Toolkit:  L'entrée <b>state in</b> est vide.
+</nierror>
+<nierror code="24005">
+Digital Filter Design Toolkit:  La valeur de <b>p</b> doit être dans la gamme [2, 128].
+</nierror>
+<nierror code="24006">
+Digital Filter Design Toolkit:  Le rayon de pôle spécifié doit se trouver dans la gamme (0 à 1].
+</nierror>
+<nierror code="24007">
+Digital Filter Design Toolkit:  Les zéros aux deux extrémités de la fonction de transfert ont été supprimés. L'ordre à la conception est différent de l'ordre spécifié.
+</nierror>
+<nierror code="24008">
+Digital Filter Design Toolkit:  Mise en garde interne : vous avez sélectionné une valeur de départ non valide.
+</nierror>
+<nierror code="24009">
+Digital Filter Design Toolkit:  Soit l'itération maximale a été atteinte, soit une erreur numérique est survenue au cours de la conception de la norme "least pth".
+</nierror>
+<nierror code="24010">
+Digital Filter Design Toolkit:  Ce VI conçoit un filtre dont l'ordre est inférieur à l'ordre que vous avez spécifié.
+</nierror>
+<nierror code="24011">
+Digital Filter Design Toolkit:  Les deux facteurs rationnels ne sont pas premiers entre eux.
+</nierror>
+<nierror code="24012">
+Digital Filter Design Toolkit:  Le processus de filtrage sera initialisé car la fréquence d'échantillonnage du signal à traiter n'est plus la même que celle du bloc précédent de données de signal.
+</nierror>
+<nierror code="24013">
+Digital Filter Design Toolkit:  Le processus de filtrage sera initialisé car le nombre de voies de signal à traiter a changé.
+</nierror>
+<nierror code="24014">
+Digital Filter Design Toolkit:  Le processus de filtre sera initialisé car la valeur de retard (delay) a changé.
+</nierror>
+<nierror code="24015">
+Digital Filter Design Toolkit:  Le processus de filtre sera initialisé car le nombre de filtres multifréquences a changé.
+</nierror>
+<nierror code="24016">
+Digital Filter Design Toolkit:  La longueur de mot en sortie et la longueur de mot de la partie entière en sortie d'un étage doivent être égales à celles de l'étage suivant.
+</nierror>
+<nierror code="24017">
+Digital Filter Design Toolkit:  La fréquence de front de la bande d'arrêt doit être inférieure ou égale à la fréquence de Nyquist si vous n'autorisez pas le repliement.
+</nierror>
+<nierror code="24018">
+Digital Filter Design Toolkit:  Le processus de conception risque de prendre beaucoup de temps car l'ordre estimé pour le filtre est supérieur à 1000. 
+</nierror>
+<nierror code="24019">
+Digital Filter Design Toolkit:  Vous devez commencer par cliquer sur le bouton <b>Update Design</b> pour concevoir un filtre à point flottant avant de pouvoir quantifier le filtre. Vous ne pouvez pas quantifier le filtre s'il s'agit d'un filtre à plusieurs étages sans changement de fréquence.
+</nierror>
+<nierror code="24020">
+Digital Filter Design Toolkit:  Les paramètres à virgule fixe du signal en entrée sont différents de ceux du quantificateur en entrée.
+</nierror>
+<nierror code="24021">
+Digital Filter Design Toolkit:  Le vecteur fréquentiel en entrée est vide.
+</nierror>
+</nidocument>

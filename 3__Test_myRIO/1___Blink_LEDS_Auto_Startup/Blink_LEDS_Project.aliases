@@ -1,0 +1,8 @@
+[My Computer]
+My Computer = "172.22.11.1"
+
+[MY-RIO-NEW]
+MY-RIO-NEW = "172.22.11.2"
+
+[MYRIO-1]
+MYRIO-1 = "192.168.88.253"

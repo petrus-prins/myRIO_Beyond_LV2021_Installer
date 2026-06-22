@@ -1,0 +1,94 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Wavelet Analysis Toolkit" displayname="Wavelet Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42244">
+Wavelet Analysis Toolkit:  Der Index des in der Referenz gespeicherten 2D-Arrays liegt außerhalb des gültigen Bereiches.
+</nierror>
+<nierror code="-42243">
+Wavelet Analysis Toolkit:  Die Referenz unterstützt diese Operation nicht.
+</nierror>
+<nierror code="-42242">
+Wavelet Analysis Toolkit:  Die Referenznummer ist ungültig.
+</nierror>
+<nierror code="-42241">
+Wavelet Analysis Toolkit:  Das VI hat keine Referenz erzeugt.
+</nierror>
+<nierror code="-42230">
+Wavelet Analysis Toolkit:  Das Zeitintervall im benutzerdefinierten Wavelet-Eingang muss größer als 0 sein.
+</nierror>
+<nierror code="-42229">
+Wavelet Analysis Toolkit:  Das Format der Datei mit den Daten für die Wavelet-Filterbank ist ungültig.
+</nierror>
+<nierror code="-42226">
+Wavelet Analysis Toolkit:  Die Wavelet-Packetsession oder das Handle ist ungültig, oder der Speicherbereich, auf den es verweist, enthält nicht die notwendigen Informationen.
+</nierror>
+<nierror code="-42225">
+Wavelet Analysis Toolkit:  Die Dimensionen der Wavelet-Koeffizienten sind ungültig.
+</nierror>
+<nierror code="-42224">
+Wavelet Analysis Toolkit:  Der optionale Parameter ist ungültig - das VI kann die Entropie nicht berechnen.
+</nierror>
+<nierror code="-42223">
+Wavelet Analysis Toolkit:  Der Trend-Level darf nicht kleiner als Null und nicht größer als 1,0 sein.
+</nierror>
+<nierror code="-42221">
+Wavelet Analysis Toolkit:  Der Knoten muss ein Terminal-Knoten sein.
+</nierror>
+<nierror code="-42220">
+Wavelet Analysis Toolkit:  Der Knoten kann kein Terminal-Knoten sein.
+</nierror>
+<nierror code="-42219">
+Wavelet Analysis Toolkit:  Der Pfad- oder Knoten-String darf nur 0 oder 1 enthalten.
+</nierror>
+<nierror code="-42218">
+Wavelet Analysis Toolkit:  Die Länge der Analyse- und Synthesefilter muss größer als 0 sein.
+</nierror>
+<nierror code="-42217">
+Wavelet Analysis Toolkit:  Der Knoten befindet sich nicht auf der Zerlegungs-Struktur.
+</nierror>
+<nierror code="-42215">
+Wavelet Analysis Toolkit:  Der Wert des Eingangs für die Verschiebung muss entweder 0 oder 1 sein.
+</nierror>
+<nierror code="-42212">
+Wavelet Analysis Toolkit:  Die Skalierung für die Wavelet-Transformierung muss größer als Null sein.
+</nierror>
+<nierror code="-42211">
+Wavelet Analysis Toolkit:  Der ausgewählte Wavelet-Typ ist ungültig.
+</nierror>
+<nierror code="-42207">
+Wavelet Analysis Toolkit:  Die Grenzfrequenz muss größer als 0 sein, aber darf nicht größer als die halbe Sample-Rate sein.
+</nierror>
+<nierror code="-42206">
+Wavelet Analysis Toolkit:  Die Größe der Farbtabelle muss 256 sein.
+</nierror>
+<nierror code="-42205">
+Wavelet Analysis Toolkit:  Das Koeffizienten-Array ist leer.
+</nierror>
+<nierror code="-42204">
+Wavelet Analysis Toolkit:  Der ausgewählte Datentyp-Parameter ist ungültig.
+</nierror>
+<nierror code="-42203">
+Wavelet Analysis Toolkit:  <b>coef level</b> muss eine Ganzzahl zwischen 1 und dem größten Levelwert der Detailkoeffizienten sein.
+</nierror>
+<nierror code="-42202">
+Wavelet Analysis Toolkit:  Das LabVIEW Real-Time Module wird von diese Dateioperation nicht unterstützt.
+</nierror>
+<nierror code="-42201">
+Wavelet Analysis Toolkit:  Der Eingang für das Eingangssignal ist leer.
+</nierror>
+<nierror code="42201">
+Wavelet Analysis Toolkit:  Das VI wurde automatisch neu initialisiert.
+</nierror>
+<nierror code="42211">
+Wavelet Analysis Toolkit:  Der ausgewählte Wavelet-Typ ist ungültig.
+</nierror>
+<nierror code="42217">
+Wavelet Analysis Toolkit:  Die Verbesserung zur Berechnung des Mutter-Wavelet muss größer oder gleich 1 sein.
+</nierror>
+<nierror code="42222">
+Wavelet Analysis Toolkit:  Der Zeitschritt muss größer als 0 sein.
+</nierror>
+</nidocument>

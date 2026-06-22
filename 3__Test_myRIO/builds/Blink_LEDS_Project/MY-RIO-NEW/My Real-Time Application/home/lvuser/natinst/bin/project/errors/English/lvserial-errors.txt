@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+<nifamily familyname="LVSERIAL" displayname="LVSERIAL">
+</nifamily>
+</nicomment>
+<nierror code="-65088">
+COMM: The event handler is disabled.
+</nierror>
+<nierror code="-65087">
+COMM: A time-out occurred on a parallel device.
+</nierror>
+<nierror code="-65086">
+COMM: A parallel device signaled that it is out of paper.
+</nierror>
+<nierror code="-65085">
+COMM: The requested mode is not supported, or the handle is invalid.
+</nierror>
+<nierror code="-65084">
+COMM: An I/O error occurred during communications with the device.
+</nierror>
+<nierror code="-65083">
+COMM: A parallel device is not selected.
+</nierror>
+<nierror code="-65082">
+COMM: The hardware detected a break condition.
+</nierror>
+<nierror code="-65081">
+COMM: The received character is not equal to the transmitted character.
+</nierror>
+<nierror code="-65080">
+COMM: The application tried to transmit a character, but the output buffer was full.
+</nierror>
+<nierror code="-65079">
+COMM: A character-buffer overrun has occurred. The next character is lost.
+</nierror>
+<nierror code="-65078">
+COMM: The system was unable to write the specified number of bytes.
+</nierror>
+<nierror code="-65077">
+COMM: The serial port is not locked.
+</nierror>
+<nierror code="-65076">
+COMM: Can't lock the serial port (timeout).
+</nierror>
+<nierror code="-65075">
+COMM: Unable to create the semaphore.
+</nierror>
+<nierror code="-65074">
+COMM: Operation aborted.
+</nierror>
+<nierror code="-65073">
+COMM: Out of memory.
+</nierror>
+<nierror code="-65072">
+COMM: Argument error.
+</nierror>
+<nierror code="-65071">
+COMM: Device not found.
+</nierror>
+<nierror code="-65070">
+COMM: Unknown system error.
+</nierror>
+<nierror code="-65069">
+COMM: The given device reference is invalid.
+</nierror>
+<nierror code="-65068">
+COMM: Timeout expired.
+</nierror>
+<nierror code="-65067">
+COMM: Parity error occurred during transfer.
+</nierror>
+<nierror code="-65066">
+COMM: Framing error occurred during transfer.
+</nierror>
+<nierror code="-65065">
+COMM: An input buffer overflow has occurred. There is either no room in the input buffer, or a character was received after the end-of-file (EOF) character.
+</nierror>
+<nierror code="-65064">
+COMM: The device is valid, but you cannot currently access it.
+</nierror>
+<nierror code="-65063">
+COMM: The given operation is not implemented.
+</nierror>
+<nierror code="-65062">
+COMM: Invalid length or byte count specified.
+</nierror>
+<nierror code="-65061">
+COMM: Termination character not received.
+</nierror>
+<nierror code="65060">
+COMM: The number of bytes transferred is equal to the specified maximum.
+</nierror>
+<nierror code="65061">
+COMM: One of the termination characters received.
+</nierror>
+</nidocument>

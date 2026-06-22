@@ -1,0 +1,85 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Time Series Analysis Toolkit" displayname="Time Series Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42461">
+Time Series Analysis Toolkit:  Die Dimension des Skalierungsinfo-Parameters passt nicht zu den Dimensionen der multivariaten Zeitserien.
+</nierror>
+<nierror code="-42454">
+Time Series Analysis Toolkit:  Die Varianz des Rauschens muss größer als 0 sein, damit die Kovarianzmatrix des Rauschens gültig ist.
+</nierror>
+<nierror code="-42453">
+Time Series Analysis Toolkit:  Das erste Element im Array der Modelkoeffizienten muss 1 sein und die Größe des Arrays muss größer oder gleich 1 sein.
+</nierror>
+<nierror code="-42452">
+Time Series Analysis Toolkit:  Die Anzahl der vorhergesagten Punkte muss größer als 0 sein.
+</nierror>
+<nierror code="-42451">
+Time Series Analysis Toolkit:  Der Wert der Modelordnung ist kleiner als der Wert der erforderlichen Ordnung.
+</nierror>
+<nierror code="-42442">
+Time Series Analysis Toolkit:  Die Anzahl der Spektrumteilungen muss größer 0 sein.
+</nierror>
+<nierror code="-42441">
+Time Series Analysis Toolkit:  Die Teilraumdimension muss größer als 0 und kleiner als 100 Prozent sein.
+</nierror>
+<nierror code="-42430">
+Time Series Analysis Toolkit:  Der Referenzwert ist ungültig.
+</nierror>
+<nierror code="-42429">
+Time Series Analysis Toolkit:  Die Anzahl der Teilsequenzen, in die die Eingangsserie aufgespalten werden soll, muss größer als 0 sein.
+</nierror>
+<nierror code="-42428">
+Time Series Analysis Toolkit:  Der Prozentwert muss größer oder gleich 0 und kleiner als 100 sein.
+</nierror>
+<nierror code="-42427">
+Time Series Analysis Toolkit:  Die Größe des Zeitpunkt-Arrays passt nicht zu der Größe des Werte-Arrays in den ungleichmäßig abgetasteten Zeitserien.
+</nierror>
+<nierror code="-42426">
+Time Series Analysis Toolkit:  Die Länge des Musters in der Zeitserie muss größer als 0 sein.
+</nierror>
+<nierror code="-42425">
+Time Series Analysis Toolkit:  Der Freiheitsgrad für die Definition der Verteilung muss größer als 0 sein.
+</nierror>
+<nierror code="-42424">
+Time Series Analysis Toolkit:  Der Wert des oberen Endpunktes muss größer sein als der Wert des unteren Endpunktes.
+</nierror>
+<nierror code="-42423">
+Time Series Analysis Toolkit:  Die Eingangsparameter passen nicht zu den Dimensionen der multivariaten Zeitserien.
+</nierror>
+<nierror code="-42422">
+Time Series Analysis Toolkit:  Die Anzahl der Abtastwerte muss größer als 0 sein.
+</nierror>
+<nierror code="-42421">
+Time Series Analysis Toolkit:  Die Eingangsstandardabweichung muss größer als 0 sein.
+</nierror>
+<nierror code="-42407">
+Time Series Analysis Toolkit:  Die eingegebene Zeitserie ist zu groß für den Speicher. Verwenden Sie weniger Samples für die Zeitserie, ändern Sie die Fensterlänge oder kürzen Sie die Zeitserie.
+</nierror>
+<nierror code="-42406">
+Time Series Analysis Toolkit:  Alle Werte der Eingangszeitserie müssen positiv sein.
+</nierror>
+<nierror code="-42405">
+Time Series Analysis Toolkit:  Die Eingangszeitserie ist leer oder die Länge dieser Eingangszeitserie muss größer als die erforderliche Länge sein.
+</nierror>
+<nierror code="-42404">
+Time Series Analysis Toolkit:  Das LabVIEW Real-Time Module wird von diese Dateioperation nicht unterstützt.
+</nierror>
+<nierror code="-42403">
+Time Series Analysis Toolkit:  Die Anzahl der Frequenzteilungen muss größer 0 sein.
+</nierror>
+<nierror code="-42402">
+Time Series Analysis Toolkit:  Die Abtastrate muss größer als 0 sein.
+</nierror>
+<nierror code="-42401">
+Time Series Analysis Toolkit:  Die Größe der Farbtabelle muss 256 sein.
+</nierror>
+<nierror code="42421">
+Time Series Analysis Toolkit:  Es können nicht mehr unabhängige Komponenten als angegeben abgeschätzt werden.
+</nierror>
+<nierror code="42422">
+Time Series Analysis Toolkit:  Die Anzahl von Frequenzintervallen hat sich geändert.
+</nierror>
+</nidocument>

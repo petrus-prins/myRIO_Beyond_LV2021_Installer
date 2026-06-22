@@ -1,0 +1,70 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Adaptive Filter VIs" displayname="Adaptive Filter VIs">
+</nifamily>
+</nicomment>
+<nierror code="-42155">
+Adaptive Filter VIs:  La génération de code LabVIEW FPGA a échoué. Vous devez enregistrer le fichier de projet LabVIEW'.lvproj avant de générer le code LabVIEW FPGA pour le filtre adaptatif en virgule fixe.
+</nierror>
+<nierror code="-42154">
+Adaptive Filter VIs:  La génération de code LabVIEW FPGA a échoué. Les VIs que vous voulez remplacer existent déjà en mémoire. Fermez ces VIs et regénérer le code.
+</nierror>
+<nierror code="-42151">
+Adaptive Filter VIs:  La configuration du filtre adaptatif en virgule fixe n'est pas valide. Utilisez le VI Express AFT Simulate Fixed-Point FIR LMS pour simuler le filtre adaptatif en virgule fixe et déterminer la configuration appropriée.
+</nierror>
+<nierror code="-42022">
+Adaptive Filter VIs:  La longueur du tableau <b>secondary path</b> doit être supérieure à 0.
+</nierror>
+<nierror code="-42021">
+Adaptive Filter VIs:  Le filtre adaptatif spécifié n'est pas valide. Vous ne pouvez pas définir les coefficients de filtre si le filtre adaptatif utilise l'algorithme des moindres carrés par décomposition en QR ( (QR-RLS).
+</nierror>
+<nierror code="-42020">
+Adaptive Filter VIs:  La longueur du signal en entrée est différente de celle du filtre adaptatif.
+</nierror>
+<nierror code="-42019">
+Adaptive Filter VIs:  Vous devez spécifier un filtre adaptatif à valeurs réelles pour l'entrée <b>adaptive filter in</b>.
+</nierror>
+<nierror code="-42018">
+Adaptive Filter VIs:  Soit les fréquences d'échantillonnage des signaux en entrée sont différentes, soit celle d'un signal en entrée change pendant le processus de filtrage adaptatif.
+</nierror>
+<nierror code="-42017">
+Adaptive Filter VIs:  Le type de données du filtre adaptatif ne correspond pas au type d'instance du VI AFT Get Coefficients ou du VI AFT Set Coefficients. Si le filtre adaptatif a des valeurs réelles, vous devez utiliser l'instance Real des VIs. Si le filtre adaptatif a des valeurs complexes, vous devez utiliser l'instance Complex des VIs.
+</nierror>
+<nierror code="-42016">
+Adaptive Filter VIs:  Le type de données du filtre adaptatif ne correspond pas à celui du signal en entrée. Si le signal en entrée a des valeurs réelles, vous devez utiliser des filtres adaptatifs à valeurs réelles. Si le signal en entrée a des valeurs complexes, vous devez utiliser des filtres adaptatifs à valeurs complexes.
+</nierror>
+<nierror code="-42015">
+Adaptive Filter VIs:  La valeur de regularization factor doit être supérieure ou égale à 2,22045E-16.
+</nierror>
+<nierror code="-42012">
+Adaptive Filter VIs:  Le système est à cours de mémoire. Fermez certaines des applications ouvertes pour libérer de la mémoire.
+</nierror>
+<nierror code="-42010">
+Adaptive Filter VIs:  La longueur du signal en entrée est zéro. Vérifiez que le signal en entrée n'est pas vide.
+</nierror>
+<nierror code="-42009">
+Adaptive Filter VIs:  La longueur du signal en entrée x(n) n'est pas égale à celle du signal en entrée d(n).
+</nierror>
+<nierror code="-42008">
+Adaptive Filter VIs:  La longueur des coefficients de filtre est différente de celle du filtre adaptatif.
+</nierror>
+<nierror code="-42006">
+Adaptive Filter VIs:  La longueur du filtre adaptatif doit être supérieure à 2.
+</nierror>
+<nierror code="-42005">
+Adaptive Filter VIs:  La valeur de leaky factor est hors gamme. La gamme valide est [0; 0,1].
+</nierror>
+<nierror code="-42004">
+Adaptive Filter VIs:  La valeur de forgetting factor est hors gamme. La gamme valide est [0; 1].
+</nierror>
+<nierror code="-42003">
+Adaptive Filter VIs:  La valeur de step size doit être supérieure à zéro. Pour les filtres adaptatifs avec l'algorithme de moindre carré moyen (LMS) normalisé, la taille d'incrément doit se trouver entre 0 et 2, non compris.
+</nierror>
+<nierror code="-42002">
+Adaptive Filter VIs:  Le filtre adaptatif spécifié n'existe pas.
+</nierror>
+<nierror code="42153">
+Adaptive Filter VIs:  La génération de code LabVIEW FPGA a été annulée.
+</nierror>
+</nidocument>

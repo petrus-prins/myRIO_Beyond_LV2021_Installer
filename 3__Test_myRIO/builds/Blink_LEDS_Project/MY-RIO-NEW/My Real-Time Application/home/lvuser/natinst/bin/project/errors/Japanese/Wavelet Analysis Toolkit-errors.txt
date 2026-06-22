@@ -1,0 +1,94 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Wavelet Analysis Toolkit" displayname="Wavelet Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42244">
+Wavelet Analysis Toolkit:  Refnumに保存されている2D配列の指数が範囲外です。
+</nierror>
+<nierror code="-42243">
+Wavelet Analysis Toolkit:  Refnumはこの操作をサポートしていません。
+</nierror>
+<nierror code="-42242">
+Wavelet Analysis Toolkit:  このRefnumは無効です。
+</nierror>
+<nierror code="-42241">
+Wavelet Analysis Toolkit:  VIによってRefnumが作成されませんでした。
+</nierror>
+<nierror code="-42230">
+Wavelet Analysis Toolkit:  ユーザ定義ウェーブレット入力の時間間隔は、0より大きくなければなりません。
+</nierror>
+<nierror code="-42229">
+Wavelet Analysis Toolkit:  ウェーブレットフィルタバンクのデータファイルの形式が無効です。
+</nierror>
+<nierror code="-42226">
+Wavelet Analysis Toolkit:  ウェーブレットパケットハンドルまたはセッションが無効か、参照先のデータ空間に必要な情報がありません。
+</nierror>
+<nierror code="-42225">
+Wavelet Analysis Toolkit:  ウェーブレット係数の次元が無効です。
+</nierror>
+<nierror code="-42224">
+Wavelet Analysis Toolkit:  オプションパラメータが無効です。VIがエントロピーを計算できません。
+</nierror>
+<nierror code="-42223">
+Wavelet Analysis Toolkit:  傾向レベルは0以上、1.0以下でなければなりません。
+</nierror>
+<nierror code="-42221">
+Wavelet Analysis Toolkit:  ノードは端子ノードでなければなりません。
+</nierror>
+<nierror code="-42220">
+Wavelet Analysis Toolkit:  ノードは端子ノードにできません。
+</nierror>
+<nierror code="-42219">
+Wavelet Analysis Toolkit:  パスまたはノード文字列には0または1しか使用できません。
+</nierror>
+<nierror code="-42218">
+Wavelet Analysis Toolkit:  解析フィルタの長さまたは合成フィルタは0より大きくなければなりません。
+</nierror>
+<nierror code="-42217">
+Wavelet Analysis Toolkit:  ノードが分解ツリー上にありません。
+</nierror>
+<nierror code="-42215">
+Wavelet Analysis Toolkit:  シフト入力は0または1でなければなりません。
+</nierror>
+<nierror code="-42212">
+Wavelet Analysis Toolkit:  ウェーブレット変換のスケールは、0より大きくなければなりません。
+</nierror>
+<nierror code="-42211">
+Wavelet Analysis Toolkit:  選択されたウェーブレットタイプが無効です。
+</nierror>
+<nierror code="-42207">
+Wavelet Analysis Toolkit:  しきい値周波数は0より大きく、サンプルレートの半分以下である必要があります。
+</nierror>
+<nierror code="-42206">
+Wavelet Analysis Toolkit:  カラーテーブルのサイズは256であるべきです。
+</nierror>
+<nierror code="-42205">
+Wavelet Analysis Toolkit:  係数の配列が空です。
+</nierror>
+<nierror code="-42204">
+Wavelet Analysis Toolkit:  選択された列挙体データタイプパラメータが無効です。
+</nierror>
+<nierror code="-42203">
+Wavelet Analysis Toolkit:  <b>coef level</b>は整数で1と詳細係数最大レベルの間の値であるべきです。
+</nierror>
+<nierror code="-42202">
+Wavelet Analysis Toolkit:  このファイル操作はLabVIEW Real-Timeモジュールをサポートしません。
+</nierror>
+<nierror code="-42201">
+Wavelet Analysis Toolkit:  入力信号が空です。
+</nierror>
+<nierror code="42201">
+Wavelet Analysis Toolkit:  このVIは自動的に再初期化されました。
+</nierror>
+<nierror code="42211">
+Wavelet Analysis Toolkit:  選択されたウェーブレットタイプが無効です。
+</nierror>
+<nierror code="42217">
+Wavelet Analysis Toolkit:  マザーウェーブレットの計算の高精度化の値は、1以上でなければなりません。
+</nierror>
+<nierror code="42222">
+Wavelet Analysis Toolkit:  時間ステップは0より大きくなければなりません。
+</nierror>
+</nidocument>

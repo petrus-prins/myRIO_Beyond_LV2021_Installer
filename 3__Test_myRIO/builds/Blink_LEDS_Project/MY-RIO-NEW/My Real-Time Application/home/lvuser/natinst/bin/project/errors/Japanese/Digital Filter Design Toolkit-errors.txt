@@ -1,0 +1,460 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Digital Filter Design Toolkit" displayname="Digital Filter Design Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-24130">
+Digital Filter Design Toolkit:  有効なFPGAターゲットがインストールされていません。
+</nierror>
+<nierror code="-24129">
+Digital Filter Design Toolkit:  重み付けは(0,1)の範囲内にある必要があります。
+</nierror>
+<nierror code="-24128">
+Digital Filter Design Toolkit:  余弦変調Mバンド完全再構築フィルタバンクの指定されたフィルタ次数は、N+1=2mM（Nは次数、Mはバンド数、mは正の整数）の制約を満たす必要があります。
+</nierror>
+<nierror code="-24127">
+Digital Filter Design Toolkit:  このVIは入力サブバンド信号を再構築することができません。
+</nierror>
+<nierror code="-24126">
+Digital Filter Design Toolkit:  指定されたフィルタ次数は、3以上の奇数である必要があります。
+</nierror>
+<nierror code="-24125">
+Digital Filter Design Toolkit:  入力フィルタバンク入力は、余弦変調されたフィルタバンクである必要があります。
+</nierror>
+<nierror code="-24124">
+Digital Filter Design Toolkit:  サブバンド信号の数は、入力フィルタバンクのサブバンドの数と同じである必要があります。
+</nierror>
+<nierror code="-24123">
+Digital Filter Design Toolkit:  フィルタバンクのバンド数は、1より大きい必要があります。
+</nierror>
+<nierror code="-24122">
+Digital Filter Design Toolkit:  サブバンド指標は[0, #band-1]の範囲内にある必要があります。
+</nierror>
+<nierror code="-24121">
+Digital Filter Design Toolkit:  無効なフィルタバンクオブジェクト。
+</nierror>
+<nierror code="-24120">
+Digital Filter Design Toolkit:  間引きステージまたは補間ステージのみを含むマルチステージマルチレートフィルタ用に、LabVIEW FPGAコードを生成することができます。
+</nierror>
+<nierror code="-24119">
+Digital Filter Design Toolkit:  固定小数点移動平均フィルタは、最大32個のチャンネルをサポートします。
+</nierror>
+<nierror code="-24118">
+Digital Filter Design Toolkit:  LabVIEW FPGAコードを生成するのに、移動平均フィルタのサンプル周波数変換係数は1以上である必要があります。
+</nierror>
+<nierror code="-24117">
+Digital Filter Design Toolkit:  レート変更がないカスケード型積分コンボ（CIC）フィルタからLabVIEW FPGAコードを生成するのに、DFD FXP Moving Average Code Generator VIを使用する必要があります。
+</nierror>
+<nierror code="-24116">
+Digital Filter Design Toolkit:  バンドエッジ周波数は周波数ポイントに対応している必要があります。
+</nierror>
+<nierror code="-24115">
+Digital Filter Design Toolkit:  入力文字列の長さは周波数ポイントの長さと互換性がある必要があります。
+</nierror>
+<nierror code="-24114">
+Digital Filter Design Toolkit:  入力配列の長さは周波数ポイントの長さと互換性がある必要があります。
+</nierror>
+<nierror code="-24113">
+Digital Filter Design Toolkit:  周波数ポイントは昇順である必要があります。
+</nierror>
+<nierror code="-24112">
+Digital Filter Design Toolkit:  フィルタには負でないゼロ位相応答がある必要があります。
+</nierror>
+<nierror code="-24111">
+Digital Filter Design Toolkit:  入力フィルタは、有効な固定小数点移動平均（MA）フィルタではありません。固定小数点MAフィルタの詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24110">
+Digital Filter Design Toolkit:  入力フィルタは、IIRカスケード型2次セクション形式のストラクチャを持つ固定小数点フィルタである必要があります。
+</nierror>
+<nierror code="-24109">
+Digital Filter Design Toolkit:  コード生成はキャンセルされました。
+</nierror>
+<nierror code="-24108">
+Digital Filter Design Toolkit:  フィルタからCコードを生成するには、ターゲット上のゲイン処理を行う必要があります。DFD FXP Quantize Coef VIを使用して、ゲイン処理を行うターゲットを指定することができます。
+</nierror>
+<nierror code="-24107">
+Digital Filter Design Toolkit:  入力信号は、入力ワード長の値で指定された範囲内にある必要があります。入力信号の有効値の詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24106">
+Digital Filter Design Toolkit:  帯域幅は0より大きく、Type Iのコンボフィルタ設計のf0/2よりも小さくなければなりません。帯域幅は0より大きく、Type IIのコンボフィルタ設計のf0よりも小さくなければなりません。
+</nierror>
+<nierror code="-24105">
+Digital Filter Design Toolkit:  帯域幅は0より大きく、fn/Nの値よりも小さい必要があります。ここで、fnはナイキスト周波数で、Nはノッチ/ピーク数の入力で指定する値です。
+</nierror>
+<nierror code="-24104">
+Digital Filter Design Toolkit:  Q因数はf0/fnの値よりも大きくなければなりません。ここで、f0はノッチまたはピークの中心周波数で、fnはナイキスト周波数です。
+</nierror>
+<nierror code="-24103">
+Digital Filter Design Toolkit:  Q因数を使用してフィルタを設計するには、(0, fn)の範囲内で中心周波数値f0を指定する必要があります。ここで、fnはナイキスト周波数です。DCで中心周波数を持つフィルタを設計する場合は、By Bandwidthインスタンスを選択します。
+</nierror>
+<nierror code="-24102">
+Digital Filter Design Toolkit:  帯域幅は0よりも大きく、ナイキスト周波数よりも小さくなければなりません。
+</nierror>
+<nierror code="-24101">
+Digital Filter Design Toolkit:  中心周波数f0は0以上で、ナイキスト周波数よりも小さくなければなりません。
+</nierror>
+<nierror code="-24100">
+Digital Filter Design Toolkit:  この関数は、カスケード型積分コンボ（CIC）フィルタには適用できません。
+</nierror>
+<nierror code="-24099">
+Digital Filter Design Toolkit:  フィルタは線形位相特性の有限インパルス応答（FIR）フィルタである必要があります。
+</nierror>
+<nierror code="-24098">
+Digital Filter Design Toolkit:  この関数はフィルタのスペクトル因数の計算に失敗しました。フィルタが負でないゼロ位相応答を持つ線形位相特性フィルタであることを確認してください。
+</nierror>
+<nierror code="-24097">
+Digital Filter Design Toolkit:  結果として得られたフィルタからコードを生成する場合、被乗数の量子化器に指定する整数ワード長は、量子化器合計の整数ワード長以上である必要があります。
+</nierror>
+<nierror code="-24096">
+Digital Filter Design Toolkit:  結果として得られたフィルタからコードを生成する場合、被乗数の量子化器に指定する整数ワード長は、量子化器遅延の整数ワード長以上である必要があります。
+</nierror>
+<nierror code="-24095">
+Digital Filter Design Toolkit:  チャンネル数は0より大きくなければなりません。
+</nierror>
+<nierror code="-24094">
+Digital Filter Design Toolkit:  ワード長の有効値を指定する必要があります。ワード長の有効範囲に関する詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24093">
+Digital Filter Design Toolkit:  固定小数点ターゲット上でフィルタゲインを処理する場合、[1, 32]の範囲内でフィルタゲインのワード長を指定する必要があります。
+</nierror>
+<nierror code="-24092">
+Digital Filter Design Toolkit:  少なくとも1つの係数セットのワード長を、[1, 40]の範囲で指定する必要があります。
+</nierror>
+<nierror code="-24091">
+Digital Filter Design Toolkit:  入力係数は指定したカスケード型ストラクチャに対して無効です。
+</nierror>
+<nierror code="-24090">
+Digital Filter Design Toolkit:  ストップバンド周波数の有効範囲は(%#.3g, %#.3g] Hzです。
+</nierror>
+<nierror code="-24089">
+Digital Filter Design Toolkit:  パスバンド周波数の有効範囲は(0, %#.3g) Hzです。
+</nierror>
+<nierror code="-24088">
+Digital Filter Design Toolkit:  マルチレートフィルタの入力は、有効なカスケード型積分コンボ（CIC）フィルタではありません。
+</nierror>
+<nierror code="-24087">
+Digital Filter Design Toolkit:  指定したファイルパスは無効です。有効なファイルパスを指定してください。
+</nierror>
+<nierror code="-24086">
+Digital Filter Design Toolkit:  FPGA(Feld-Pogrammable Gate Array)チップでメモリのオーバーフローが発生しました。
+</nierror>
+<nierror code="-24085">
+Digital Filter Design Toolkit:  固定小数点マルチレートFIR(Finite Impulse Response)のコード生成は、[1, 255]の範囲内でのみ因数をサポートします。位相ごとのタップ数は[1, 32767]の範囲内にある必要があります。
+</nierror>
+<nierror code="-24084">
+Digital Filter Design Toolkit:  固定小数点カスケード型積分コンボ（CIC）フィルタのコード生成は、(1, 16383]の範囲内でのみ因数をサポートします。
+</nierror>
+<nierror code="-24083">
+Digital Filter Design Toolkit:  コード生成は1～255のチャンネル処理のみをサポートします。
+</nierror>
+<nierror code="-24082">
+Digital Filter Design Toolkit:  固定小数点カスケード型積分コンボ（CIC）フィルタのコード生成は、最大32個のチャンネルをサポートします。
+</nierror>
+<nierror code="-24081">
+Digital Filter Design Toolkit:  同じ名前のプロジェクトが既にメモリに存在します。既存のプロジェクトを閉じるか、または新規プロジェクトとして別の名前を指定してください。
+</nierror>
+<nierror code="-24080">
+Digital Filter Design Toolkit:  パスバンドエッジ周波数はゼロよりも大きく、ナイキスト周波数よりも小さい必要があります。パスバンドエッジ周波数の有効値を指定する詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24079">
+Digital Filter Design Toolkit:  有効なフィルタ処理モードを指定する必要があります。フィルタモードを指定する詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24078">
+Digital Filter Design Toolkit:  入力フィルタの配列を空にできません。
+</nierror>
+<nierror code="-24077">
+Digital Filter Design Toolkit:  中間ワード長の値の配列サイズはステージ数から1を減算した値と同じである必要があります。ここで、ステージ数はマルチステージマルチレートフィルタのステージ数です。
+</nierror>
+<nierror code="-24076">
+Digital Filter Design Toolkit:  DFD Plot NStage MRate Freq Response VIは、有理リサンプリングフィルタを含むマルチステージマルチレートフィルタをサポートしません。
+</nierror>
+<nierror code="-24075">
+Digital Filter Design Toolkit:  係数ワード長の値の配列サイズは、マルチレートフィルタの入力の配列サイズと同じである必要があります。
+</nierror>
+<nierror code="-24074">
+Digital Filter Design Toolkit:  ストップバンドエッジ周波数はパスバンドエッジ周波数よりも大きくなければなりません。
+</nierror>
+<nierror code="-24073">
+Digital Filter Design Toolkit:  LabVIEW FPGAコードを生成するのに、Rシリーズ対応LabVIEW FPGAモジュールとNI-RIOドライバソフトウェアをインストールする必要があります。FPGAコードを実行するのに、コードを実行するFPGAターゲットも必要になります。
+</nierror>
+<nierror code="-24072">
+Digital Filter Design Toolkit:  コードジェネレータは、指定した固定小数点マルチレートフィルタをサポートしていません。詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24071">
+Digital Filter Design Toolkit:  固定小数点カスケード型積分コンボ（CIC）フィルタはハイパスモードをサポートしません。移動平均(MA)フィルタとして動作する固定小数点CICフィルタを設計する場合は、差動遅延とステージ数の入力を1に設定する必要があります。
+</nierror>
+<nierror code="-24070">
+Digital Filter Design Toolkit:  入力範囲は0より大きい必要があります。
+</nierror>
+<nierror code="-24069">
+Digital Filter Design Toolkit:  デシメーションフィルタの出力位相は、[0, 因数]の範囲内にある必要があります。
+</nierror>
+<nierror code="-24068">
+Digital Filter Design Toolkit:  固定小数点マルチレートフィルタのオブジェクトは無効です。
+</nierror>
+<nierror code="-24067">
+Digital Filter Design Toolkit:  <b>coefficients word length</b>の値を、[1, 32]の範囲で指定する必要があります。
+</nierror>
+<nierror code="-24066">
+Digital Filter Design Toolkit:  マルチレートフィルタのフィルタモードは、多態性VIで選択したインスタンスと一致しません。多態性VIの適切なインスタンスを選択してください。
+</nierror>
+<nierror code="-24065">
+Digital Filter Design Toolkit:  有理因数のペアは同じにできません。
+</nierror>
+<nierror code="-24064">
+Digital Filter Design Toolkit:  指定した有理サブ因数のシーケンスは無効です。デシメーション因数を補間因数の前に表示することはできません。詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24063">
+Digital Filter Design Toolkit:  タイプIのくし型フィルタ設計では、fs/f0の値は整数である必要があります。ここで、fsとf0はそれぞれサンプリング周波数と中心周波数です。タイプIIのくし型フィルタ設計では、fs/(f0*2)の値は整数である必要があります。
+</nierror>
+<nierror code="-24062">
+Digital Filter Design Toolkit:  0以上の遅延値を指定する必要があります。
+</nierror>
+<nierror code="-24061">
+Digital Filter Design Toolkit:  rolloff値を[0,1]の範囲に指定する必要があります。
+</nierror>
+<nierror code="-24060">
+Digital Filter Design Toolkit:  0に等しくないゲイン値を指定する必要があります。
+</nierror>
+<nierror code="-24059">
+Digital Filter Design Toolkit:  指定されたゼロにはNaNまたはゼロを含むことはできません。指定された極にはNaNまたはInfを含むことはできません。
+</nierror>
+<nierror code="-24058">
+Digital Filter Design Toolkit:  ストップバンドエッジ周波数値が高すぎるため、パスバンドにエイリアシング歪みを取り込む可能性があります。
+</nierror>
+<nierror code="-24057">
+Digital Filter Design Toolkit:  指定された因数はマニュアルの因数分解配列中の全てのサブ因数の積と等しくなければなりません。 
+</nierror>
+<nierror code="-24056">
+Digital Filter Design Toolkit:  マルチステージマルチレートフィルタでCICフィルタを使用する場合、4より大きい因数を指定して、4で除算する必要があります。
+</nierror>
+<nierror code="-24055">
+Digital Filter Design Toolkit:  オーバーフローモード入力は量子化器合計用にSaturationに設定されています。オーバーフローモード入力をWrapに設定します。
+</nierror>
+<nierror code="-24054">
+Digital Filter Design Toolkit:  信号入力と信号出力はマルチレートフィルタ中で異なるメモリ領域を使用する必要があります。
+</nierror>
+<nierror code="-24053">
+Digital Filter Design Toolkit:  この状態のシフト番号は無効です。
+</nierror>
+<nierror code="-24052">
+Digital Filter Design Toolkit:  対角線のサイズが行列のサイズと一致する必要があります。
+</nierror>
+<nierror code="-24051">
+Digital Filter Design Toolkit:  データにスペースを割り当てることができませんでした。
+</nierror>
+<nierror code="-24050">
+Digital Filter Design Toolkit:  このVIでファイルからフィルタをロードするのに失敗しました。有効なファイルパスを指定してください。
+</nierror>
+<nierror code="-24049">
+Digital Filter Design Toolkit:  マルチフィルタオブジェクトは無効です。
+</nierror>
+<nierror code="-24048">
+Digital Filter Design Toolkit:  差動遅延の有効値を指定する必要があります。有効値は1および2です。
+</nierror>
+<nierror code="-24047">
+Digital Filter Design Toolkit:  指定された分子および分母の次数を使用したフィルタ設計は失敗しました。より小さい次数の値を使用してください。
+</nierror>
+<nierror code="-24046">
+Digital Filter Design Toolkit:  バンド仕様入力の周波数範囲内で正確なゲインの周波数を指定しなければなりません。
+</nierror>
+<nierror code="-24045">
+Digital Filter Design Toolkit:  ステージ数は、[1, 8]の範囲内にある必要があります。
+</nierror>
+<nierror code="-24044">
+Digital Filter Design Toolkit:  分子の次数と分母の次数の値を35より小さく指定する必要があります。
+</nierror>
+<nierror code="-24043">
+Digital Filter Design Toolkit:  マルチレート因数を0よりも大きく指定する必要があります。
+</nierror>
+<nierror code="-24042">
+Digital Filter Design Toolkit:  バンドパスフィルタおよびバンドストップフィルタに偶数である次数値が必要です。
+</nierror>
+<nierror code="-24041">
+Digital Filter Design Toolkit:  フィルタ構造が無効です。フィルタ構造を選択する詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24040">
+Digital Filter Design Toolkit:  係数a/kまたは係数b/vに量子化ソース入力を設定する必要があります。
+</nierror>
+<nierror code="-24039">
+Digital Filter Design Toolkit:  入力係数は指定された格子フィルタ構造に対して無効です。
+</nierror>
+<nierror code="-24038">
+Digital Filter Design Toolkit:  指定されたフィルタの構造は格子フィルタ構造ではありません。
+</nierror>
+<nierror code="-24037">
+Digital Filter Design Toolkit:  入力フィルタは有限インパルス応答（FIR）フィルタではありません。
+</nierror>
+<nierror code="-24036">
+Digital Filter Design Toolkit:  入力フィルタは量子化固定小数点フィルタではありません。
+</nierror>
+<nierror code="-24035">
+Digital Filter Design Toolkit:  フィルタ設計は入力された仕様では成功しませんでした。
+</nierror>
+<nierror code="-24034">
+Digital Filter Design Toolkit:  状態入力の入力値とフィルタ次数が一致している必要があります。
+</nierror>
+<nierror code="-24033">
+Digital Filter Design Toolkit:  内部エラー: 無効なパラメータです。
+</nierror>
+<nierror code="-24032">
+Digital Filter Design Toolkit:  偶数であるフィルタ次数値を指定する必要があります。
+</nierror>
+<nierror code="-24031">
+Digital Filter Design Toolkit:  分母の次数値を0以上に指定する必要があります。 
+</nierror>
+<nierror code="-24030">
+Digital Filter Design Toolkit:  分子の次数値を0よりも大きく指定する必要があります。
+</nierror>
+<nierror code="-24029">
+Digital Filter Design Toolkit:  マルチレート因数を1よりも大きく指定する必要があります。
+</nierror>
+<nierror code="-24028">
+Digital Filter Design Toolkit:  rolloff値を(0,1)の範囲に指定する必要があります。
+</nierror>
+<nierror code="-24027">
+Digital Filter Design Toolkit:  線形スケールのリプルは(0,1)の範囲である必要があります。
+</nierror>
+<nierror code="-24026">
+Digital Filter Design Toolkit:  周波数仕様入力で有効な周波数シーケンスを指定する必要があります。
+</nierror>
+<nierror code="-24025">
+Digital Filter Design Toolkit:  指定された固定小数点フィルタモデルは、コード生成の制約と互換性がありません。デジタルフィルタ設計VIでコードを生成する詳細については、『LabVIEWヘルプ』を参照してください。
+</nierror>
+<nierror code="-24024">
+Digital Filter Design Toolkit:  LabVIEW Digital Filter Design Toolkit(LabVIEWデジタルフィルタ設計ツールキット)はこのフィルタ構造のLabVIEW FPGAコード生成をサポートしていません。
+</nierror>
+<nierror code="-24023">
+Digital Filter Design Toolkit:  0よりも大きいQ因数またはDf値を指定する必要があります。
+</nierror>
+<nierror code="-24022">
+Digital Filter Design Toolkit:  0よりも大きい次数値を設定する必要があります。
+</nierror>
+<nierror code="-24021">
+Digital Filter Design Toolkit:  0よりも大きく、ナイキスト周波数よりも小さい周波数値を指定する必要があります。
+</nierror>
+<nierror code="-24020">
+Digital Filter Design Toolkit:  各バンドは最低1つのポイントを含む必要があります。
+</nierror>
+<nierror code="-24019">
+Digital Filter Design Toolkit:  低周波数値よりも大きい高周波数値を指定する必要があります。
+</nierror>
+<nierror code="-24018">
+Digital Filter Design Toolkit:  0よりも大きい値のサンプリング周波数値を指定する必要があります。
+</nierror>
+<nierror code="-24017">
+Digital Filter Design Toolkit:  ストップバンド減衰または0よりも大きいリプル値を指定する必要があります。
+</nierror>
+<nierror code="-24016">
+Digital Filter Design Toolkit:  振幅入力に負でない値を指定する必要があります。
+</nierror>
+<nierror code="-24015">
+Digital Filter Design Toolkit:  フィルタオブジェクトは無効です。
+</nierror>
+<nierror code="-24014">
+Digital Filter Design Toolkit:  伝達関数は無効です。
+</nierror>
+<nierror code="-24013">
+Digital Filter Design Toolkit:  ドルフ・チェビシェフ窓のために、ゼロより大きいリプル率を指定する必要があります。
+</nierror>
+<nierror code="-24012">
+Digital Filter Design Toolkit:  指定された構造でこのフィルタを表すことはできません。
+</nierror>
+<nierror code="-24011">
+Digital Filter Design Toolkit:  フィルタ仕様の必要次数は、最小次数の検索オプションと一緒に動作させるには大きすぎます。ユーザ定義オプションを使用してください。
+</nierror>
+<nierror code="-24010">
+Digital Filter Design Toolkit:  最小次数の設計に全てのバンドを強要する必要があります。
+</nierror>
+<nierror code="-24009">
+Digital Filter Design Toolkit:  最小または最大位相の設計に負ではない周波数応答を指定する必要があります。
+</nierror>
+<nierror code="-24008">
+Digital Filter Design Toolkit:  奇数の次数である非対称FIRフィルタ設計に対して、DCでの振幅値はゼロである必要があります。
+</nierror>
+<nierror code="-24007">
+Digital Filter Design Toolkit:  偶数の次数である非対称FIRフィルタ設計に対して、DCおよびナイキスト周波数での振幅値は両方ともゼロである必要があります。
+</nierror>
+<nierror code="-24006">
+Digital Filter Design Toolkit:  奇数の次数である対称FIRフィルタ設計に対して、ナイキスト周波数での振幅値はゼロである必要があります。
+</nierror>
+<nierror code="-24005">
+Digital Filter Design Toolkit:  最低1つの有効なバンドを定義する必要があります。
+</nierror>
+<nierror code="-24004">
+Digital Filter Design Toolkit:  全ての重み付けの値は正である必要があります。
+</nierror>
+<nierror code="-24003">
+Digital Filter Design Toolkit:  バンド周波数は昇順である必要があります。バンドはオーバラップ不可で、DC周波数とナイキスト周波数の間で発生する必要があります。
+</nierror>
+<nierror code="-24002">
+Digital Filter Design Toolkit:  このVIはすべての制約を満たすフィルタを設計できませんでした。リプル制約または次数の値をより大きく指定します。
+</nierror>
+<nierror code="-24001">
+Digital Filter Design Toolkit:  反復数が最大値に到達したか、またはRemez設計で数値エラーが発生しました。
+</nierror>
+<nierror code="24001">
+Digital Filter Design Toolkit:  実際のサンプリング周波数はフィルタを作成するのに使用した周波数とは異なります。
+</nierror>
+<nierror code="24002">
+Digital Filter Design Toolkit:  連続している2つのデータブロックのタイムスタンプが一致しません。
+</nierror>
+<nierror code="24003">
+Digital Filter Design Toolkit:  入力シーケンスが空です。
+</nierror>
+<nierror code="24004">
+Digital Filter Design Toolkit:  入力中の状態が空です。
+</nierror>
+<nierror code="24005">
+Digital Filter Design Toolkit:  pの値は[2, 128]の範囲内にある必要があります。
+</nierror>
+<nierror code="24006">
+Digital Filter Design Toolkit:  指定された極半径は(0, 1]の範囲に制限されています。
+</nierror>
+<nierror code="24007">
+Digital Filter Design Toolkit:  伝達関数の両端のゼロが削除されました。設計された次数は指定されたものと異なります。
+</nierror>
+<nierror code="24008">
+Digital Filter Design Toolkit:  内部警告: 不正なシード値が選択されました。
+</nierror>
+<nierror code="24009">
+Digital Filter Design Toolkit:  Least Pth Normの設計中に最大反復数に到達したか、または数値エラーが発生しました。
+</nierror>
+<nierror code="24010">
+Digital Filter Design Toolkit:  このVIではフィルタは指定された次数よりも低い次数で設計されています。
+</nierror>
+<nierror code="24011">
+Digital Filter Design Toolkit:  有理因数のペアは互いに素ではありません。
+</nierror>
+<nierror code="24012">
+Digital Filter Design Toolkit:  処理する信号のサンプリング周波数が前の信号データのブロックから変更されたため、フィルタ処理を初期化します。
+</nierror>
+<nierror code="24013">
+Digital Filter Design Toolkit:  処理する信号チャンネル数が変更されたため、フィルタ処理を初期化します。
+</nierror>
+<nierror code="24014">
+Digital Filter Design Toolkit:  遅延値が変更されたため、フィルタ処理を初期化します。
+</nierror>
+<nierror code="24015">
+Digital Filter Design Toolkit:  マルチレートフィルタ数が変更されたため、フィルタ処理を初期化します。
+</nierror>
+<nierror code="24016">
+Digital Filter Design Toolkit:  ステージの出力ワード長および出力整数ワード長は次のステージの入力ワード長および入力整数ワード長と同じでなければなりません。
+</nierror>
+<nierror code="24017">
+Digital Filter Design Toolkit:  エイリアスを許可しない場合、ストップバンドエッジ周波数はナイキスト周波数以下である必要があります。
+</nierror>
+<nierror code="24018">
+Digital Filter Design Toolkit:  予想されるフィルタ次数が1000より大きいため、設計処理に時間がかかる可能性があります。 
+</nierror>
+<nierror code="24019">
+Digital Filter Design Toolkit:  フィルタを量子化する前に、最初に設計を更新するボタンをクリックして浮動小数点フィルタを設計する必要があります。フィルタがマルチステージのレート変更がないフィルタの場合、フィルタを量子化できません。
+</nierror>
+<nierror code="24020">
+Digital Filter Design Toolkit:  入力信号の固定小数点設定は入力量子化器と異なります。
+</nierror>
+<nierror code="24021">
+Digital Filter Design Toolkit:  入力周波数ベクトルが空です。
+</nierror>
+</nidocument>

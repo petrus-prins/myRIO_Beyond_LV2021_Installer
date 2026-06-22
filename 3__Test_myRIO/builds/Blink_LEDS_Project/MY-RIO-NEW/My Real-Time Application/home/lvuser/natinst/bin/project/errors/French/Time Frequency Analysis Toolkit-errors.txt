@@ -1,0 +1,55 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Time Frequency Analysis Toolkit" displayname="Time Frequency Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42619">
+Time Frequency Analysis Toolkit:  Les paramètres des entrées 'transform info' et 'expansion info' sont valides pour tout calcul ultérieur.
+</nierror>
+<nierror code="-42618">
+Time Frequency Analysis Toolkit:  La taille de ligne du kernel (noyau) doit être une puissance de 2 et doit être supérieure à 0. La taille de colonne du kernel doit être 2^(ceil(log2(Ls-1))), où Ls représente la longueur du signal en entrée.
+</nierror>
+<nierror code="-42615">
+Time Frequency Analysis Toolkit:  L'entrée 'number of terms' doit être supérieure à 0.
+</nierror>
+<nierror code="-42614">
+Time Frequency Analysis Toolkit:  Le paramètre N/dM, ou 'oversampling rate' (fréquence de suréchantillonnage), doit être supérieur ou égal à 1.
+</nierror>
+<nierror code="-42606">
+Time Frequency Analysis Toolkit:  Cette opération sur fichier ne supporte pas le module LabVIEW Real-Time.
+</nierror>
+<nierror code="-42605">
+Time Frequency Analysis Toolkit:  La taille de la table de couleurs doit être 256.
+</nierror>
+<nierror code="-42601">
+Time Frequency Analysis Toolkit:  Le signal en entrée est vide ou la longueur du signal est inférieure à la longueur de la fenêtre.
+</nierror>
+<nierror code="42602">
+Time Frequency Analysis Toolkit:  La fréquence d'échantillonnage doit être supérieure à 0.
+</nierror>
+<nierror code="42603">
+Time Frequency Analysis Toolkit:  Les intervalles de fréquence doivent être une puissance de 2 et doivent être supérieurs à 0.
+</nierror>
+<nierror code="42611">
+Time Frequency Analysis Toolkit:  Le paramètre 'time steps' doit être supérieur à 0. 
+</nierror>
+<nierror code="42613">
+Time Frequency Analysis Toolkit:  Le paramètre 'order' doit être supérieur ou égal à 0.
+</nierror>
+<nierror code="42614">
+Time Frequency Analysis Toolkit:  Le paramètre N/dM, ou 'oversampling rate' (fréquence de suréchantillonnage), doit être supérieur ou égal à 1.
+</nierror>
+<nierror code="42616">
+Time Frequency Analysis Toolkit:  La taille de la fenêtre doit être supérieure à 0.
+</nierror>
+<nierror code="42617">
+Time Frequency Analysis Toolkit:  La variance de la fenêtre gaussienne doit être supérieure à 0.
+</nierror>
+<nierror code="42618">
+Time Frequency Analysis Toolkit:  La longueur de la fenêtre gaussienne doit être une puissance de 2 et doit être supérieure à 8.
+</nierror>
+<nierror code="42619">
+Time Frequency Analysis Toolkit:  Le paramètre 'alpha' doit être supérieur ou égal à 0.
+</nierror>
+</nidocument>

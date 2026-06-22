@@ -1,0 +1,6 @@
+Use this at your own risk.
+There are no guarantees in this world, that includes this piece of software.
+This software can brick your LV installation if you are not careful.
+All credits go to the respective owners of the softwares used to make this tool.
+Anything else is MIT license.
+This was tested on LV2022Q3 32 bit.

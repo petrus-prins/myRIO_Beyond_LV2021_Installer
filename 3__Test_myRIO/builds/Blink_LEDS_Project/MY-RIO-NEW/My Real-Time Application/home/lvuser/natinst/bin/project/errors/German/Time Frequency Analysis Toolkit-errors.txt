@@ -1,0 +1,55 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Time Frequency Analysis Toolkit" displayname="Time Frequency Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42619">
+Time Frequency Analysis Toolkit:  Die Parameter für den Transform-Info-Eingang und den Expansion-Info-Eingang sind ungültig für weitere Berechnungen. 
+</nierror>
+<nierror code="-42618">
+Time Frequency Analysis Toolkit:  Die Zeilengröße des Kernels muss größer als Null und eine Potenz von 2 sein. Die Spaltengröße des Kernels muss 2^(ceil(log2(Ls-1))) sein, wobei Ls die Länge des Eingangssignals ist.
+</nierror>
+<nierror code="-42615">
+Time Frequency Analysis Toolkit:  Der Wert des Eingangs-Parameters "number of terms" muss größer 0 sein.
+</nierror>
+<nierror code="-42614">
+Time Frequency Analysis Toolkit:  Der Rate der Überabtastung, N/dM, muss größer oder gleich 1 sein.
+</nierror>
+<nierror code="-42606">
+Time Frequency Analysis Toolkit:  Das LabVIEW Real-Time Module wird von diese Dateioperation nicht unterstützt.
+</nierror>
+<nierror code="-42605">
+Time Frequency Analysis Toolkit:  Die Größe der Farbtabelle muss 256 sein.
+</nierror>
+<nierror code="-42601">
+Time Frequency Analysis Toolkit:  Der Eingang für das Signal ist leer oder die Signallänge ist kleiner als die Fensterlänge.
+</nierror>
+<nierror code="42602">
+Time Frequency Analysis Toolkit:  Die Abtastrate muss größer als 0 sein.
+</nierror>
+<nierror code="42603">
+Time Frequency Analysis Toolkit:  Die Frequenzunterteilungen müssen eine Potenz von 2 und größer als 0 sein.
+</nierror>
+<nierror code="42611">
+Time Frequency Analysis Toolkit:  Die Zeitschritte müssen größer als 0 sein.
+</nierror>
+<nierror code="42613">
+Time Frequency Analysis Toolkit:  Die Ordnung muss größer oder gleich 0 sein.
+</nierror>
+<nierror code="42614">
+Time Frequency Analysis Toolkit:  Der Rate der Überabtastung, N/dM, muss größer oder gleich 1 sein.
+</nierror>
+<nierror code="42616">
+Time Frequency Analysis Toolkit:  Die Größe des Fensters muss größer als 0 sein.
+</nierror>
+<nierror code="42617">
+Time Frequency Analysis Toolkit:  Die Varianz des Gauß'schen Fensters muss größer als 0 sein.
+</nierror>
+<nierror code="42618">
+Time Frequency Analysis Toolkit:  Die gaußsche Fensterlänge muss eine Potenz von 2 und größer oder gleich 8 sein.
+</nierror>
+<nierror code="42619">
+Time Frequency Analysis Toolkit:  Das Alpha muss größer oder gleich 0 sein.
+</nierror>
+</nidocument>

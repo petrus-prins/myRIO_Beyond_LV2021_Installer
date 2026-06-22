@@ -1,0 +1,94 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Wavelet Analysis Toolkit" displayname="Wavelet Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42244">
+Wavelet Analysis Toolkit:  The index of the 2D array stored in the refnum is out of range.
+</nierror>
+<nierror code="-42243">
+Wavelet Analysis Toolkit:  The refnum does not support this operation.
+</nierror>
+<nierror code="-42242">
+Wavelet Analysis Toolkit:  The refnum is invalid.
+</nierror>
+<nierror code="-42241">
+Wavelet Analysis Toolkit:  The VI did not create the refnum.
+</nierror>
+<nierror code="-42230">
+Wavelet Analysis Toolkit:  The time interval in the user defined wavelet input must be greater than 0.
+</nierror>
+<nierror code="-42229">
+Wavelet Analysis Toolkit:  The format of the data file for the wavelet filter bank is invalid.
+</nierror>
+<nierror code="-42226">
+Wavelet Analysis Toolkit:  The wavelet packet handle or session is invalid, or the data space it refers to does not contain the necessary information.
+</nierror>
+<nierror code="-42225">
+Wavelet Analysis Toolkit:  The dimensions of the wavelet coefficients are invalid.
+</nierror>
+<nierror code="-42224">
+Wavelet Analysis Toolkit:  The optional parameter is invalid, and the VI cannot compute the entropy.
+</nierror>
+<nierror code="-42223">
+Wavelet Analysis Toolkit:  The trend level must be no less than 0 and no greater than 1.0.
+</nierror>
+<nierror code="-42221">
+Wavelet Analysis Toolkit:  The node must be a terminal node.
+</nierror>
+<nierror code="-42220">
+Wavelet Analysis Toolkit:  The node cannot be a terminal node.
+</nierror>
+<nierror code="-42219">
+Wavelet Analysis Toolkit:  The path or node string can contain only 0 or 1.
+</nierror>
+<nierror code="-42218">
+Wavelet Analysis Toolkit:  The lengths of the analysis filters or the synthesis filters must be greater than 0.
+</nierror>
+<nierror code="-42217">
+Wavelet Analysis Toolkit:  The node is not on the decomposition tree.
+</nierror>
+<nierror code="-42215">
+Wavelet Analysis Toolkit:  The shift input must be 0 or 1.
+</nierror>
+<nierror code="-42212">
+Wavelet Analysis Toolkit:  The scale of the wavelet transform must be greater than 0.
+</nierror>
+<nierror code="-42211">
+Wavelet Analysis Toolkit:  The wavelet type you selected is invalid.
+</nierror>
+<nierror code="-42207">
+Wavelet Analysis Toolkit:  The threshold frequency must be greater than 0 but no greater than half the sampling rate.
+</nierror>
+<nierror code="-42206">
+Wavelet Analysis Toolkit:  The size of the color table must equal 256.
+</nierror>
+<nierror code="-42205">
+Wavelet Analysis Toolkit:  The array of coefficients is empty.
+</nierror>
+<nierror code="-42204">
+Wavelet Analysis Toolkit:  The enumerated data type parameter you selected is invalid.
+</nierror>
+<nierror code="-42203">
+Wavelet Analysis Toolkit:  The <b>coef level</b> must be an integer value between 1 and the largest level of the detail coefficients.
+</nierror>
+<nierror code="-42202">
+Wavelet Analysis Toolkit:  This file operation does not support the LabVIEW Real-Time Module.
+</nierror>
+<nierror code="-42201">
+Wavelet Analysis Toolkit:  The input signal is empty.
+</nierror>
+<nierror code="42201">
+Wavelet Analysis Toolkit:  This VI has re-initialized automatically.
+</nierror>
+<nierror code="42211">
+Wavelet Analysis Toolkit:  The wavelet type you selected is invalid.
+</nierror>
+<nierror code="42217">
+Wavelet Analysis Toolkit:  The refinements for computing the mother wavelet must be greater than or equal to 1.
+</nierror>
+<nierror code="42222">
+Wavelet Analysis Toolkit:  The time step must be greater than 0.
+</nierror>
+</nidocument>

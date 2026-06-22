@@ -1,0 +1,55 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Time Frequency Analysis Toolkit" displayname="Time Frequency Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42619">
+Time Frequency Analysis Toolkit:  変換情報入力または拡張情報入力のパラメータは、これ以上の計算では無効です。
+</nierror>
+<nierror code="-42618">
+Time Frequency Analysis Toolkit:  カーネルの行のサイズは、2の累乗で、かつ0より大きくなければなりません。カーネルの列のサイズは、2^(ceil(log2(Ls-1)))でなければなりません（Lsは入力信号の長さ）。
+</nierror>
+<nierror code="-42615">
+Time Frequency Analysis Toolkit:  入力される項の数は0より大きくなければなりません。
+</nierror>
+<nierror code="-42614">
+Time Frequency Analysis Toolkit:  オーバサンプリングレート（N /dM）は1以上でなければなりません。
+</nierror>
+<nierror code="-42606">
+Time Frequency Analysis Toolkit:  このファイル操作はLabVIEW Real-Timeモジュールをサポートしません。
+</nierror>
+<nierror code="-42605">
+Time Frequency Analysis Toolkit:  カラーテーブルのサイズは256であるべきです。
+</nierror>
+<nierror code="-42601">
+Time Frequency Analysis Toolkit:  入力信号が空か、信号の長さがウィンドウの長さより短くなっています。
+</nierror>
+<nierror code="42602">
+Time Frequency Analysis Toolkit:  サンプリングレートは0より大きくなければなりません。
+</nierror>
+<nierror code="42603">
+Time Frequency Analysis Toolkit:  周波数ビンは、2の累乗で、かつ0より大きくなければなりません。
+</nierror>
+<nierror code="42611">
+Time Frequency Analysis Toolkit:  時間ステップは0より大きくなければなりません。
+</nierror>
+<nierror code="42613">
+Time Frequency Analysis Toolkit:  次数は0以上でなければなりません。
+</nierror>
+<nierror code="42614">
+Time Frequency Analysis Toolkit:  オーバサンプリングレート（N/dM）は1以上でなければなりません。
+</nierror>
+<nierror code="42616">
+Time Frequency Analysis Toolkit:  ウィンドウのサイズは、0より大きくなければなりません。
+</nierror>
+<nierror code="42617">
+Time Frequency Analysis Toolkit:  ガウスウィンドウの分散は、0より大きくなければなりません。
+</nierror>
+<nierror code="42618">
+Time Frequency Analysis Toolkit:  ガウスウィンドウの長さは、2の累乗で、かつ8以上でなければなりません。
+</nierror>
+<nierror code="42619">
+Time Frequency Analysis Toolkit:  αは0以上でなければなりません。
+</nierror>
+</nidocument>

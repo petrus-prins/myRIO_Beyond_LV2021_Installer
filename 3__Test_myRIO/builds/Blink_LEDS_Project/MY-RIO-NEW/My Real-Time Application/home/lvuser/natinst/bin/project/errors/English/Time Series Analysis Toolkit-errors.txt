@@ -1,0 +1,85 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Time Series Analysis Toolkit" displayname="Time Series Analysis Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-42461">
+Time Series Analysis Toolkit:  The dimension of the scale info parameter does not match the dimension of the multivariate time series.
+</nierror>
+<nierror code="-42454">
+Time Series Analysis Toolkit:  The noise variance must be greater than zero or the noise covariance matrix is invalid.
+</nierror>
+<nierror code="-42453">
+Time Series Analysis Toolkit:  The first element of the model coefficients array must be 1, and the size of the array must be greater than or equal to 1.
+</nierror>
+<nierror code="-42452">
+Time Series Analysis Toolkit:  The number of predicted points must be greater than 0.
+</nierror>
+<nierror code="-42451">
+Time Series Analysis Toolkit:  The value of the model order is less than the value of the required order.
+</nierror>
+<nierror code="-42442">
+Time Series Analysis Toolkit:  The number of cepstrum bins must be greater than 0.
+</nierror>
+<nierror code="-42441">
+Time Series Analysis Toolkit:  The subspace dimension must be greater than 0 and less than 100 in percentage.
+</nierror>
+<nierror code="-42430">
+Time Series Analysis Toolkit:  The reference value is invalid.
+</nierror>
+<nierror code="-42429">
+Time Series Analysis Toolkit:  The number of subsequences into which to divide the input series must be greater than 0.
+</nierror>
+<nierror code="-42428">
+Time Series Analysis Toolkit:  The percentage must be greater than or equal to 0 and less than 100.
+</nierror>
+<nierror code="-42427">
+Time Series Analysis Toolkit:  The size of the time point array does not match the size of the value array in the unequally-sampled time series.
+</nierror>
+<nierror code="-42426">
+Time Series Analysis Toolkit:  The length of seasonal pattern in time series must be greater than 0.
+</nierror>
+<nierror code="-42425">
+Time Series Analysis Toolkit:  The degree of freedom defining the distribution must be greater than 0.
+</nierror>
+<nierror code="-42424">
+Time Series Analysis Toolkit:  The value of upper endpoint must be greater than the value of lower endpoint.
+</nierror>
+<nierror code="-42423">
+Time Series Analysis Toolkit:  The input parameters do not match the dimension of multivariate time series.
+</nierror>
+<nierror code="-42422">
+Time Series Analysis Toolkit:  The number of samples must be greater than 0.
+</nierror>
+<nierror code="-42421">
+Time Series Analysis Toolkit:  The input standard deviation must be greater than 0.
+</nierror>
+<nierror code="-42407">
+Time Series Analysis Toolkit:  The input time series is too large for memory. You can downsample the input time series, modify the window length, or trim the input time series to reduce memory consumption.
+</nierror>
+<nierror code="-42406">
+Time Series Analysis Toolkit:  All the values of input time series must be positive numbers.
+</nierror>
+<nierror code="-42405">
+Time Series Analysis Toolkit:  The input time series is empty or the length of the input time series must be greater than the required length.
+</nierror>
+<nierror code="-42404">
+Time Series Analysis Toolkit:  This file operation does not support the LabVIEW Real-Time Module.
+</nierror>
+<nierror code="-42403">
+Time Series Analysis Toolkit:  The number of frequency bins must be greater than 0.
+</nierror>
+<nierror code="-42402">
+Time Series Analysis Toolkit:  The sampling rate must be greater than 0.
+</nierror>
+<nierror code="-42401">
+Time Series Analysis Toolkit:  The size of the color table must equal 256.
+</nierror>
+<nierror code="42421">
+Time Series Analysis Toolkit:  Cannot estimate more independent components than specified.
+</nierror>
+<nierror code="42422">
+Time Series Analysis Toolkit:  The number of frequency bins has changed.
+</nierror>
+</nidocument>

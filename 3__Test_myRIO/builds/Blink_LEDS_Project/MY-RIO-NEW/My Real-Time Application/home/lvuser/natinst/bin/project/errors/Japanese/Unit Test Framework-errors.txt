@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="Unit Test Framework" familyname="Unit Test Framework">
+</nifamily>
+</nicomment>
+<nierror code="-25299">
+Unit Test Framework: 最後のUnit Test Frameworkエラーコードのプレースホルダ。
+</nierror>
+<nierror code="-25288">
+Unit Test Framework: シェア変数にアクセスできません。
+</nierror>
+<nierror code="-25287">
+Unit Test Framework: テストの作成中にエラーが発生しました。
+</nierror>
+<nierror code="-25286">
+Unit Test Framework: このVIにブロックダイアグラムはありません。
+</nierror>
+<nierror code="-25285">
+Unit Test Framework: テスト中のVI、セットアップVI、分解VI、ユーザ定義の比較VI、およびユーザ定義のテストVIを含む、関連するVIが実行されている間はテストを実行できません。
+</nierror>
+<nierror code="-25284">
+Unit Test Framework: このVIはロックされたライブラリにあります。ライブラリのロックを解除するか、<b>Project Properties</b>ダイアログボックスでパスワードを追加します。
+</nierror>
+<nierror code="-25283">
+Unit Test Framework: このVIはパスワードにより保護されています。VIのロックを解除するか、<b>Project Properties</b>ダイアログボックスでパスワードを追加します。
+</nierror>
+<nierror code="-25282">
+Unit Test Framework: ユーザ定義のテストVIへのパスが無効です。
+</nierror>
+<nierror code="-25281">
+Unit Test Framework: 指標が見つかりません。
+</nierror>
+<nierror code="-25280">
+Unit Test Framework: その他のエラーです。
+</nierror>
+<nierror code="-25262">
+Unit Test Framework: ユーザ定義の比較VIが無効です。
+</nierror>
+<nierror code="-25261">
+Unit Test Framework: ユーザ定義の比較VIへのパスが無効です。
+</nierror>
+<nierror code="-25260">
+Unit Test Framework: .lvtestファイルは読み取り専用です。
+</nierror>
+<nierror code="-25259">
+Unit Test Framework: .lvtestファイルが無効です。
+</nierror>
+<nierror code="-25258">
+Unit Test Framework: テストケースのデータエラーです。
+</nierror>
+<nierror code="-25257">
+Unit Test Framework: テストケースのデータがありません。
+</nierror>
+<nierror code="-25256">
+Unit Test Framework: テスト中のVIに入力値を設定中にエラーが発生しました。
+</nierror>
+<nierror code="-25255">
+Unit Test Framework: 処理する制御器または表示器がありません。
+</nierror>
+<nierror code="-25253">
+Unit Test Framework: テストされているVIが再入可能VI、ダイナミックディスパッチメンバーVI、サブルーチンVI、またはリアルタイム (RT) ターゲットで実行できるVIの場合、LabVIEWはコネクタペーンにある表示器またはグローバル変数のみを比較することができます。
+</nierror>
+<nierror code="-25252">
+Unit Test Framework: テストされているVIが再入可能VI、ダイナミックディスパッチメンバーVI、サブルーチンVI、またはリアルタイム (RT) ターゲットで実行できるVIの場合、LabVIEWはコネクタペーンにある制御器、またはグローバル変数にのみ値を設定できます。
+</nierror>
+<nierror code="-25251">
+Unit Test Framework: LabVIEWは以下の制御器を見つけることができません。
+</nierror>
+<nierror code="-25250">
+Unit Test Framework: .lvtestファイルヘッダ情報にエラーがあります。
+</nierror>
+<nierror code="-25249">
+Unit Test Framework: 以下の制御器名は一意ではありません。
+</nierror>
+<nierror code="-25248">
+Unit Test Framework: 制御器名には、\n、\r、タブ、配列の角括弧、名前区切り文字、および小数点区切り文字を含めることはできません。
+</nierror>
+<nierror code="-25245">
+Unit Test Framework: セットアップおよび分解VIの実行中にエラーが発生しました。
+</nierror>
+<nierror code="-25244">
+Unit Test Framework: セットアップVI、分解VI、およびテスト中のVI間の構成が無効です。
+</nierror>
+<nierror code="-25243">
+Unit Test Framework: 制御器リファレンスではありません。
+</nierror>
+<nierror code="-25242">
+Unit Test Framework: ユーザ定義のテストVIが無効です。
+</nierror>
+<nierror code="-25241">
+Unit Test Framework: テスト中のVIが無効です。
+</nierror>
+<nierror code="-25240">
+Unit Test Framework: テスト中のVIのパスが無効です。
+</nierror>
+<nierror code="-25232">
+Unit Test Framework: 分解VIにエラーが発生しました。
+</nierror>
+<nierror code="-25231">
+Unit Test Framework: 分解VIが無効です。
+</nierror>
+<nierror code="-25230">
+Unit Test Framework: 分解VIのパスが無効です。
+</nierror>
+<nierror code="-25222">
+Unit Test Framework: LabVIEWは以下の端子を見つけることができません。
+</nierror>
+<nierror code="-25221">
+Unit Test Framework: セットアップVIが無効です。
+</nierror>
+<nierror code="-25220">
+Unit Test Framework: セットアップVIのパスが無効です。
+</nierror>
+<nierror code="-25204">
+Unit Test Framework: クラスをロードできません。クラスをロードする前、またはテストを実行する前にクラスを保存してください。
+</nierror>
+<nierror code="-25201">
+Unit Test Framework: <b>Unit Test Framework Results</b>ウィンドウの複数のインスタンスを開くことができません。テストを実行する前にウィンドウを閉じてください。
+</nierror>
+<nierror code="-25200">
+Unit Test Framework: 不明なエラーが発生しました。
+</nierror>
+</nidocument>

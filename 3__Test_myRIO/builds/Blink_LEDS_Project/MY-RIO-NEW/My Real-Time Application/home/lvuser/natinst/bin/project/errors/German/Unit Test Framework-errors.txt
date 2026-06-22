@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="Unit Test Framework" familyname="Unit Test Framework">
+</nifamily>
+</nicomment>
+<nierror code="-25299">
+Unit Test Framework: Platzhalter für letzten UTF-Fehlercode.
+</nierror>
+<nierror code="-25288">
+Unit Test Framework: Kein Zugriff auf eine Umgebungsvariable.
+</nierror>
+<nierror code="-25287">
+Unit Test Framework: Beim Erstellen der Tests trat ein Fehler auf.
+</nierror>
+<nierror code="-25286">
+Unit Test Framework: Dieses VI hat kein Blockdiagramm.
+</nierror>
+<nierror code="-25285">
+Unit Test Framework: Es können keine Tests ausgeführt werden, während am Test beteiligte VIs laufen. Dazu gehören das zu testende VI, das Setup-VI, das Teardown-VI, das benutzerdefinierte Vergleichs-VI und das benutzerdefinierte Test-VI.
+</nierror>
+<nierror code="-25284">
+Unit Test Framework: Dieses VI befindet sich in einer gesperrten Bibliothek. Geben Sie die Bibliothek frei oder fügen Sie das Passwort zum Dialogfeld <b>Project Properties</b> hinzu.
+</nierror>
+<nierror code="-25283">
+Unit Test Framework: Dieses VI ist passwortgeschützt. Geben Sie das VI frei oder fügen Sie das Passwort zum Dialogfeld <b>Project Properties</b> hinzu.
+</nierror>
+<nierror code="-25282">
+Unit Test Framework: Der Pfad zum benutzerdefinierten Test-VI ist ungültig.
+</nierror>
+<nierror code="-25281">
+Unit Test Framework: Index nicht gefunden.
+</nierror>
+<nierror code="-25280">
+Unit Test Framework: Anderer Fehler
+</nierror>
+<nierror code="-25262">
+Unit Test Framework: Das benutzerdefinierte Vergleichs-VI ist ungültig.
+</nierror>
+<nierror code="-25261">
+Unit Test Framework: Der Pfad zum benutzerdefinierten Vergleichs-VI ist ungültig.
+</nierror>
+<nierror code="-25260">
+Unit Test Framework: Die *.lvtest-Datei ist schreibgeschützt.
+</nierror>
+<nierror code="-25259">
+Unit Test Framework: Die *.lvtest-Datei ist ungültig.
+</nierror>
+<nierror code="-25258">
+Unit Test Framework: Fehlerhafte Test-Case-Daten
+</nierror>
+<nierror code="-25257">
+Unit Test Framework: Fehlende Test-Case-Daten
+</nierror>
+<nierror code="-25256">
+Unit Test Framework: Beim Festlegen der Eingangswerte für das zu testende VI trat ein Fehler auf.
+</nierror>
+<nierror code="-25255">
+Unit Test Framework: Es gibt kein zu verarbeitendes Bedien- oder Anzeigeelement.
+</nierror>
+<nierror code="-25253">
+Unit Test Framework: Wenn das getestete VI ein ablaufinvariantes VI, ein Klassen-VI mit dynamischer Bindung oder ein Unterprogramm-VI ist oder auf einem Real-Time-System ausgeführt wird, kann LabVIEW nur jeweils Anzeigeelemente des Anschlussfelds und globale Variablen vergleichen.
+</nierror>
+<nierror code="-25252">
+Unit Test Framework: Wenn das getestete VI ein ablaufinvariantes VI, ein Klassen-VI mit dynamischer Bindung oder ein Unterprogramm-VI ist oder auf einem Real-Time-System ausgeführt wird, kann LabVIEW nur jeweils Werte für Elemente des Anschlussfelds und für globale Variablen festlegen.
+</nierror>
+<nierror code="-25251">
+Unit Test Framework: LabVIEW kann folgende Elemente nicht finden.
+</nierror>
+<nierror code="-25250">
+Unit Test Framework: Die Header-Angaben der *.lvtest-Datei enthalten einen Fehler.
+</nierror>
+<nierror code="-25249">
+Unit Test Framework: Folgender Elementname ist nicht eindeutig.
+</nierror>
+<nierror code="-25248">
+Unit Test Framework: Folgende Zeichen sind für Elementnamen unzulässig: \n, \r, Tabulatoren, Array-Klammern, Trennzeichen und Dezimalzeichen.
+</nierror>
+<nierror code="-25245">
+Unit Test Framework: Bei der Ausführung des Setup- und Teardown-VIs trat ein Fehler auf.
+</nierror>
+<nierror code="-25244">
+Unit Test Framework: Die Konfiguration zwischen Setup-, Teardown- und zu testendem VI ist ungültig.
+</nierror>
+<nierror code="-25243">
+Unit Test Framework: Keine Elementreferenz
+</nierror>
+<nierror code="-25242">
+Unit Test Framework: Das benutzerdefinierte Test-VI ist ungültig.
+</nierror>
+<nierror code="-25241">
+Unit Test Framework: Das zu testende VI ist ungültig.
+</nierror>
+<nierror code="-25240">
+Unit Test Framework: Der Pfad zum zu testenden VI ist ungültig.
+</nierror>
+<nierror code="-25232">
+Unit Test Framework: Das Teardown-VI hat einen Fehler verursacht.
+</nierror>
+<nierror code="-25231">
+Unit Test Framework: Das Teardown-VI ist ungültig.
+</nierror>
+<nierror code="-25230">
+Unit Test Framework: Der Pfad zum Teardown-VI ist ungültig.
+</nierror>
+<nierror code="-25222">
+Unit Test Framework: LabVIEW kann folgende Anschlüsse nicht finden.
+</nierror>
+<nierror code="-25221">
+Unit Test Framework: Das Setup-VI ist ungültig.
+</nierror>
+<nierror code="-25220">
+Unit Test Framework: Der Pfad zum Setup-VI ist ungültig.
+</nierror>
+<nierror code="-25204">
+Unit Test Framework: Die Klasse kann nicht geladen werden. Speichern Sie die Klasse, bevor Sie sie laden oder Tests ausführen.
+</nierror>
+<nierror code="-25201">
+Unit Test Framework: Es können nicht mehrere Instanzen des Fensters <b>Unit Test Framework Results</b> geöffnet werden. Schließen Sie das Fenster vor der Ausführung von Tests.
+</nierror>
+<nierror code="-25200">
+Unit Test Framework: Unbekannter Fehler.
+</nierror>
+</nidocument>

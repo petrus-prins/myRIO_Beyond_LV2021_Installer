@@ -1,0 +1,460 @@
+<?XML Version="1.0">
+<nidocument>
+<nicomment>
+<nifamily familyname="Digital Filter Design Toolkit" displayname="Digital Filter Design Toolkit">
+</nifamily>
+</nicomment>
+<nierror code="-24130">
+Digital Filter Design Toolkit:  No valid FPGA target is installed.
+</nierror>
+<nierror code="-24129">
+Digital Filter Design Toolkit:  The weight must be in the range (0,1).
+</nierror>
+<nierror code="-24128">
+Digital Filter Design Toolkit:  The specified filter order of a cosine-modulated M-band perfect reconstruction filter bank must meet the constraint that N+1=2mM, where N is the order, M is the band counts, and m is a positive integer.
+</nierror>
+<nierror code="-24127">
+Digital Filter Design Toolkit:  This VI cannot reconstruct the input subband signals.
+</nierror>
+<nierror code="-24126">
+Digital Filter Design Toolkit:  The specified filter order must be an odd number greater than or equal to 3.
+</nierror>
+<nierror code="-24125">
+Digital Filter Design Toolkit:  The input filter bank in must be a cosine-modulated filter bank.
+</nierror>
+<nierror code="-24124">
+Digital Filter Design Toolkit:  The number of subband signals must equal the number of subbands in the input filter bank.
+</nierror>
+<nierror code="-24123">
+Digital Filter Design Toolkit:  The band number of the filter bank must be greater than 1.
+</nierror>
+<nierror code="-24122">
+Digital Filter Design Toolkit:  The subband index must be in the range [0, #band-1].
+</nierror>
+<nierror code="-24121">
+Digital Filter Design Toolkit:  Invalid filter bank object.
+</nierror>
+<nierror code="-24120">
+Digital Filter Design Toolkit:  You can generate LabVIEW FPGA code for a multistage multirate filter that contains only decimation stages or only interpolation stages.
+</nierror>
+<nierror code="-24119">
+Digital Filter Design Toolkit:  The fixed-point moving average filter supports a maximum of 32 channels.
+</nierror>
+<nierror code="-24118">
+Digital Filter Design Toolkit:  To generate LabVIEW FPGA code, the sampling frequency conversion factor of the moving average filter must be greater than 1.
+</nierror>
+<nierror code="-24117">
+Digital Filter Design Toolkit:  You must use the DFD FXP Moving Average Code Generator VI to generate LabVIEW FPGA code from a cascaded integrator comb (CIC) filter that has no rate change.
+</nierror>
+<nierror code="-24116">
+Digital Filter Design Toolkit:  The band edge frequencies must correspond to the frequency points.
+</nierror>
+<nierror code="-24115">
+Digital Filter Design Toolkit:  The length of the input string must be compatible with the length of frequency points.
+</nierror>
+<nierror code="-24114">
+Digital Filter Design Toolkit:  The length of the input array must be compatible with the length of frequency points.
+</nierror>
+<nierror code="-24113">
+Digital Filter Design Toolkit:  The frequency points must be in ascending order.
+</nierror>
+<nierror code="-24112">
+Digital Filter Design Toolkit:  The filter must have a nonnegative zero-phase response.
+</nierror>
+<nierror code="-24111">
+Digital Filter Design Toolkit:  The input filter is not a valid fixed-point moving average (MA) filter. Refer to the LabVIEW Help for more information about fixed-point MA filters.
+</nierror>
+<nierror code="-24110">
+Digital Filter Design Toolkit:  The input filter must be a fixed-point filter with the IIR Cascaded Second-Order Sections Form structure.
+</nierror>
+<nierror code="-24109">
+Digital Filter Design Toolkit:  The code generation was cancelled.
+</nierror>
+<nierror code="-24108">
+Digital Filter Design Toolkit:  To generate C code from the filter, you must process the gain on the target. You can specify the gain processing target by using the DFD FXP Quantize Coef VI.
+</nierror>
+<nierror code="-24107">
+Digital Filter Design Toolkit:  The input signal must be in the range specified in the <b>input word length</b> value. Refer to the LabVIEW Help for more information about the valid range for the input signal.
+</nierror>
+<nierror code="-24106">
+Digital Filter Design Toolkit:  The bandwidth must be greater than 0 and less than f0/2 for a Type I comb filter design. The bandwidth must be greater than 0 and less than f0 for a Type II comb filter design.
+</nierror>
+<nierror code="-24105">
+Digital Filter Design Toolkit:  The bandwidth must be greater than 0 and less than the value of fn/N, where fn is the Nyquist frequency and N is the value you specify for the <b># notches/peaks</b> input.
+</nierror>
+<nierror code="-24104">
+Digital Filter Design Toolkit:  The Q factor must be greater than the value of f0/fn, where f0 is the center frequency of the notch or peak and fn is the Nyquist frequency.
+</nierror>
+<nierror code="-24103">
+Digital Filter Design Toolkit:  To design a filter by using the Q factor, you must specify the center frequency value f0 in the range (0, fn), where fn is the Nyquist frequency. If you want to design a filter with the center frequency at DC, choose the By Bandwidth instance.
+</nierror>
+<nierror code="-24102">
+Digital Filter Design Toolkit:  The bandwidth must be greater than 0 and less than the Nyquist frequency.
+</nierror>
+<nierror code="-24101">
+Digital Filter Design Toolkit:  The center frequency f0 must be greater than or equal to 0 and less than the Nyquist frequency.
+</nierror>
+<nierror code="-24100">
+Digital Filter Design Toolkit:  This function is not applicable to cascaded integrator comb (CIC) filters.
+</nierror>
+<nierror code="-24099">
+Digital Filter Design Toolkit:  The filter must be a linear phase finite impulse response (FIR) filter.
+</nierror>
+<nierror code="-24098">
+Digital Filter Design Toolkit:  This function failed to calculate the spectral factor of the filter. Ensure that the filter is a linear phase filter with a nonnegative zero-phase response.
+</nierror>
+<nierror code="-24097">
+Digital Filter Design Toolkit:  If you want to generate code from the resulting filter, the integer word length that you specify for the multiplicand quantizer must be greater than or equal to the integer word length of the sum quantizer.
+</nierror>
+<nierror code="-24096">
+Digital Filter Design Toolkit:  If you want to generate code from the resulting filter, the integer word length that you specify for the multiplicand quantizer must be greater than or equal to the integer word length of the delay quantizer.
+</nierror>
+<nierror code="-24095">
+Digital Filter Design Toolkit:  The number of channels must be greater than 0.
+</nierror>
+<nierror code="-24094">
+Digital Filter Design Toolkit:  You must specify a valid value for the word length. Refer to the LabVIEW Help for more information about the valid range of word lengths.
+</nierror>
+<nierror code="-24093">
+Digital Filter Design Toolkit:  If you want to process the filter gain on a fixed-point target, you must specify the word length of the filter gain in the range [1, 32].
+</nierror>
+<nierror code="-24092">
+Digital Filter Design Toolkit:  You must specify the word length of at least one set of coefficients in the range [1, 40].
+</nierror>
+<nierror code="-24091">
+Digital Filter Design Toolkit:  The input coefficients are invalid for the cascaded structure you specified.
+</nierror>
+<nierror code="-24090">
+Digital Filter Design Toolkit:  The valid range of the stopband frequency is (%#.3g, %#.3g] Hz.
+</nierror>
+<nierror code="-24089">
+Digital Filter Design Toolkit:  The valid range of the passband frequency is (0, %#.3g) Hz.
+</nierror>
+<nierror code="-24088">
+Digital Filter Design Toolkit:  The input multirate filter is not a valid cascaded integrator comb (CIC) filter.
+</nierror>
+<nierror code="-24087">
+Digital Filter Design Toolkit:  The file path you specified is invalid. Specify a valid file path.
+</nierror>
+<nierror code="-24086">
+Digital Filter Design Toolkit:  A memory overflow occurred on the field-programmable gate array (FPGA) target.
+</nierror>
+<nierror code="-24085">
+Digital Filter Design Toolkit:  Fixed-point multirate finite impulse response (FIR) code generation supports factors only in the range [1, 255]. The taps per phase must be in the range [1, 32767].
+</nierror>
+<nierror code="-24084">
+Digital Filter Design Toolkit:  Fixed-point cascaded integrator comb (CIC) filter code generation supports factors only in the range (1, 16383].
+</nierror>
+<nierror code="-24083">
+Digital Filter Design Toolkit:  The code generation supports only one- to 255-channel processing.
+</nierror>
+<nierror code="-24082">
+Digital Filter Design Toolkit:  Fixed-point cascaded integrator comb (CIC) filter code generation supports a maximum of 32 channels.
+</nierror>
+<nierror code="-24081">
+Digital Filter Design Toolkit:  A project with the same name already exists in memory. Close the existing project or specify another name for the new project.
+</nierror>
+<nierror code="-24080">
+Digital Filter Design Toolkit:  The passband edge frequency must be greater than zero and less than the Nyquist frequency. Refer to the LabVIEW Help for more information about specifying a valid value for the passband edge frequency.
+</nierror>
+<nierror code="-24079">
+Digital Filter Design Toolkit:  You must specify a valid filtering mode. Refer to the LabVIEW Help for more information about specifying the filtering mode.
+</nierror>
+<nierror code="-24078">
+Digital Filter Design Toolkit:  The array of the input filter cannot be empty.
+</nierror>
+<nierror code="-24077">
+Digital Filter Design Toolkit:  The array size for interstage word length values must equal <b># stages</b> - 1, where <b># stages</b> is the number of stages of the multistage multirate filter.
+</nierror>
+<nierror code="-24076">
+Digital Filter Design Toolkit:  The DFD Plot NStage MRate Freq Response VI does not support multistage multirate filters that contain rational resampling filters.
+</nierror>
+<nierror code="-24075">
+Digital Filter Design Toolkit:  The array size for the coefficient word length values must be the same as that of the input multirate filter.
+</nierror>
+<nierror code="-24074">
+Digital Filter Design Toolkit:  The stopband edge frequency must be greater than the passband edge frequency.
+</nierror>
+<nierror code="-24073">
+Digital Filter Design Toolkit:  To generate LabVIEW FPGA code, you must install the LabVIEW FPGA Module and NI-RIO driver software with R Series support. To execute the FPGA code, you also need an FPGA target on which to run the code.
+</nierror>
+<nierror code="-24072">
+Digital Filter Design Toolkit:  The code generator does not support the fixed-point multirate filter you specified. Refer to the LabVIEW Help for details.
+</nierror>
+<nierror code="-24071">
+Digital Filter Design Toolkit:  The fixed-point cascaded integrator comb (CIC) filter does not support the <b>Highpass</b> mode. You must set the <b>differential delay</b> and <b># stages</b> inputs to 1 if you want to design a fixed-point CIC filter that works as a moving-average (MA) filter.
+</nierror>
+<nierror code="-24070">
+Digital Filter Design Toolkit:  The input range must be greater than 0.
+</nierror>
+<nierror code="-24069">
+Digital Filter Design Toolkit:  The output phase of a decimation filter must be in the range [0, <b>factor</b>).
+</nierror>
+<nierror code="-24068">
+Digital Filter Design Toolkit:  The fixed-point multirate filter object is invalid.
+</nierror>
+<nierror code="-24067">
+Digital Filter Design Toolkit:  You must specify the <b>coefficients word length</b> value in the range [1, 32].
+</nierror>
+<nierror code="-24066">
+Digital Filter Design Toolkit:  The filtering mode of the multirate filter does not match the instance you chose in the polymorphic VI. Specify the appropriate instance of the polymorphic VI.
+</nierror>
+<nierror code="-24065">
+Digital Filter Design Toolkit:  The pair of rational factors cannot be equal.
+</nierror>
+<nierror code="-24064">
+Digital Filter Design Toolkit:  The sequence for rational subfactors you specify is invalid. The decimation factor cannot appear before the interpolation factor. Refer to the LabVIEW Help for details.
+</nierror>
+<nierror code="-24063">
+Digital Filter Design Toolkit:  The value of fs/f0 must be an integer for a Type I comb filter design, where fs and f0 are the sampling frequency and central frequency, respectively. The value of fs/(f0*2) must be an integer for a Type II comb filter design.
+</nierror>
+<nierror code="-24062">
+Digital Filter Design Toolkit:  You must specify a delay value that is greater than or equal to zero.
+</nierror>
+<nierror code="-24061">
+Digital Filter Design Toolkit:  You must specify a roll off value in the range [0, 1].
+</nierror>
+<nierror code="-24060">
+Digital Filter Design Toolkit:  You must specify a gain value that is not equal to zero.
+</nierror>
+<nierror code="-24059">
+Digital Filter Design Toolkit:  The zeroes that you specified cannot contain NaN or zero values. The poles you specified cannot contain NaN or Inf values.
+</nierror>
+<nierror code="-24058">
+Digital Filter Design Toolkit:  The stopband edge frequency value is too high and might introduce aliasing distortion in the passband.
+</nierror>
+<nierror code="-24057">
+Digital Filter Design Toolkit:  The product of the factors in the <b>manual factorization</b> input must equal the <b>factor</b> input value. 
+</nierror>
+<nierror code="-24056">
+Digital Filter Design Toolkit:  You must specify a factor value that is greater than 4 and divisible by 4 if you use the cascaded integrator comb (CIC) filter in multistage multirate filters.
+</nierror>
+<nierror code="-24055">
+Digital Filter Design Toolkit:  The <b>overflow mode</b> input is set to Saturation for a sum quantizer. Set the <b>overflow mode</b> input to Wrap.
+</nierror>
+<nierror code="-24054">
+Digital Filter Design Toolkit:  <b>signal in</b> and <b>signal out</b> must use different memory space in the multirate filter.
+</nierror>
+<nierror code="-24053">
+Digital Filter Design Toolkit:  The shift number in the states is invalid.
+</nierror>
+<nierror code="-24052">
+Digital Filter Design Toolkit:  The diagonal size must match the matrix size.
+</nierror>
+<nierror code="-24051">
+Digital Filter Design Toolkit:  LabVIEW failed to allocate space for data.
+</nierror>
+<nierror code="-24050">
+Digital Filter Design Toolkit:  This VI failed to load the filter from the file. Specify a valid file path.
+</nierror>
+<nierror code="-24049">
+Digital Filter Design Toolkit:  The multirate filter object is invalid.
+</nierror>
+<nierror code="-24048">
+Digital Filter Design Toolkit:  You must specify a valid value for the differential delay. Valid values are 1 and 2.
+</nierror>
+<nierror code="-24047">
+Digital Filter Design Toolkit:  The filter design failed with the specified numerator and denominator order values. Use smaller order values.
+</nierror>
+<nierror code="-24046">
+Digital Filter Design Toolkit:  You must specify the frequencies of the exact gain within the frequency ranges of the <b>band specs</b> input.
+</nierror>
+<nierror code="-24045">
+Digital Filter Design Toolkit:  The number of stages must be in the range [1, 8].
+</nierror>
+<nierror code="-24044">
+Digital Filter Design Toolkit:  You must specify numerator order and denominator order values of less than 35.
+</nierror>
+<nierror code="-24043">
+Digital Filter Design Toolkit:  You must specify a multirate factor that is greater than zero.
+</nierror>
+<nierror code="-24042">
+Digital Filter Design Toolkit:  Bandpass and bandstop filters require an order value that is an even number.
+</nierror>
+<nierror code="-24041">
+Digital Filter Design Toolkit:  The structure of the filter is invalid. Refer to the LabVIEW Help for more information about selecting a filter structure.
+</nierror>
+<nierror code="-24040">
+Digital Filter Design Toolkit:  You must set the <b>quantizer source</b> input to Coefficients a/k or Coefficients b/v.
+</nierror>
+<nierror code="-24039">
+Digital Filter Design Toolkit:  The input coefficients are invalid for the specified lattice filter structure.
+</nierror>
+<nierror code="-24038">
+Digital Filter Design Toolkit:  The structure of the filter you specified is not a lattice filter structure.
+</nierror>
+<nierror code="-24037">
+Digital Filter Design Toolkit:  The input filter is not an finite impulse response (FIR) filter.
+</nierror>
+<nierror code="-24036">
+Digital Filter Design Toolkit:  The input filter is not a quantized fixed-point filter.
+</nierror>
+<nierror code="-24035">
+Digital Filter Design Toolkit:  The filter design failed with the specifications you entered.
+</nierror>
+<nierror code="-24034">
+Digital Filter Design Toolkit:  The value of the <b>states in</b> input must match the filter order.
+</nierror>
+<nierror code="-24033">
+Digital Filter Design Toolkit:  Internal errors: Invalid parameters.
+</nierror>
+<nierror code="-24032">
+Digital Filter Design Toolkit:  You must specify a filter order value that is an even number.
+</nierror>
+<nierror code="-24031">
+Digital Filter Design Toolkit:  You must specify a denominator order value that is greater than or equal to zero. 
+</nierror>
+<nierror code="-24030">
+Digital Filter Design Toolkit:  You must specify a numerator order value that is greater than zero.
+</nierror>
+<nierror code="-24029">
+Digital Filter Design Toolkit:  You must specify a multirate factor that is greater than one.
+</nierror>
+<nierror code="-24028">
+Digital Filter Design Toolkit:  You must specify a roll off value in the range (0, 1).
+</nierror>
+<nierror code="-24027">
+Digital Filter Design Toolkit:  Ripples in a linear scale must be in the range (0, 1).
+</nierror>
+<nierror code="-24026">
+Digital Filter Design Toolkit:  You must specify a valid frequency sequence in the <b>freq specs</b> input.
+</nierror>
+<nierror code="-24025">
+Digital Filter Design Toolkit:  The fixed-point filter model you specified is incompatible with the constraints of code generation. Refer to the LabVIEW Help for more information about generating code with the Digital Filter Design VIs.
+</nierror>
+<nierror code="-24024">
+Digital Filter Design Toolkit:  The LabVIEW Digital Filter Design Toolkit does not support LabVIEW FPGA code generation for this filter structure.
+</nierror>
+<nierror code="-24023">
+Digital Filter Design Toolkit:  You must specify a <b>Q factor</b> or <b>Df</b> value that is greater than zero.
+</nierror>
+<nierror code="-24022">
+Digital Filter Design Toolkit:  You must specify an order value that is greater than zero.
+</nierror>
+<nierror code="-24021">
+Digital Filter Design Toolkit:  You must specify frequency values that are greater than zero and less than the Nyquist frequency.
+</nierror>
+<nierror code="-24020">
+Digital Filter Design Toolkit:  Each band must contain at least one point.
+</nierror>
+<nierror code="-24019">
+Digital Filter Design Toolkit:  You must specify high frequency values that are greater than low frequency values.
+</nierror>
+<nierror code="-24018">
+Digital Filter Design Toolkit:  You must specify a sampling frequency value that is greater than zero.
+</nierror>
+<nierror code="-24017">
+Digital Filter Design Toolkit:  You must specify a stopband attenuation or ripple value that is greater than 0.
+</nierror>
+<nierror code="-24016">
+Digital Filter Design Toolkit:  You must specify a nonnegative value or values for the <b>magnitude</b> input.
+</nierror>
+<nierror code="-24015">
+Digital Filter Design Toolkit:  The filter object is invalid.
+</nierror>
+<nierror code="-24014">
+Digital Filter Design Toolkit:  The transfer function is invalid.
+</nierror>
+<nierror code="-24013">
+Digital Filter Design Toolkit:  You must specify a ripple ratio that is greater than zero for Dolph-Chebyshev windows.
+</nierror>
+<nierror code="-24012">
+Digital Filter Design Toolkit:  The filter cannot be represented by the structure you specified.
+</nierror>
+<nierror code="-24011">
+Digital Filter Design Toolkit:  The required order of the filter specifications is too large to work with the <b>minimum order</b> search option. Use the <b>user defined</b> option.
+</nierror>
+<nierror code="-24010">
+Digital Filter Design Toolkit:  You must constrain all bands for minimum order designs.
+</nierror>
+<nierror code="-24009">
+Digital Filter Design Toolkit:  You must specify a nonnegative frequency response for minimum or maximum phase designs.
+</nierror>
+<nierror code="-24008">
+Digital Filter Design Toolkit:  The amplitude value at DC must be zero for odd-order, antisymmetric, finite impulse response (FIR) filter designs.
+</nierror>
+<nierror code="-24007">
+Digital Filter Design Toolkit:  The amplitude values at the DC and Nyquist frequencies both must be zero for even-order, antisymmetric, finite impulse response (FIR) filter designs.
+</nierror>
+<nierror code="-24006">
+Digital Filter Design Toolkit:  The amplitude value at the Nyquist frequency must be zero for odd-order, symmetric, finite impulse response (FIR) filter designs.
+</nierror>
+<nierror code="-24005">
+Digital Filter Design Toolkit:  You must define at least one valid band.
+</nierror>
+<nierror code="-24004">
+Digital Filter Design Toolkit:  All weighting values must be positive.
+</nierror>
+<nierror code="-24003">
+Digital Filter Design Toolkit:  The band frequency must be in ascending order. Bands cannot overlap and must occur between the DC and Nyquist frequencies.
+</nierror>
+<nierror code="-24002">
+Digital Filter Design Toolkit:  This VI failed to design a filter that meets all constraints. Specify a larger <b>ripple constraint</b> or <b>order</b> value.
+</nierror>
+<nierror code="-24001">
+Digital Filter Design Toolkit:  The number of iterations has reached its maximum value, or a numeric error in the Remez design has occurred.
+</nierror>
+<nierror code="24001">
+Digital Filter Design Toolkit:  The actual sampling frequency differs from the one used to create the filter.
+</nierror>
+<nierror code="24002">
+Digital Filter Design Toolkit:  The timestamps of the two sequential data blocks are inconsistent.
+</nierror>
+<nierror code="24003">
+Digital Filter Design Toolkit:  The input sequence is empty.
+</nierror>
+<nierror code="24004">
+Digital Filter Design Toolkit:  The <b>state in</b> input is empty.
+</nierror>
+<nierror code="24005">
+Digital Filter Design Toolkit:  The value of <b>p</b> must be in the range [2, 128].
+</nierror>
+<nierror code="24006">
+Digital Filter Design Toolkit:  The pole radius must be in the range (0, 1].
+</nierror>
+<nierror code="24007">
+Digital Filter Design Toolkit:  Zeroes at two ends of the transfer function have been removed. The designed order is different from the specified order.
+</nierror>
+<nierror code="24008">
+Digital Filter Design Toolkit:  Internal warning: You have selected an incorrect seed value.
+</nierror>
+<nierror code="24009">
+Digital Filter Design Toolkit:  Either the maximum iteration has been reached, or a numerical error has occurred during the least pth norm design.
+</nierror>
+<nierror code="24010">
+Digital Filter Design Toolkit:  This VI will design a filter with a lower order than the order you specified.
+</nierror>
+<nierror code="24011">
+Digital Filter Design Toolkit:  The pair of rational factors are not coprime.
+</nierror>
+<nierror code="24012">
+Digital Filter Design Toolkit:  The filtering process will initialize because the sampling frequency of the signal to process has changed from that of the preceding block of signal data.
+</nierror>
+<nierror code="24013">
+Digital Filter Design Toolkit:  The filtering process will initialize because the number of signal channels to process has changed.
+</nierror>
+<nierror code="24014">
+Digital Filter Design Toolkit:  The filtering process will initialize because the delay value has changed.
+</nierror>
+<nierror code="24015">
+Digital Filter Design Toolkit:  The filtering process will initialize because the number of multirate filters has changed.
+</nierror>
+<nierror code="24016">
+Digital Filter Design Toolkit:  The output word length and output integer word length of a stage must equal the input word length and input integer word length of the following stage.
+</nierror>
+<nierror code="24017">
+Digital Filter Design Toolkit:  The stopband edge frequency must be less than or equal to the Nyquist frequency if you do not allow aliasing.
+</nierror>
+<nierror code="24018">
+Digital Filter Design Toolkit:  The design process might take a long time because the estimated filter order is greater than 1000. 
+</nierror>
+<nierror code="24019">
+Digital Filter Design Toolkit:  You first must click the <b>Update Design</b> button to design a floating-point filter before you can quantize the filter. You cannot quantize the filter if the filter is a multistage no-rate-change filter.
+</nierror>
+<nierror code="24020">
+Digital Filter Design Toolkit:  The fixed-point settings of the input signal are different from those of the input quantizer.
+</nierror>
+<nierror code="24021">
+Digital Filter Design Toolkit:  The input frequency vector is empty.
+</nierror>
+</nidocument>
