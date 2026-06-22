@@ -1,6 +1,3 @@
-This is a tool to install the original myRIO 2021 SP1 Toolkit Files into any existing Labview Installation.
-
-==========================
 Installation Instructions:
 ==========================
  Run myRIO_Beyond_LV2021_Installer.exe
@@ -9,7 +6,6 @@ Installation Instructions:
  For Example select your BASE folder as this: 
  C:\Program Files (x86)\National Instruments\LabVIEW 2022
  
-========== 
 Uninstall:
 ==========
  
@@ -30,4 +26,24 @@ I wish NI had done this 5 years ago!
 Many thanks to 'softball' on that forum, that pointed me in the right direction. 
 Many thanks to Andreas Kreiseder for his very generous assistance.
 
--Petrus Prins  
+-Petrus Prins 
+ 
+
+
+
+
+
+
+
+
+
+
+
+Instructions to Recompile Installer:
+====================================
+1: Clone Repo to Flash Drive F:\
+2: Install F:\2__Tools\innosetup-6.7.3.zip
+3: Run F:\2__Tools\_inno_scripts\Compile_Installer.iss
+4: Compiled deliverable will be F:\myRIO_Beyond_LV2021_Installer.exe
+
+ 
