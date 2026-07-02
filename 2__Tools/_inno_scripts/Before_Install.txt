@@ -1,3 +1,4 @@
-Please select your LabVIEW Base directory for example:
+Please select your desired LabVIEW directory for installation. 
+For Example:
 
 C:\Program Files (x86)\National Instruments\LabVIEW 2022
