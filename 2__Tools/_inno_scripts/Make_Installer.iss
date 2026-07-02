@@ -3,7 +3,7 @@
 ; Non-commercial use only
 
 #define MyAppName "myRIO_Installer"
-#define MyAppVersion "2.01"
+#define MyAppVersion "2.02"
 #define MyAppPublisher "Petrus Prins"
 #define MyAppURL "https://github.com/petrus-prins/myRIO_Beyond_LV2021_Installer"
 
@@ -42,11 +42,13 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 ;Source: "E:\1__Originals\2__Extracted\LabVIEW 2021\Petrus\*"; DestDir: "{app}\_Petrus"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "E:\1__Originals\2__Extracted\LabVIEW 2021\resource\*"; DestDir: "{app}\resource"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "E:\1__Originals\2__Extracted\LabVIEW 2021\Targets\*"; DestDir: "{app}\Targets"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "E:\1__Originals\2__Extracted\LabVIEW 2021\vi.lib\*"; DestDir: "{app}\vi.lib"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "E:\1__Originals\2__Extracted\LabVIEW 2021\resource\*"; DestDir: "{app}\resource"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "E:\1__Originals\2__Extracted\LabVIEW 2021\Targets\*"; DestDir: "{app}\Targets"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+Source: "E:\1__Originals\2__Extracted\LabVIEW 2021\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "E:\1__Originals\2__Extracted\Shared\*"; DestDir: "{app}\..\Shared"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "E:\1__Originals\2__Extracted\_Legal Information\*"; DestDir: "{app}\..\_Legal Information"; Flags: ignoreversion recursesubdirs createallsubdirs
+
 
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
