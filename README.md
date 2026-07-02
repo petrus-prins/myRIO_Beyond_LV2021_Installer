@@ -13,7 +13,7 @@ For Example: Select your BASE Installation folder as:
 C:\Program Files (x86)\National Instruments\LabVIEW 2022
 
 * Remember to update your myRIO to the latest firmware available for your selected LabVIEW Installation before loading any projects.
-NOTE: (myRIO 1950 units seem to become myRIO 1900 units - i.e no WIFI after the 2022Q3 firmware upgrade. 
+NOTE: (myRIO 1950 units seem to become myRIO 1900 units - i.e no WIFI after the 2022Q3 firmware upgrade). 
 This makes sense as NI announced extended support for myRIO 1900 only.
 
 There is an example myRIO LED + Accelerometer test program (LV2022Q3) included. 
@@ -38,7 +38,7 @@ I really hope this will be useful for some students/teachers out there.
 
 Thanks:
 =======
-Many thanks to 'softball' on that NI community forum, he pointed me in the right direction. 
+Many thanks to 'softball' on that NI community forum, for pointing me in the right direction.  
 Many thanks to Andreas Kreiseder for his VERY generous assistance.
 
 Disclaimer:
