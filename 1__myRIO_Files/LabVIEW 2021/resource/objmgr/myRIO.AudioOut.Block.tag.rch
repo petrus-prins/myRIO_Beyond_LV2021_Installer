@@ -1,0 +1,8 @@
+//// myRIO AudioOut Block Tag Type Definition /////
+genericType: myRIO_AudioOut_Block
+genericTypeName: "myRIO AudioOut (N Samples)"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"
+

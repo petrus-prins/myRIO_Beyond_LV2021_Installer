@@ -1,0 +1,8 @@
+//// myRIO AO Tag Type Definition /////
+genericType: myRIO_AO
+genericTypeName: "myRIO AO"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"
+

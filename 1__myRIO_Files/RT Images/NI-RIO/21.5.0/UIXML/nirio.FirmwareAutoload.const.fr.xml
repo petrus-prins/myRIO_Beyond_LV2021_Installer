@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<uistrings>
+	<str name="viautoload">Paramètre de chargement automatique des firmwares</str> 
+	<str name="noautoload">Ne pas charger automatiquement</str> 
+	<str name="rebootautoload">Charger automatiquement au redémarrage</str> 
+	<str name="powerupautoload">Charger automatiquement au démarrage</str> 
+</uistrings>

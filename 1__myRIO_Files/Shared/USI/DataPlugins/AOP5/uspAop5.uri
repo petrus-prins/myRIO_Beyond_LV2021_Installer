@@ -1,0 +1,79 @@
+<usireginfo>
+
+  <substitution name="DataPlugins32">
+    <regkey>Software\National Instruments\Common\Installer</regkey>
+    <regvalue>NISHAREDDIR</regvalue>
+    <type>path</type>
+    <platform>win32</platform>
+  </substitution>
+  
+  <substitution name="DataPlugins64">
+    <regkey>Software\National Instruments\Common\Installer</regkey>
+    <regvalue>NISHAREDDIR64</regvalue>
+    <type>path</type>
+    <platform>x64</platform>
+  </substitution>
+
+  <storetype name="AOP5">
+    <alias>AOP5</alias>
+    <importsupported>1</importsupported>
+    <exportsupported>1</exportsupported>
+    <description>ASAM Ods Corba interface</description>
+    <filepath>%DataPlugins32%\USI\DataPlugins\AOP5\uspAOP5.dll</filepath>
+    <caching>1</caching>
+    <guifilepath>%DataPlugins32%\USI\DataPlugins\AOP5\uspAop5.ocx</guifilepath>
+    <guiprogid>NIUSI.config.aop5.0</guiprogid>
+    <iconinfo>"%DataPlugins32%\USI\DataPlugins\AOP5\uspAOP5.dll" ICON_RESOURCE 5005</iconinfo>
+    <preservestoredefinitions>1</preservestoredefinitions>
+    <platform>win32</platform>
+  </storetype>
+
+  <storetype name="NIAsamService">
+    <alias>NIAsamService</alias>
+    <importsupported>1</importsupported>
+    <exportsupported>0</exportsupported>
+    <description>ASAM Ods Corba interface</description>
+    <filepath>%DataPlugins32%\USI\DataPlugins\AOP5\uspAOP5.dll</filepath>
+    <caching>1</caching>
+    <guifilepath>%DataPlugins32%\USI\DataPlugins\AOP5\uspAop5.ocx</guifilepath>
+    <guiprogid>NIUSI.config.aop5.0</guiprogid>
+    <iconinfo>"%DataPlugins32%\USI\DataPlugins\AOP5\uspAOP5.dll" ICON_RESOURCE 5006</iconinfo>
+    <system>1</system>
+    <querysupported>1</querysupported>
+    <easypluginparam><![CDATA[<useattributeinvalidflag>yes</useattributeinvalidflag><addclientinfotoken>yes</addclientinfotoken><classicmodejoins>yes</classicmodejoins><autogroupbyforspecialattributes>no</autogroupbyforspecialattributes>]]></easypluginparam>
+    <preservestoredefinitions>1</preservestoredefinitions>
+    <platform>win32</platform>
+  </storetype>
+
+  <storetype name="AOP5">
+    <alias>AOP5</alias>
+    <importsupported>1</importsupported>
+    <exportsupported>1</exportsupported>
+    <description>ASAM Ods Corba interface</description>
+    <filepath>%DataPlugins64%\USI\DataPlugins\AOP5\uspAOP5.dll</filepath>
+    <caching>1</caching>
+    <guifilepath>%DataPlugins64%\USI\DataPlugins\AOP5\uspAop5.ocx</guifilepath>
+    <guiprogid>NIUSI.config.aop5.0</guiprogid>
+    <iconinfo>"%DataPlugins64%\USI\DataPlugins\AOP5\uspAOP5.dll" ICON_RESOURCE 5005</iconinfo>
+    <preservestoredefinitions>1</preservestoredefinitions>
+    <platform>x64</platform>
+  </storetype>
+
+  <storetype name="NIAsamService">
+    <alias>NIAsamService</alias>
+    <importsupported>1</importsupported>
+    <exportsupported>0</exportsupported>
+    <description>ASAM Ods Corba interface</description>
+    <filepath>%DataPlugins64%\USI\DataPlugins\AOP5\uspAOP5.dll</filepath>
+    <caching>1</caching>
+    <guifilepath>%DataPlugins64%\USI\DataPlugins\AOP5\uspAop5.ocx</guifilepath>
+    <guiprogid>NIUSI.config.aop5.0</guiprogid>
+    <iconinfo>"%DataPlugins64%\USI\DataPlugins\AOP5\uspAOP5.dll" ICON_RESOURCE 5006</iconinfo>
+    <system>1</system>
+    <querysupported>1</querysupported>
+    <easypluginparam><![CDATA[<useattributeinvalidflag>yes</useattributeinvalidflag><addclientinfotoken>yes</addclientinfotoken><classicmodejoins>yes</classicmodejoins><autogroupbyforspecialattributes>no</autogroupbyforspecialattributes>]]></easypluginparam>
+    <preservestoredefinitions>1</preservestoredefinitions>
+    <platform>x64</platform>
+  </storetype>
+
+</usireginfo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item>
+	<group id="settings" weight="0">
+		<property id="viautoload" caption="{viautoload}" sysattr="83890176" writable="true" order="50000">
+			<constoptions>
+				<option value="0"/>
+				<option value="1"/>
+				<option value="2"/>
+			</constoptions>
+			
+			<map value="0" caption="{noautoload}"/>
+			<map value="1" caption="{rebootautoload}"/>
+			<map value="2" caption="{powerupautoload}"/>
+		
+		</property>
+	</group>
+</item>

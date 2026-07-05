@@ -1,0 +1,7 @@
+//// myRIO DI IRQ Tag Type Definition /////
+genericType: myRIO_DI_IRQ
+genericTypeName: "myRIO Digital Input Interrupt"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

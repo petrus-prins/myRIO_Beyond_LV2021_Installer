@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<uistrings>
+	<str name="viautoload">Firmware Autoload Setting</str> 
+	<str name="noautoload">Do not autoload</str> 
+	<str name="rebootautoload">Autoload on reboot</str> 
+	<str name="powerupautoload">Autoload on powerup</str> 
+</uistrings>

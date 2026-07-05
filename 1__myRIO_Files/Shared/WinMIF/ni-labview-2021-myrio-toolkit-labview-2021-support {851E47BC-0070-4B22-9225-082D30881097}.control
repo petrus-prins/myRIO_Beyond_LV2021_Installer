@@ -1,0 +1,19 @@
+﻿Architecture: windows_x64
+CompatibilityVersion: 210300
+Depends: ni-compactrio-myrio-labview-2021-support-x86 (>=21.0.0), ni-labview-2021-myrio-toolkit-framework-x86 (>=8.0.0), ni-labview-2021-rt-module-x86 (>=21.0.0), ni-mdfsupport (>=21.5.0), ni-metauninstaller (>=21.5.0)
+Description: Installs the LabVIEW support files for the myRIO Toolkit, including the myRIO Express VIs and Low Level VIs. The myRIO Toolkit provides LabVIEW VIs for you to interface with the myRIO onboard I/O devices.
+DisplayName: LabVIEW myRIO Toolkit LabVIEW 2021 Support
+DisplayVersion: 2021
+Eula: eula-ni-standard
+Homepage: https://www.ni.com
+Maintainer: National Instruments <support@ni.com>
+OsRequires: >= 10
+OsSupport: WINDOWS_10_64BIT WINDOWS_SERVER_2016_64BIT WINDOWS_SERVER_2019_64BIT
+Package: ni-labview-2021-myrio-toolkit-labview-2021-support-x86
+Plugin: wininst
+Priority: standard
+Provides: 78ef2039-a5f1-4acb-97d6-25a112721c54 (=8.00.49152)
+Section: Add-Ons
+Supplements: ni-labview-2021-rt-module-x86 (>=21.0.0)
+UserVisible: yes
+Version: 8.0.0.49152-0+f0

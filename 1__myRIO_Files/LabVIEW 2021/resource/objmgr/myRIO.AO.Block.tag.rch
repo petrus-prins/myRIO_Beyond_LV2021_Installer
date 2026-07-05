@@ -1,0 +1,8 @@
+//// myRIO AO Block Tag Type Definition /////
+genericType: myRIO_AO_Block
+genericTypeName: "myRIO AO (N Samples)"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"
+

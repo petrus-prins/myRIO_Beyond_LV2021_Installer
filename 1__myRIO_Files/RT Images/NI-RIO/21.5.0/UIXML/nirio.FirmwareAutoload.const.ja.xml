@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<uistrings>
+	<str name="viautoload">ファームウェア自動ロード設定</str> 
+	<str name="noautoload">自動ロードなし</str> 
+	<str name="rebootautoload">再起動時に自動ロード</str> 
+	<str name="powerupautoload">電源投入時に自動ロード</str> 
+</uistrings>

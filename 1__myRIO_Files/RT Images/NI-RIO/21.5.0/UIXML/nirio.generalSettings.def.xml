@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item>
+	<group id="settings" weight="0">
+      <!-- Display DriverItemName from RIO -->
+		<property id="rioresource" caption="{rioresource}" sysattr="16896000" sysexpert="ni-rio" order="47000" />
+	</group>
+</item>

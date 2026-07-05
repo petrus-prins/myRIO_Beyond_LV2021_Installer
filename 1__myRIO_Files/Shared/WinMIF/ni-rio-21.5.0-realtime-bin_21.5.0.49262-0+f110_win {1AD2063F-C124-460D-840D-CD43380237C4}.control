@@ -1,0 +1,17 @@
+﻿Architecture: windows_x64
+CompatibilityVersion: 210300
+Depends: ni-apal-errors-21.5.0-realtime-bin (>= 21.5.0), ni-labview-2021-fpga-module-realtime-support (>= 21.0.0), ni-metauninstaller (>= 21.5.0), ni-msvcrt-2008-realtime-bin (>= 19.0.0), ni-mximanager-21.5.0-realtime-bin (>= 21.5.0), ni-p2p-21.5.0-realtime-bin (>= 21.5.0), ni-pal-errors-21.5.0-realtime-bin (>= 21.5.0), ni-pxiplatformservices-21.5.0-realtime-bin (>= 21.5.0), ni-qpxi-21.5.0-realtime-bin (>= 21.5.0), ni-rpc-21.5.0-realtime-bin (>= 21.5.0), ni-rtdm-19.0.0-realtime-bin (>= 19.0.0), ni-svcloc-21.0.0-realtime-bin (>= 21.0.0), ni-sysapi-21.5.0-realtime-bin (>= 21.5.0)
+Description: This feature includes NI-RIO driver for Real-Time embedded targets.
+DisplayName: NI-RIO Driver for LabVIEW Real-Time
+DisplayVersion: 21.5.0
+Eula: eula-ni-standard
+Homepage: https://www.ni.com
+Maintainer: National Instruments <support@ni.com>
+OsRequires: >= 10
+OsSupport: WINDOWS_10_64BIT WINDOWS_SERVER_2016_64BIT WINDOWS_SERVER_2019_64BIT
+Package: ni-rio-21.5.0-realtime-bin
+Plugin: wininst
+Priority: standard
+Provides: 5c59bee9-65f9-4412-b6d7-4efc0dcbb07a (=21.50.49262)
+Section: Infrastructure
+Version: 21.5.0.49262-0+f110

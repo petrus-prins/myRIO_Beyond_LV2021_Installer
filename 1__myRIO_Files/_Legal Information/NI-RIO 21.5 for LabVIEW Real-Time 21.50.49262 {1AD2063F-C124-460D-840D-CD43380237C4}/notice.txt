@@ -1,0 +1,113 @@
+﻿NI-RIO 21.5 Driver for LabVIEW Real-Time
+
+This product uses the following technologies licensed under the corresponding licenses.
+
+****************************************
+
+DOCUMENTATION NOTICE FOR NATIONAL INSTRUMENTS SOFTWARE
+
+This product is licensed to you by National Instruments pursuant to the applicable National Instruments software license agreement.
+
+-----------------
+Legal Information
+-----------------
+
+End-User License Agreements and Third-Party Legal Notices
+----
+You can find end-user license agreements (EULAs) and third-party legal notices in the following locations after installation:
+
+Windows:
+- Notices are located in the %ProgramFiles(x86)%\National Instruments\_Legal Information directory
+- EULAs are located in the %ProgramFiles(x86)%\National Instruments\Shared\MDF\Legal\license directory
+- Review %ProgramFiles(x86)%\National Instruments\_Legal Information.txt for information on including legal information in installers built with NI products.
+
+Linux:
+- Notices are located in the /usr/share/doc/ni-<packagename>/NOTICES directory
+- EULAs are located in the /usr/share/ni/licenses directory
+
+macOS:
+- Notices are located in the /Library/Application Support/National Instruments/Legal Information directory
+
+----
+U.S. Government Restricted Rights
+----
+If you are an agency, department, or other entity of the United States Government ("Government"), the use, duplication, reproduction, release, modification, disclosure or transfer of the technical data included in this manual is governed by the Restricted Rights provisions under Federal Acquisition Regulation 52.227-14 for civilian agencies and Defense Federal Acquisition Regulation Supplement Section 252.227-7014 and 252.227-7015 for military agencies.
+
+----
+Trademarks
+----
+Refer to the NI Trademarks and Logo Guidelines at ni.com/trademarks for information on NI trademarks. Other product and company names mentioned herein are trademarks or trade names of their respective companies.
+
+----
+Patents
+----
+For patents covering the NI products/technology, refer to the appropriate location: Help>>Patents in your software, the patents.txt file on your media, or the NI Patent Notice at ni.com/patents.
+
+
+****************************************
+
+DOCUMENTATION NOTICE FOR THE BSD 3-CLAUSE LICENSE 
+
+This product includes code from PCRE 7.8 licensed by a third party or parties pursuant to the 3-clause BSD license, which can be found at "..\..\Shared\MDF\Legal\license\BSD\3.0.0" and that is subject to the following notice(s):
+
+Copyright (c) 1997-2010 University of Cambridge. All rights reserved. Copyright (c) 2007-2010, Google Inc. All rights reserved.
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+Neither the name of the University of Cambridge nor Google Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+****************************************
+
+DOCUMENTATION NOTICE FOR STLPORT
+
+This product includes code from STLport 4.6.2 licensed by a third party or parties pursuant to the STLport software license, which can be found at "..\..\Shared\MDF\Legal\license\STLPort\1.0.0" and that is subject to the following notice(s):
+
+Copyright 1999,2000 Boris Fomitchev
+Copyright 1994 Hewlett-Packard Company
+Copyright 1996,97 Silicon Graphics Computer Systems, Inc.
+Copyright 1997 Moscow Center for SPARC Technology.
+
+
+****************************************
+
+DOCUMENTATION NOTICE FOR BOOST SOFTWARE LICENSE (1.0)
+
+This product includes code from Boost 1.55.0 licensed by a third party or parties pursuant to the Boost Software License 1.0, which can be found at "..\..\Shared\MDF\Legal\license\Boost\1.0.0" and that is subject to the following notice(s):
+
+Copyright Beman Dawes, David Abrahams, 1998-2005
+
+****************************************
+
+DOCUMENTATION NOTICE FOR SOFTWARE IN THE PUBLIC DOMAIN
+
+This product includes code from Libb64 1.2 released into the public domain by a third party or parties, and subject to the following notice(s):
+
+
+
+
+****************************************
+
+DOCUMENTATION NOTICE FOR THE BSD 2-CLAUSE LICENSE 
+
+This product includes code from tinydir 1.0 licensed by a third party or parties pursuant to the 2-clause BSD license, which can be found at "..\..\Shared\MDF\Legal\license\BSD\2.0.0" and that is subject to the following notice(s):
+
+Copyright (c) 2013, Cong Xu
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of THE COPYRIGHT HOLDER.

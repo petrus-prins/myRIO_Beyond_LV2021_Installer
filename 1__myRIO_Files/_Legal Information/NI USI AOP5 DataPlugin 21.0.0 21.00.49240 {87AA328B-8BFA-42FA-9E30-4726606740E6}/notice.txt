@@ -1,0 +1,63 @@
+﻿NI USI AOP5 DataPlugin
+
+This product uses the following technologies licensed under the corresponding licenses.
+
+****************************************
+
+DOCUMENTATION NOTICE FOR NATIONAL INSTRUMENTS SOFTWARE
+
+This product is licensed to you by National Instruments pursuant to the applicable National Instruments software license agreement.
+
+****************************************
+
+DOCUMENTATION NOTICE FOR THE GNU LGPL, v2.1
+
+This product includes code from omniORB 4.1.6 licensed by a third party or parties pursuant to the GNU LGPL, v2.1, software license, which can be found at "..\..\Shared\MDF\Legal\license\LGPL\2.1.0" and that is subject to the following notice(s):
+
+omniOrb 4.1.6 provides robust high performance CORBA ORB for C++ and Python. 
+
+Copyright (C) 1996, 1999 ATT Research Cambridge, Copyright (C) 2008 Apasphere Ltd
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.
+
+To request source code for this component, please send an email to licensing@ni.com.
+
+Duncan Grisby (duncan@grisby.org)
+
+
+
+****************************************
+
+DOCUMENTATION NOTICE FOR APACHE LICENSE (2.0)
+
+This product includes code from Xerces 2.8 licensed by a third party or parties pursuant to the Apache License, Version 2.0, which can be found at "..\..\Shared\MDF\Legal\license\Apache\2.0.0" and that is subject to the following notice(s):
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0 
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+Copyright (C) 1999-2010 The Apache Software Foundation. All Rights Reserved.
+
+
+
+
+
+
+****************************************
+
+DOCUMENTATION NOTICE FOR OPENSSL
+
+This product includes code from OpenSSL 1.0.2o licensed by a third party or parties pursuant to the OpenSSL software license, which can be found at "..\..\Shared\MDF\Legal\license\OpenSSL\1.0.0" and that is subject to the following notice(s):
+
+Copyright (c) 1998-2008 The OpenSSL Project.  All rights reserved.
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com). All rights reserved.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit  http://www.openssl.org/).
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).
+This product includes software written by Tim Hudson (tjh@cryptsoft.com).

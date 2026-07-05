@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Configuring a Wireless Network on the myRIO</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<![if !IE]>
+<link rel="stylesheet" type="text/css" href="../common/tutoriallayout.css"/>  
+<![endif]>
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="../common/IEtutoriallayout.css"/> 
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="../common/IEtutoriallayout.css"/> 
+<![endif]-->
+
+<!--[if gte IE 8]> 
+<link rel="stylesheet" type="text/css" href="../common/IE8tutoriallayout.css"/> 
+<![endif]--> 
+	
+</head>
+ 
+<body>
+<div id="wrapper">
+<div id="header">
+</div>
+
+<ul id="globalnav">
+  <li><a href="../myriotutorials.html">Home</a></li>
+  <li><a href="../YourFirstProgram/firstprogram1.html">Creating Your First myRIO Application</a></li>
+  <li><a href="configurewifi1.html" class="here">Configuring a Wireless Network on the myRIO</a>
+  	<ul>
+      <li><a href="configurewifi1.html">Tutorial:&nbsp;&nbsp;&nbsp;Connecting to a Wireless Network</a></li>
+      <li><a href="configurewifi2.html" class="here">&nbsp;&nbsp;Creating a Wireless Network</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+<div id="content">
+
+<h2 id="create_wireless">Creating a Wireless Network</h2>
+
+<p class="Body">You can use the myRIO as an access point to create wireless networks. After you create a wireless network using the myRIO, you can connect clients to this wireless network. Complete the following steps to create a wireless network using the myRIO:</p>
+
+<table>
+	<tr>
+		<td valign="top"><img src="images/myriousbmonitor.gif" alt=""/></td>
+		<td valign="top">
+			<ol>
+				<li>Use a USB cable to connect the myRIO to your computer.</li>
+				<li>Click the <strong>Configure myRIO</strong> button in the <strong>myRIO USB Monitor</strong> to launch NI&nbsp;Web-based Configuration &amp; Monitoring in your web browser.<br/><br/><strong>Note</strong>&nbsp;&nbsp;If you have already connected the myRIO to your computer and do not have the <strong>myRIO USB Monitor</strong> open, you can open your web browser and enter <span class="Monospace">http://172.22.11.2</span> in the address bar to launch Web-based Configuration &amp; Monitoring.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="images/createpage.gif" alt=""/></td>
+		<td valign="top">
+			<ol start="3">
+				<li>Click the <strong>Network Configuration</strong> button <img src="images/networkbutton.gif" alt=""/> on the left of the web page to display the <strong>Network Configuration</strong> page. You will configure the settings of the wireless network in the <strong>Wireless Adapter wlan0</strong> section.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="images/createsettings.gif" alt=""/></td>
+		<td valign="top">
+			<ol start="4">
+				<li>Select <strong>Create wireless network</strong> from the <strong>Wireless Mode</strong> pull-down menu.</li>
+				<li>Select the country in which you are located from the <strong>Country</strong> pull-down menu.</li>
+				<li>Specify a name for the wireless network in the <strong>SSID</strong> text box.</li>
+				<li>(Optional) Select a channel from the <strong>Channel</strong> pull-down menu. The valid value range of <strong>Channel</strong> is [1, 11]. National Instruments recommends that you specify <strong>1</strong> for <strong>Channel</strong>.</li>
+                <li>Select one of the following options from the <strong>Security</strong> pull-down menu: 
+                <ul>
+                  <li><strong>Open</strong>&#8212;Creates a public wireless network. 
+</li>
+                  <li><strong>WPA2 Personal</strong>&#8212;Creates a private wireless network.</li>
+                </ul></li>
+                <li>If you select <strong>WPA2 Personal</strong> in the previous step, enter security credentials in the <strong>WPA Passphrase</strong> text box. Ensure that the length of characters in your WPA passphrase is within the range [8, 63].</li>
+                <li>Select <strong>DHCP Only</strong> from the <strong>Configure IPv4 Address</strong> pull-down menu.</li>
+<li>Click <strong>Save</strong> to save the wireless network settings.</li>
+<li>Verify that you can connect clients to the wireless network that you create. The wireless LED on the myRIO turns red when you try to connect a client to the network. After you successfully connect the client to the network, the wireless LED keeps flashing.</li>
+			</ol>
+		</td>
+	</tr>
+</table>
+
+<p class="Body">Congratulations! You have successfully created a wireless network. You now can connect clients to this wireless network. If you want to create another wireless network, click the <strong>Enter new security settings</strong> link in the <strong>Wireless Adapter wlan0</strong> section, repeat steps 6 through 11.<br/><br/><strong>Note</strong>&nbsp;&nbsp;The wireless network that you create with the myRIO accepts up to six clients. National Instruments recommends that you connect at most three clients to such a wireless network.</p>
+
+
+<br/>
+
+</div>
+
+
+<div id="footer">
+&#0169; 2013&ndash;2015 National Instruments. All rights reserved.
+</div>
+
+</div>
+</body>
+</html>

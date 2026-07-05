@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<uistrings>
+	<str name="viautoload">固件自动加载设置</str> 
+	<str name="noautoload">不自动加载</str> 
+	<str name="rebootautoload">重启时自动加载</str> 
+	<str name="powerupautoload">上电时自动加载</str> 
+</uistrings>

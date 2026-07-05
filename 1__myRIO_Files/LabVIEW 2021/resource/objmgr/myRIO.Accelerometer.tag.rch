@@ -1,0 +1,7 @@
+//// myRIO Accelerometer Channel Tag Type Definition /////
+genericType: myRIO_Accelerometer
+genericTypeName: "myRIO Accelerometer"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

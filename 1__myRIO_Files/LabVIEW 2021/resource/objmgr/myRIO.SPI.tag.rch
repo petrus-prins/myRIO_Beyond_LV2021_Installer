@@ -1,0 +1,7 @@
+//// myRIO SPI Channel Tag Type Definition /////
+genericType: myRIO_SPI
+genericTypeName: "myRIO SPI"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="LabVIEW myRIO" familyname="LabVIEW myRIO">
+</nifamily>
+</nicomment>
+<nierror code="-363051">
+LabVIEW myRIO: The number of elements to write that you specify in <b>Data To Write</b> is out of range. <b>Data To Write</b> is a 2D array. The number of elements in each row represents the number of samples you want to write to each analog output channel. Ensure this number is greater than 0 and less than or equal to 200,000.
+</nierror>
+<nierror code="-363050">
+LabVIEW myRIO: A timeout occurred when filling data to the buffer. Increase the value of timeout or set timeout to -1 to wait indefinitely.
+</nierror>
+<nierror code="-363049">
+LabVIEW myRIO: The continuous generation has not started or has already stopped. Restart the generation.
+</nierror>
+<nierror code="-363048">
+LabVIEW myRIO: The sample rate is higher than the rate of filling data to the buffer. Increase the number of data or decrease the sample rate. For example, when the sample rate is 1.6 MHz, you can modify the number of samples to a value between 3,000 and 50,000.
+</nierror>
+<nierror code="-363047">
+LabVIEW myRIO: Cannot start the generation without data in the buffer. You must call the Write VI before calling the Start VI.
+</nierror>
+<nierror code="-363046">
+LabVIEW myRIO: A timeout occurred during the acquisition. Increase the value of timeout or set timeout to -1 to wait indefinitely.
+</nierror>
+<nierror code="-363045">
+LabVIEW myRIO: Cannot open the reference to channels on one bank using more than one Open VI at the same time to perform signal acquisition or generation.
+</nierror>
+<nierror code="-363044">
+LabVIEW myRIO: The read buffer has overflowed. This error occurs when you call the Read VI long after the acquisition starts. You must call the Read VI before the buffer overflows. This error may also occur when you set a high sample rate, for example, 1 MHz. In this case, you can modify the number of samples to a value between 3,000 and 50,000 to fit the buffer size.
+</nierror>
+<nierror code="-363043">
+LabVIEW myRIO: The continuous acquisition has not started. You must call the Start VI before calling the Read VI.
+</nierror>
+<nierror code="-363042">
+LabVIEW myRIO: The continuous acquisition or generation has already started. Call the Stop VI if you need to restart the acquisition or generation.
+</nierror>
+<nierror code="-363041">
+LabVIEW myRIO: Cannot open the reference to channels on different banks using the same Open VI. Use separate Open VIs instead.
+</nierror>
+<nierror code="-363040">
+LabVIEW myRIO: The sample rate is out of range. Refer to the hardware manual. For analog input, apart from adjusting the sample rate, you can also reduce the number of channels on one bank.
+</nierror>
+<nierror code="-363039">
+LabVIEW myRIO: The EEPROM on the application board does not have a proper end.
+</nierror>
+<nierror code="-363038">
+LabVIEW myRIO: The application board you connect to the workstation is invalid.
+</nierror>
+<nierror code="-363037">
+LabVIEW myRIO: No application board detected.
+</nierror>
+<nierror code="-363036">
+LabVIEW myRIO: CRC check failed. The data is corrupted.
+</nierror>
+<nierror code="-363035">
+LabVIEW myRIO: The <b>Max Value</b> or <b>Min Value</b> you specify is not correct. This error occurs when <b>Max Value</b> or <b>Min Value</b> is greater than +10 V or less than -10V, or when <b>Max Value</b> is less than <b>Min Value</b>.
+</nierror>
+<nierror code="-363034">
+LabVIEW myRIO: The number of elements to write that you specify in <b>Values</b> is out of range. <b>Values</b> is a 2D array. The number of elements in each row represents the number of samples you want to write to each analog output channel. Ensure this number is greater than 0 and less than or equal to 10,000.
+</nierror>
+<nierror code="-363033">
+LabVIEW myRIO: An unknown error occurred. Possible reason: the joystick device does not function correctly.
+</nierror>
+<nierror code="-363032">
+LabVIEW myRIO: Unsupported device type. Ensure that you connect a joystick device to the myRIO, the roboRIO, the NI ELVIS RIO CM, or the NI ELVIS III.
+</nierror>
+<nierror code="-363031">
+LabVIEW myRIO: Joystick device not found. Ensure that you specify a correct <b>device ID</b>.
+</nierror>
+<nierror code="-363030">
+LabVIEW myRIO: Memory allocation failed. Possible reason: one or more programs cause insufficient system resources. Close some programs or restart the myRIO, the roboRIO, the NI ELVIS RIO CM, or the NI ELVIS III.
+</nierror>
+<nierror code="-363029">
+LabVIEW myRIO: The write buffer has overflowed. Specify a longer interval between write operations or set <b>Wait Until Done?</b> to TRUE.
+</nierror>
+<nierror code="-363028">
+LabVIEW myRIO: The current personality is incompatible with the peripheral. To change the personality, right-click the myRIO/NI ELVIS RIO CM target in the <b>Project Explorer</b> window, select <b>Switch FPGA Personality</b>, and select an available personality from the shortcut menu.
+</nierror>
+<nierror code="-363027">
+LabVIEW myRIO: The number of samples to read must be greater than 0 and less than or equal to 10,000.
+</nierror>
+<nierror code="-363026">
+LabVIEW myRIO: Cannot create the timer interrupt with the specified <b>Timer ID</b>. Possible reasons: the specified <b>Timer ID</b> is out of range; you have already created a timer interrupt with the same timer ID. Specify a <b>Timer ID</b> within the range [0, 7] or destroy the created timer interrupt with the same timer ID.
+</nierror>
+<nierror code="-363025">
+LabVIEW myRIO: Cannot register the interrupt with the specified <b>IRQ Number</b>. Possible reasons: the specified <b>IRQ Number</b> is out of range; you have already registered an interrupt with the same interrupt number. Specify an <b>IRQ Number</b> within the range [0, 7] or unregister the interrupt with the same interrupt number.
+</nierror>
+<nierror code="-363024">
+LabVIEW myRIO: Cannot register the interrupt with the specified <b>Channel Name</b>. You have already registered an interrupt with the same channel name. Specify another value for <b>Channel Name</b> or unregister the interrupt with the same channel name.
+</nierror>
+<nierror code="-363023">
+LabVIEW myRIO: The FPGA reference is already set and cannot be overwritten.
+</nierror>
+<nierror code="-363022">
+LabVIEW myRIO: The input FPGA reference is invalid. Ensure that the input custom FPGA reference is correct for the FPGA target.
+</nierror>
+<nierror code="-363021">
+LabVIEW myRIO: The specified channel is opened with a different configuration that you cannot change at run time.
+</nierror>
+<nierror code="-363020">
+LabVIEW myRIO: A timeout occurred while waiting for the myRIO, the roboRIO, the NI ELVIS RIO CM, or the NI ELVIS III to initialize. Some of the I/O channels may not function correctly.
+</nierror>
+<nierror code="-363019">
+LabVIEW myRIO: The number of scaling constant values provided does not match the number of channels that you specified.
+</nierror>
+<nierror code="-363018">
+LabVIEW myRIO: Cannot write to the channel that you specified because the channel can only be an input.
+</nierror>
+<nierror code="-363017">
+LabVIEW myRIO: The requested frequency is outside the range of supported frequencies and has been coerced to the closest supported frequency within the range.
+</nierror>
+<nierror code="-363016">
+LabVIEW myRIO: Cannot reset the channel output because the channel was set to allow opening for multiple times.
+</nierror>
+<nierror code="-363015">
+LabVIEW myRIO: Cannot open one or more channels that you specified with <b>allow multiple opens?</b> set to TRUE because the channel was already opened with <b>allow multiple opens?</b> set to FALSE.
+</nierror>
+<nierror code="-363014">
+LabVIEW myRIO: There was an error during the code generation. Reinstall the myRIO Toolkit, the roboRIO Toolkit, the NI ELVIS RIO Control Toolkit, or the NI ELVIS III Toolkit.
+</nierror>
+<nierror code="-363013">
+LabVIEW myRIO: A timeout occurred during the last I2C read/write operation.
+</nierror>
+<nierror code="-363012">
+LabVIEW myRIO: Received a No Acknowledge (NAK) bit from the slave device after the last data transmission.
+</nierror>
+<nierror code="-363011">
+LabVIEW myRIO: Received a No Acknowledge (NAK) bit from the slave device after the last address transmission.
+</nierror>
+<nierror code="-363010">
+LabVIEW myRIO: You did not specify any channels to open. You must specify at least one channel in <b>channel name</b>.
+</nierror>
+<nierror code="-363009">
+LabVIEW myRIO: Cannot close one or more open channels. Check the corresponding open VI to ensure that you opened and/or configured the channels correctly.
+</nierror>
+<nierror code="-363008">
+LabVIEW myRIO: You have already configured one or more channels that you specify as a different I/O type.
+</nierror>
+<nierror code="-363007">
+LabVIEW myRIO: Cannot open one or more of the channels that you specified with <b>allow multiple opens?</b> set to FALSE because the channel is already open.
+</nierror>
+<nierror code="-363006">
+LabVIEW myRIO: An overflow occurred in the encoder counter while the overflow flag was still set.
+</nierror>
+<nierror code="-363005">
+LabVIEW myRIO: An invalid transition occurred in the quadrature encoder. Ensure that you connect the hardware correctly and the encoder is not turning too fast.
+</nierror>
+<nierror code="-363004">
+LabVIEW myRIO: The number of values to write must match the number of channels that you specify for the write operation.
+</nierror>
+<nierror code="-363003">
+LabVIEW myRIO: One or more of the channels that you specified to read or write are not supported. Ensure that the channels you specified are available on the myRIO, the roboRIO, the NI ELVIS RIO CM, or the NI ELVIS III
+</nierror>
+<nierror code="-363002">
+LabVIEW myRIO: One or more of the channels that you specified are invalid. Ensure that all channel names that you enter correspond to the right type of channel and do not contain unnecessary characters or spaces.
+</nierror>
+<nierror code="-363001">
+LabVIEW myRIO: The myRIO, the roboRIO, the NI ELVIS RIO CM, or the NI ELVIS III is not configured. You must use the open VIs to open a reference to an I/O channel before using the channel. This error occurs if you attempt to run a myRIO/roboRIO/NI ELVIS RIO CM/NI ELVIS III VI within the main application instance or under <b>My Computer</b> without specifying the target version of the myRIO, the roboRIO, the NI ELVIS RIO CM, or the NI ELVIS III. This error also occurs if you attempt to run a myRIO/roboRIO/NI ELVIS RIO CM/NI ELVIS III VI on a Real-Time target that is not on the myRIO, the roboRIO, the NI ELVIS RIO CM, or the NI ELVIS III.
+</nierror>
+<nierror code="-363000">
+LabVIEW myRIO: The target is unknown. This error occurs when you attempt to run a myRIO/roboRIO/NI ELVIS RIO CM/NI ELVIS III VI on a Real-Time target that is not on the myRIO, a roboRIO, a NI ELVIS RIO CM or NI ELVIS III.
+</nierror>
+</nidocument>

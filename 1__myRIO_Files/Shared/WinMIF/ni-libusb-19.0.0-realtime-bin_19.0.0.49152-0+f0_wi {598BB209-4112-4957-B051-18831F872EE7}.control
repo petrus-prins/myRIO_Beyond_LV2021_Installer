@@ -1,0 +1,16 @@
+﻿Architecture: windows_all
+CompatibilityVersion: 190006
+Depends: ni-mdfsupport (>= 19.0.0), ni-metauninstaller (>= 19.0.0)
+Description: NI-LIBUSB for LabVIEW Real-Time
+DisplayName: NI-LIBUSB for LabVIEW Real-Time
+DisplayVersion: 19.0.0
+Homepage: http://www.ni.com
+Maintainer: National Instruments <support@ni.com>
+OsSupport: WINDOWS_7_SP1_32BIT WINDOWS_7_SP1_64BIT WINDOWS_81_32BIT WINDOWS_81_64BIT WINDOWS_10_32BIT WINDOWS_10_64BIT WINDOWS_EMBEDDED_STANDARD_7_SP1 WINDOWS_SERVER_2008_R2_SP1_64BIT WINDOWS_SERVER_2012_R2_64BIT
+Package: ni-libusb-19.0.0-realtime-bin
+Plugin: wininst
+Priority: standard
+Provides: a7b10521-54c1-4d2f-a77d-669ea8e96eb4 (=19.00.49152)
+Section: Infrastructure
+UserVisible: no
+Version: 19.0.0.49152-0+f0

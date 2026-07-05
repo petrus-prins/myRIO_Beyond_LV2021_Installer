@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="NI-P2P" familyname="NI-P2P">
+</nifamily>
+</nicomment>
+<nierror code="-308032">
+The data types of the two endpoints are incompatible.
+</nierror>
+<nierror code="-308031">
+Internal Error:  A software fault has occurred in the NI-P2P component.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308030">
+The endpoints cannot be linked because a physical communication path does not exist between them.  This can be caused by certain bus routing topologies within some systems that do not offer streaming capabilities between particular slots.  Please ensure that your devices are inserted into slots that support peer-to-peer streaming.
+</nierror>
+<nierror code="-308029">
+Internal Error:  This event is not registered.  You must register this event before it can be used.   Please contact National Instruments for support.
+</nierror>
+<nierror code="-308028">
+Internal Error:  This event type is not supported.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308027">
+The endpoints are on the same device, and the device does not support linking its own endpoints together.
+</nierror>
+<nierror code="-308026">
+The requested attribute is not settable.
+</nierror>
+<nierror code="-308025">
+The requested stream operation could not complete because the stream session was closed.
+</nierror>
+<nierror code="-308024">
+The stream operation timed out.
+</nierror>
+<nierror code="-308023">
+The requested stream event is invalid.
+</nierror>
+<nierror code="-308022">
+The endpoints are currently configured to use different data types.  Please modify each endpoint to use the same data type before linking them together into a stream.
+</nierror>
+<nierror code="-308021">
+The provided endpoint handle is invalid.
+</nierror>
+<nierror code="-308020">
+The version of the internal interface exposed by one or more of the endpoints is not supported.  Please ensure that you are using the latest driver software version for each of your endpoint devices.  If you continue to experience this problem, please contact National Instruments for support.
+</nierror>
+<nierror code="-308019">
+The endpoints in this stream are not compatible with each other.  This typically occurs when there are sufficient differences in the communication protocol for each endpoint such that communication between them is not possible.
+</nierror>
+<nierror code="-308018">
+The requested attribute is invalid.
+</nierror>
+<nierror code="-308017">
+The requested attribute type is invalid.
+</nierror>
+<nierror code="-308016">
+The provided stream session handle is invalid.
+</nierror>
+<nierror code="-308015">
+The stream is not currently enabled.  The stream must be enabled to complete this operation.
+</nierror>
+<nierror code="-308014">
+Internal Error:  At least one of the endpoints is not capable of participating in the created stream.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308013">
+Internal Error:  The endpoint interface is invalid.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308012">
+The stream is not currently in the linked state.  The stream must be linked in order to complete this operation.
+</nierror>
+<nierror code="-308011">
+Internal Error:  The internal stream resource was not found.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308010">
+Internal Error:  The device resource already exists.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308009">
+The peer-to-peer stream does not exist. You may have destroyed the stream or a device session associated with the stream. Ensure the stream and associated sessions are open before you attempt to use the stream.
+</nierror>
+<nierror code="-308008">
+The two endpoints are equivalent and therefore cannot be linked into a stream.
+</nierror>
+<nierror code="-308007">
+Internal Error:  The requested endpoint resource was not found.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308006">
+Internal Error:  The endpoint resource already exists.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308005">
+Some resources needed by this stream operation are currently in use.  Please relinquish these resources before attempting to perform this operation again.
+</nierror>
+<nierror code="-308004">
+The operation received an invalid data pointer value.
+</nierror>
+<nierror code="-308003">
+Internal Error:  The requested device was not found.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308002">
+Internal Error:  The I/O operation failed.  Please contact National Instruments for support.
+</nierror>
+<nierror code="-308001">
+The requested operation is not supported.
+</nierror>
+<nierror code="-308000">
+System memory is full.  The operation could not allocate enough memory to complete successfully.
+</nierror>
+<nierror code="308000">
+The sign of the two endpoint data types is different.  Data may be interpreted incorrectly on one of the endpoints.
+</nierror>
+</nidocument>

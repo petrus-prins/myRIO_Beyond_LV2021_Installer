@@ -1,0 +1,24 @@
+﻿libusb for LabVIEW Real-Time
+
+This product uses the following technologies licensed under the corresponding licenses.
+
+****************************************
+
+DOCUMENTATION NOTICE FOR THE GNU LGPL, v2.1
+
+This product includes code from libusb 1.0.8 licensed by a third party or parties pursuant to the GNU LGPL, v2.1, software license, which can be found at "..\..\Shared\MDF\Legal\license\LGPL\2.1.0" and that is subject to the following notice(s):
+
+libusb is a C library which gives applications easy access to USB devices on many different operating systems. 
+
+Copyright (C) 2007-2009 Daniel Drake dsd@gentoo.org - Copyright (c) 2001 Johannes Erdfelt johannes@erdfelt.com - Copyright (C) 2008-2010 Nathan Hjelm hjelmn@users.sourceforge.net
+
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.
+
+To request source code for this component, please send an email to licensing@ni.com.
+
+http://libusb.sourceforge.net
+

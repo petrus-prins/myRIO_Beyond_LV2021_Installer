@@ -1,0 +1,7 @@
+//// myRIO QE Channel Tag Type Definition /////
+genericType: myRIO_ENC
+genericTypeName: "myRIO Encoder"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

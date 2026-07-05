@@ -1,0 +1,20 @@
+[XSFP-ScriptReplacement]
+myRIO Accelerometer Open.xnode	=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+myRIO AI Open.xnode				=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+myRIO AO Open.xnode				=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+myRIO DIO Open.xnode			=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+myRIO Encoder Open.xnode		=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+myRIO I2C Open.xnode			=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+myRIO PWM Open.xnode			=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+myRIO SPI Open.xnode			=vi.lib/myRIO/Common/Instrument Driver Framework/Utilities/vis/myRIOXSFP.vi
+
+[XSFP-Simple]
+myRIO Create Timer IRQ.xnode=Replace With Label
+myRIO Register AI IRQ.xnode=Replace With Label
+myRIO Register DI IRQ.xnode=Replace With Label
+myRIO AI N Samples Open.xnode=Replace With Label
+myRIO AO N Samples Open.xnode=Replace With Label
+myRIO AudioIn N Samples Open.xnode=Replace With Label
+myRIO AudioOut N Samples Open.xnode=Replace With Label
+myRIO DI N Samples Open.xnode=Replace With Label
+myRIO DO N Samples Open.xnode=Replace With Label

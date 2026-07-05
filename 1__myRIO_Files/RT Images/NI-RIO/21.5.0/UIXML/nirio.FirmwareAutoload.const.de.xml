@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<uistrings>
+	<str name="viautoload">Einstellungen zum autom. Laden der Firmware</str> 
+	<str name="noautoload">Nicht autom. laden</str> 
+	<str name="rebootautoload">Bei Neustart autom. laden</str> 
+	<str name="powerupautoload">Bei Start autom. laden</str> 
+</uistrings>

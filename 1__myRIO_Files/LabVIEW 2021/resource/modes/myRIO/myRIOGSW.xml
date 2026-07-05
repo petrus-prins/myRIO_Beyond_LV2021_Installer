@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<Tree localize="yes">
+	<Node>
+		<ControlID>banner background</ControlID>
+		<Handler>ClickableItem</Handler>
+		<Hidden>True</Hidden>
+	</Node>
+	<Node>
+		<ControlID>banner background no logo</ControlID>
+		<Handler>ClickableItem</Handler>
+		<Hidden>False</Hidden>
+	</Node>
+	<Node>
+		<ControlID>logo</ControlID>
+		<Handler>Image</Handler>
+		<ImagePath>resource/modes/myRIO/lvlogo.png</ImagePath>
+		<Hidden>False</Hidden>
+	</Node>
+	<Node>
+		<Name localize="yes">Create New Project</Name>
+		<Handler>NewProjectDialog</Handler>
+		<Description localize="yes">
+			Opens the Create Project dialog box, which you can use to create a new project from a template or sample project. The field below the
+			<B>Create Project</B>
+			button lists the templates and sample projects you recently selected.
+		</Description>
+		<ControlID>left_button</ControlID>
+	</Node>
+	<Node>
+		<Name localize="yes">Open</Name>
+		<Handler>Open</Handler>
+		<Description localize="yes">
+			Opens a dialog box that allows you to navigate to and select a LabVIEW file. The field below the
+			<B>Open Existing</B>
+			buttons lists the files you recently opened.
+		</Description>
+		<ControlID>right_button</ControlID>
+	</Node>
+	<Node>
+		<Name localize="yes">Set Up and Explore</Name>
+		<Description localize="yes">Set up and learn how to use myRIO!</Description>
+		<Title localize="yes">Set Up and Explore</Title>
+		<Handler>ResourcePane</Handler>
+		<ControlID>LinksPane1_Title</ControlID>
+		<RunOnceGlobal>NI.GSW.WelcomeShown</RunOnceGlobal>
+		<SecondaryPane>
+			<SubNode>
+				<Name localize="yes">Set Up and Explore</Name>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Set Up and Explore</InfoText>
+				<ControlID>Title</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Launch the Getting Started Wizard Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/Upgrading.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Launch the Getting Started Wizard</Name>
+				<Description localize="yes">Set up myRIO, test onboard devices, and start your first project.</Description>
+				<Handler>RunVI</Handler>
+				<VIPath>resource/myRIO/OpenGSW.vi</VIPath>
+				<OpenPanel>False</OpenPanel>
+				<ControlID>LinksPane_Title</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Launch the Getting Started Wizard Subtitle</Name>
+				<Description localize="yes">Set up myRIO, test onboard devices, and start your first project.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Set up myRIO, test onboard devices, and start your first project.</InfoText>
+				<ControlID>LinksPane_Subtitle</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Access Getting Started Tutorials Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/Training.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Access Getting Started Tutorials</Name>
+				<Description localize="yes">Learn how to create your first application by using myRIO.</Description>
+				<Handler>RunVI</Handler>
+				<VIPath>resource/myRIO/OpenTutorial_LandingPage.vi</VIPath>
+				<OpenPanel>False</OpenPanel>
+				<ControlID>LinksPane_Title2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Access Getting Started Tutorials Subtitle</Name>
+				<Description localize="yes">Learn how to create your first application by using myRIO.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Learn how to create your first application by using myRIO.</InfoText>
+				<ControlID>LinksPane_Subtitle2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Launch the I/O Monitor Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/Upgrading.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Launch the I/O Monitor</Name>
+				<Description localize="yes">Use the myRIO I/O monitor to test and monitor data from different channels.</Description>
+				<Handler>RunVI</Handler>
+				<VIPath>resource/myRIO/OpenIOMonitor.vi</VIPath>
+				<OpenPanel>False</OpenPanel>
+				<ControlID>LinksPane_Title3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Launch the I/O Monitor Subtitle</Name>
+				<Description localize="yes">Use the myRIO I/O monitor to test and monitor data from different channels.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Use the myRIO I/O monitor to test and monitor data from different channels.</InfoText>
+				<ControlID>LinksPane_Subtitle3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Configure WiFi Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/NewFeatures.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon4</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Configure WiFi</Name>
+				<Description localize="yes">Learn how to configure myRIO settings including WiFi, hostname, and more.</Description>
+				<Handler>RunVI</Handler>
+				<VIPath>resource/myRIO/OpenTutorial_ConfigureWiFi.vi</VIPath>
+				<OpenPanel>False</OpenPanel>
+				<ControlID>LinksPane_Title4</ControlID>
+				<Font language="en">Microsoft Sans Serif</Font>
+				<Font language="de">Microsoft Sans Serif</Font>
+				<Font language="fr">Dlg Font</Font>
+				<Font language="ja">Dlg Font</Font>
+				<Font language="ko">Dlg Font</Font>
+				<Font language="zh-cn">Dlg Font</Font>
+				<Font_Size language="en">24</Font_Size>
+				<Font_Size language="de">24</Font_Size>
+				<Font_Size language="fr">24</Font_Size>
+				<Font_Size language="ja">17</Font_Size>
+				<Font_Size language="ko">0</Font_Size>
+				<Font_Size language="zh-cn">0</Font_Size>
+				<Font_Bold>False</Font_Bold>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Configure WiFi Subtitle</Name>
+				<Description localize="yes">Learn how to configure myRIO settings including WiFi, hostname, and more.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Learn how to configure myRIO settings including WiFi, hostname, and more.</InfoText>
+				<ControlID>LinksPane_Subtitle4</ControlID>
+				<Font language="en">Microsoft Sans Serif</Font>
+				<Font language="de">Microsoft Sans Serif</Font>
+				<Font language="fr">Dlg Font</Font>
+				<Font language="ja">Dlg Font</Font>
+				<Font language="ko">Dlg Font</Font>
+				<Font language="zh-cn">Dlg Font</Font>
+				<Font_Size language="en">17</Font_Size>
+				<Font_Size language="de">17</Font_Size>
+				<Font_Size language="fr">17</Font_Size>
+				<Font_Size language="ja">17</Font_Size>
+				<Font_Size language="ko">0</Font_Size>
+				<Font_Size language="zh-cn">0</Font_Size>
+				<Font_Bold>False</Font_Bold>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Show on launch</Name>
+				<Description localize="yes">Show the Set Up and Explore pane when starting LabVIEW</Description>
+				<Handler>Checkbox</Handler>
+				<OnLaunchConfigToken>ShowWelcomeOnLaunch</OnLaunchConfigToken>
+				<ControlID>show on launch</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Close</Name>
+				<Handler>ClickableItem</Handler>
+				<Description localize="yes">Dismiss the Set Up and Explore pane</Description>
+				<ControlID>close button</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Close</Name>
+				<Handler>ClickableItem</Handler>
+				<Description localize="yes">Dismiss the Set Up and Explore pane</Description>
+				<ControlID>close box</ControlID>
+			</SubNode>
+		</SecondaryPane>
+	</Node>
+	<Node>
+		<Name localize="yes">Set Up and Explore Subtitle</Name>
+		<Description localize="yes">Set up and learn how to use myRIO!</Description>
+		<Handler>InfoText</Handler>
+		<InfoText localize="yes">Set up and learn how to use myRIO!</InfoText>
+		<ControlID>LinksPane1_Subtitle</ControlID>
+	</Node>
+	<Node>
+		<Name localize="yes">Do a Project</Name>
+		<Description localize="yes">See examples and get inspired!</Description>
+		<Title localize="yes">Do a Project</Title>
+		<Handler>ResourcePane</Handler>
+		<ControlID>LinksPane2_Title</ControlID>
+		<SecondaryPane>
+			<SubNode>
+				<Name localize="yes">Do a Project</Name>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Do a Project</InfoText>
+				<ControlID>Title</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Browse myRIO Apps Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/FindAddons.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Browse myRIO Apps</Name>
+				<Handler>Web</Handler>
+				<URL localize="yes">http://ni.com/myrio/apps</URL>
+				<Description localize="yes">Customize myRIO for your application.</Description>
+				<ControlID>LinksPane_Title</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Browse myRIO Apps Subtitle</Name>
+				<Description localize="yes">Customize myRIO for your application.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Customize myRIO for your application.</InfoText>
+				<ControlID>LinksPane_Subtitle</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Visit the myRIO Community Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/Community.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Visit the myRIO Community</Name>
+				<Handler>Web</Handler>
+				<URL localize="yes">http://digital.ni.com/express.nsf/bycode/myRIOCommunity</URL>
+				<Description localize="yes">See what others are doing, download sensor examples and share code.</Description>
+				<ControlID>LinksPane_Title2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Visit the myRIO Community Subtitle</Name>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">See what others are doing, download sensor examples and share code.</InfoText>
+				<Description localize="yes">See what others are doing, download sensor examples and share code.</Description>
+				<ControlID>LinksPane_Subtitle2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Learn How to Program in LabVIEW Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/LearnToUse.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Learn How to Program in LabVIEW</Name>
+				<Description localize="yes">New to LabVIEW programming? Check out these videos to get started.</Description>
+				<Handler>Web</Handler>
+				<URL localize="yes">http://digital.ni.com/express.nsf/bycode/VideoTraining</URL>
+				<ControlID>LinksPane_Title3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Learn How to Program in LabVIEW Subtitle</Name>
+				<Description localize="yes">New to LabVIEW programming? Check out these videos to get started.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">New to LabVIEW programming? Check out these videos to get started.</InfoText>
+				<ControlID>LinksPane_Subtitle3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Empty Slot Icon</Name>
+				<Handler>ClickableItem</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon4</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Empty Slot</Name>
+				<Handler>ClickableItem</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Title4</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Empty Slot Subtitle</Name>
+				<Handler>ClickableItem</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Subtitle4</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Checkbox</Name>
+				<Handler>ClickableItem</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>show on launch</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Close</Name>
+				<Handler>ClickableItem</Handler>
+				<Description localize="yes">Dismiss the Do a Project pane.</Description>
+				<ControlID>close button</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Close</Name>
+				<Handler>ClickableItem</Handler>
+				<Description localize="yes">Dismiss the Do a Project pane.</Description>
+				<ControlID>close box</ControlID>
+			</SubNode>
+		</SecondaryPane>
+	</Node>
+	<Node>
+		<Name localize="yes">Do a Project Subtitle</Name>
+		<Description localize="yes">See examples and get inspired!</Description>
+		<Handler>InfoText</Handler>
+		<InfoText localize="yes">See examples and get inspired!</InfoText>
+		<ControlID>LinksPane2_Subtitle</ControlID>
+	</Node>
+	<Node>
+		<Name localize="yes">Get Support</Name>
+		<Description localize="yes">Get answers to your questions!</Description>
+		<Title localize="yes">Get Support</Title>
+		<Handler>ResourcePane</Handler>
+		<Hidden>True</Hidden>
+		<ControlID>LinksPane3_Title</ControlID>
+		<SecondaryPane>
+			<SubNode>
+				<Name localize="yes">Get Support</Name>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Get Support</InfoText>
+				<ControlID>Title</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Visit Discussion Forums Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/Discussion.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Visit Discussion Forums</Name>
+				<Description localize="yes">Ask questions, share answers, and learn with other LabVIEW and myRIO users.</Description>
+				<Handler>Web</Handler>
+				<URL localize="yes">http://digital.ni.com/express.nsf/bycode/AcademicHW</URL>
+				<ControlID>LinksPane_Title</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Visit Discussion Forums Subtitle</Name>
+				<Description localize="yes">Ask questions, share answers, and learn with other LabVIEW and myRIO users.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Ask questions, share answers, and learn with other LabVIEW and myRIO users.</InfoText>
+				<ControlID>LinksPane_Subtitle</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">View Help Resources Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/NewFeatures.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">View Help Resources</Name>
+				<Description localize="yes">Check out help resources provided by NI.</Description>
+				<Handler>Help</Handler>
+				<HelpFile>myriohelp.chm</HelpFile>
+				<Topic>myriohelp.html</Topic>
+				<ControlID>LinksPane_Title2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">View Help Resources Subtitle</Name>
+				<Description localize="yes">Check out help resources provided by NI.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Check out help resources provided by NI.</InfoText>
+				<ControlID>LinksPane_Subtitle2</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Request Support Icon</Name>
+				<Handler>Image</Handler>
+				<ImagePath>resource/dialog/GSW/images/Support.png</ImagePath>
+				<Absolute>False</Absolute>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Request Support</Name>
+				<Description localize="yes">Request support from NI Technical Support.</Description>
+				<Handler>Web</Handler>
+				<URL localize="yes">http://www.ni.com/cgi-bin/redirect.cgi?dest=infcoprod&amp;src=lv-2013&amp;openagent&amp;code=ex8g43</URL>
+				<ControlID>LinksPane_Title3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Request Support Subtitle</Name>
+				<Description localize="yes">Request support from NI Technical Support.</Description>
+				<Handler>InfoText</Handler>
+				<InfoText localize="yes">Request support from NI Technical Support.</InfoText>
+				<ControlID>LinksPane_Subtitle3</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Empty Slot Icon</Name>
+				<Handler>ClickableItem</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Icon4</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Empty Slot</Name>
+				<Handler>ClickableItem</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Title4</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Empty Slot Subtitle</Name>
+				<Handler>ClickableItem</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>LinksPane_Subtitle4</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Checkbox</Name>
+				<Handler>Checkbox</Handler>
+				<Hidden>True</Hidden>
+				<ControlID>show on launch</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Close</Name>
+				<Handler>ClickableItem</Handler>
+				<Description localize="yes">Dismiss the Get Support pane</Description>
+				<ControlID>close button</ControlID>
+			</SubNode>
+			<SubNode>
+				<Name localize="yes">Close</Name>
+				<Handler>ClickableItem</Handler>
+				<Description localize="yes">Dismiss the Get Support pane</Description>
+				<ControlID>close box</ControlID>
+			</SubNode>
+		</SecondaryPane>
+	</Node>
+	<Node>
+		<Name localize="yes">Get Support Subtitle</Name>
+		<Description localize="yes">Get answers to your questions!</Description>
+		<Handler>InfoText</Handler>
+		<InfoText localize="yes">Get answers to your questions!</InfoText>
+		<ControlID>LinksPane3_Subtitle</ControlID>
+	</Node>
+	<Node>
+		<Name localize="yes">LabVIEW News</Name>
+		<Handler>Feed_link</Handler>
+		<URL localize="yes">http://www.ni.com/lv2019/gsw_newsfeed_en/</URL>
+		<METC>mtb8b8</METC>
+		<Description localize="yes">Opens a feed from ni.com in a Web browser.</Description>
+		<ControlID>headlines</ControlID>
+		<GUID>{2fbb4440-9643-11dd-ad8b-0800200c9a67}</GUID>
+	</Node>
+	<Node>
+		<Name localize="yes">Recent Files</Name>
+		<Handler>RecentFiles</Handler>
+		<Pinned>GSW_Pinned_Files</Pinned>
+		<ControlID>Recent_Files</ControlID>
+		<Filters>all;*.lvproj;*.vi;other</Filters>
+		<FilterToken>GSW_filter</FilterToken>
+	</Node>
+	<Node>
+		<Name localize="yes">Show</Name>
+		<Handler>RecentFilesFilter</Handler>
+		<ControlID>Ring</ControlID>
+		<Items>All;Projects;VIs;Other</Items>
+		<FilterToken>GSW_filter</FilterToken>
+	</Node>
+	<Node>
+		<Name localize="yes">Pin</Name>
+		<Handler>ClickableItem</Handler>
+		<Description localize="yes">Make an item persistent.</Description>
+		<Hidden>True</Hidden>
+		<ControlID>pin</ControlID>
+	</Node>
+	<Node>
+		<Name localize="yes">Remove</Name>
+		<Handler>ClickableItem</Handler>
+		<Description localize="yes">Remove an item.</Description>
+		<Hidden>True</Hidden>
+		<ControlID>close box</ControlID>
+	</Node>
+	<Node>
+		<Name localize="yes">Recent Project Templates</Name>
+		<Handler>RecentTemplates</Handler>
+		<Pinned>GSW_Pinned_Templates</Pinned>
+		<ControlID>Recent_Templates</ControlID>
+		<Font language="en">Microsoft Sans Serif</Font>
+		<Font language="de">Dlg Font</Font>
+		<Font language="fr">Dlg Font</Font>
+		<Font language="ja">Dlg Font</Font>
+		<Font language="ko">Dlg Font</Font>
+		<Font language="zh-cn">Dlg Font</Font>
+		<Font_Size>14</Font_Size>
+		<Font_Bold>False</Font_Bold>
+	</Node>
+	<Node>
+		<Name localize="yes">Pin</Name>
+		<Handler>ClickableItem</Handler>
+		<Description localize="yes">Make a template persistent.</Description>
+		<Hidden>True</Hidden>
+		<ControlID>pin_templates</ControlID>
+	</Node>
+	<Featured_Content>
+		<Entry>
+			<Title localize="yes">Get Started With LabVIEW</Title>
+			<Details localize="yes">Access interactive lessons that cover everything from connecting to your hardware to taking your first measurement.</Details>
+			<Location localize="yes">https://www.ni.com/r/gettingstartedlv?&amp;prodref=LabVIEW-2021</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>Link</Type>
+			<ContentID>GettingStarted</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">Learn the Basics of Programming</Title>
+			<Details localize="yes">Explore the LabVIEW environment in a hands-on format with the LabVIEW Core 1 online course. This course covers topics including navigating the environment, dataflow programming, and using common development techniques as you develop basic applications.</Details>
+			<Location localize="yes">https://www.ni.com/r/lvcore1?&amp;prodref=LabVIEW-2021</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>Link</Type>
+			<ContentID>LearnBasics</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">Example Programs</Title>
+			<Details localize="yes">Explore example programs that use features and functions of the software to better understand key concepts and programming patterns.</Details>
+			<Location localize="no">3038</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>ExampleFinder</Type>
+			<ContentID>Examples</ContentID>
+			<ButtonText localize="yes">Explore</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">New Features</Title>
+			<Details localize="yes">Learn what's new in LabVIEW 2021, including expanded Python support, improved MATLAB(R) support, improved Git workflows, and several usability improvements from the LabVIEW Idea Exchange.</Details>
+			<Location localize="no">lvupgrade.chm::/LabVIEW_Features.html</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>LabVIEWHelp</Type>
+			<ContentID>NewFeatures</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">Assess Your Knowledge and Test Your Skills</Title>
+			<Details localize="yes">Test your understanding of LabVIEW best practices with free online quizzes. Track your knowledge growth, assess your knowledge gaps, and find related learning resources. Then, validate your skills with an industry-recognized certification and promote your accomplishments.</Details>
+			<Location localize="yes">https://learn.ni.com/badges?&amp;prodref=LabVIEW-2021</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>Link</Type>
+			<ContentID>Badges</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">Get Support</Title>
+			<Details localize="yes">Find support resources including documentation, examples, and downloads. Learn about support services or open a service request with an NI engineer.</Details>
+			<Location localize="yes">https://www.ni.com/support?&amp;prodref=LabVIEW-2021</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>Link</Type>
+			<ContentID>Support</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">Find Add-Ons</Title>
+			<Details localize="yes">The NI Tools Network accelerates developer productivity by providing access to NI and certified third-party add-ons.</Details>
+			<Location localize="yes">https://www.ni.com/labview-tools-network?&amp;prodref=LabVIEW-2021</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>Link</Type>
+			<ContentID>FindAddons</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">Using G Web Development Software with LabVIEW</Title>
+			<Details localize="yes">G Web Development Software enables you to create remote user interfaces (UIs) for LabVIEW that run on any modern web browser, tablet, or smartphone without plug-ins or installers. To see how G Web Development Software works and access examples, download the evaluation today.</Details>
+			<Location localize="yes">https://www.ni.com/r/gwebdownload</Location>
+			<Mode>Evaluation,Licensed</Mode>
+			<Type>Link</Type>
+			<ContentID>GWebDevelopmentSoftware</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+		<Entry>
+			<Title localize="yes">Get Started with LabVIEW and CompactRIO</Title>
+			<Details localize="yes">Access video-based tutorials that cover hardware configuration through taking your first measurement.</Details>
+			<Location localize="yes">https://www.ni.com/gettingstartedlvcrio?&amp;prodref=LabVIEW-2021</Location>
+			<Mode>RTContent</Mode>
+			<Type>Link</Type>
+			<ContentID>RTContent</ContentID>
+			<ButtonText localize="yes">Read more</ButtonText>
+		</Entry>
+	</Featured_Content>
+	<Globals>
+		<GettingStarted localize="yes">LabVIEW</GettingStarted>
+		<SearchHelpLabel localize="yes">Search Help</SearchHelpLabel>
+		<SearchButtonBooleanText localize="yes">Go</SearchButtonBooleanText>
+		<NonWindowsLabVIEWInfoMessage localize="yes">LabVIEW Information</NonWindowsLabVIEWInfoMessage>
+		<NISearchHint localize="yes">Search</NISearchHint>
+		<PDF_failure_message localize="yes">LabVIEW encountered an error opening %s. Make sure you have Adobe Reader installed.</PDF_failure_message>
+		<Close localize="yes">Close</Close>
+		<Search_Help_CH localize="yes">Searches the LabVIEW Help for the word or phrase you enter.</Search_Help_CH>
+		<Search_Help_button_CH localize="yes">Searches the LabVIEW Help for the word or phrase you enter.</Search_Help_button_CH>
+		<Search_CH localize="yes">Use this application-wide search capability to search the Controls and Functions palettes, the help system, and ni.com. In localized versions of LabVIEW, the search might return results in the local language and in English.</Search_CH>
+	</Globals>
+</Tree>

@@ -1,0 +1,18 @@
+[XSFP-ScriptReplacement]
+AI Express VI.xnode				=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+AO Express VI.xnode				=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+DI Express VI.xnode				=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+DO Express VI.xnode				=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+Encoder Express VI.xnode		=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+I2C Express VI.xnode			=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+PWM Express VI.xnode			=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+SPI Express VI.xnode			=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+UART Express VI.xnode			=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+Accelerometer Express VI.xnode	=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+Button Express VI.xnode			=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+LED Express VI.xnode			=vi.lib/myRIO/Common/Express VI Framework/vis/myRIOXB SFP.vi
+
+[XSFP-Simple]
+IRQ Express VI.xnode            = Replace With Label
+AudioIn Express VI.xnode  = Replace With Label
+AudioOut Express VI.xnode = Replace With Label

@@ -1,0 +1,173 @@
+body {
+	background-color: #BBBBBB;
+}
+h2 {
+  font: 18px "arial", verdana, sans-serif; 
+  color: #222222;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font: 14px "arial", helvetica, sans-serif; 
+  font-weight:bold;
+  color: #222222;
+  padding-bottom: 5px;
+}
+
+p, ol, ul, li, td {
+  font: 12px "arial", verdana, sans-serif; 
+  color: #222222;
+  padding-bottom: 5px;
+}
+
+.Monospace { font-family: "Courier New"; font-size: 100%; }
+
+a {
+	font: 12px "arial", verdana, sans-serif;
+	color: #222222;
+	outline: none;
+}
+a:hover {
+	color: #CC6600;
+	outline: none;
+}
+a:visited {
+	color: #CC6600;
+	outline: none;
+}
+.sup {
+    font-size: 0.70em;
+    font-weight: bold;
+    vertical-align: text-top;
+}
+
+/** layout **/
+
+#wrapper {
+  text-align: left;
+  width: 800px;
+  margin-left: auto; 
+  margin-right: auto;
+  background: #FFFFFF;
+  position: relative;
+}
+
+#header {
+  height: 78px;
+  color: #e49f01;
+  background: url("GSW_BannerOnly1.png") no-repeat 0 0;
+}
+
+
+
+/*globalnav*/
+
+#globalnav {
+	position:relative;
+	float:right;
+	left:0;
+	margin:0;
+	width:760px;
+	list-style:none;
+	line-height:33px;
+	background: #e49500;
+}
+
+#globalnav LI {
+	float:left;
+	font: 14px "arial", verdana, sans-serif; 
+}
+
+#globalnav A {
+	display:block;
+	float:left;
+	left:0;
+	color:#444;
+	text-decoration:none;
+	font-weight:bold;
+	background:#ddd;
+	padding:6px 20px;
+	border-left:1px solid #fff;
+	border-top:1px solid #fff;
+	border-right:1px solid #aaa
+}
+
+#globalnav A:hover,
+#globalnav A:active,
+#globalnav A.here:link,
+#globalnav A.here:visited {
+	background:#bbb;
+}
+
+#globalnav A.here:link,
+#globalnav A.here:visited {
+	position: relative;
+	z-index:102;
+}
+
+/*subnav*/
+
+#globalnav UL {
+	position:absolute;
+	left:0;
+	top:28px;
+	float:left;
+	background:#bbb;
+	width:798px;
+	margin:0;
+	padding:2px 0 ;
+	list-style:none;
+	border-top:1px solid #fff;
+	border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+#globalnav UL LI {
+	float:left;
+	display:block;
+	margin-top:3px;
+}
+
+#globalnav UL A {
+	background:#bbb;
+	color:#fff;
+	display:inline;
+	margin:0;
+	padding:0 15px;
+	border:0
+}
+
+#globalnav UL A:hover,
+#globalnav UL A:active,
+#globalnav UL A.here:link,
+#globalnav UL A.here:visited {
+	color:#444;
+}
+
+/** scrolling area **/
+#content {
+  padding-top: 55px; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#scroll {
+  height: 459px;
+  margin-top: 56px;
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-x: hidden;
+  border-left: 3px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 3px solid #DDDDDD;
+  padding-left: 10px;
+  padding-right: 2px;
+  background-color: #FFFFFF;
+}
+#footer {
+  clear: both;
+  text-align: center;
+  font: 10px "arial", verdana, sans-serif; 
+  padding: 15px;
+  background: #BBBBBB;
+}

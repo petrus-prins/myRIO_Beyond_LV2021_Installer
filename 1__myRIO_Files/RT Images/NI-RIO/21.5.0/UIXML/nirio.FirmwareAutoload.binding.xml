@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<binding sysexpert="ni-rio">
+   <and>
+      <!-- rioSysApiAttrTag_FlashAutoLoad = 0x05001000 -->
+      <has sysattr="83890176"/>
+      <!-- rioSysApiAttrTag_SupportedFlashAutoloadOptions = 0x05004000 -->
+      <has sysattr="83902464"/>
+      <!-- 7 means the standard autoload options or'ed together -->
+      <eq sysattr="83902464" value="7" />
+   </and>
+</binding>

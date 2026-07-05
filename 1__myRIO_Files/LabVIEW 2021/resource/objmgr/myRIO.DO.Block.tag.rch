@@ -1,0 +1,7 @@
+//// myRIO DO Block Tag Type Definition /////
+genericType: myRIO_DO_Block
+genericTypeName: "myRIO DO (N Samples)"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+    <title>ASAM ODS OO API DIAdem plugin</title>
+  </head>
+  <body>
+  <h1>ASAM ODS OO API DIAdem plugin</h1>
+
+  <div id="toc_container">
+    <p class="toc_title">Table of content</p>
+    <ul class="toc_list">
+      <li><a href="#Connection_Parameter_String">Connection Parameter String</a></li>
+      <li><a href="#Instance_Keys">Instance Keys</a></li>
+      <li><a href="#Plugin_Context">Plugin Context</a></li> 
+      <li><a href="#TOKEN_passwords">TOKEN passwords</a></li>
+      <li><a href="#Column_Oriented_query">Column Oriented query</a></li>
+      <li><a href="#IOP-SSL">IOP-SSL</a></li>
+      <li><a href="#Change_Log">Change Log</a></li>
+    </ul>
+    </div>
+
+  <h3 id="Connection_Parameter_String">Connection Parameter String</h3>
+  <h5>The CORBA parameters</h5>The main entry to connect to the Server is the corba tag including everything you need to contact
+  the corba interface itself
+  <br />
+  <table style="width: 100%; text-align: left;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td>
+          <b>TagName</b>
+        </td>
+        <td>
+          <b>Attributes</b>
+        </td>
+        <td>
+          <b>Default Value</b>
+        </td>
+        <td>
+          <b>SubTags</b>
+        </td>
+      </tr>
+      <tr>
+        <td>corba</td>
+        <td>typ=&quot;[nameserver|locator|file|nameserverurl|sessionior]&quot;
+        <ul>
+          <li><i>nameserver</i> : Very common conection method for which you need a server, port and path</li>
+          <li><i>locator</i> : Is the standard interface defined by CORBA which also uses a server, port and path in most environments both locator and nameserver behave in the same way</li>
+          <li><i>file</i> : Connect by using a file including a corba IOR file. This can be used as a last resort if all other connection types do not work</li>
+          <li><i>nameserverurl</i> = specify a user-defined url. If you use nameserver or locator, I will generate this url for you. Here you have the option to insert other URLs unknown to me</li>
+          <li><i>sessionior</i> : IOR of a session or a file including it</li>
+        </ul>
+        <b>If the <i>typ</i> attribute is ommited it is assumed that the <i>corba</i> tag contains
+        <ul>
+          <li>Corba IOR to AoFactory or AoSession</li>
+          <li>full qualified corbaname url</li>
+        </ul></b></td>
+        <td></td>
+        <td>
+          <table style="width: 100%; text-align: left;" border="1" cellpadding="2" cellspacing="2">
+            <tbody>
+              <tr>
+                <td>
+                  <b>SubTag</b>
+                </td>
+                <td>
+                  <b>Attributes</b>
+                </td>
+                <td>
+                  <b>Description</b>
+                </td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td></td>
+                <td>The path of the locator or the namesever, the url or the filename of the IOR file. This tag contains info on
+                the choosen connection type</td>
+              </tr>
+              <tr>
+                <td>Server</td>
+                <td>port=&quot;[number]&quot; : The number of the port to connect to
+                <br />On most orbs the default number is commonly 900 while the default defined by the Object Managment group is
+                2809.</td>
+                <td>Server name or IP</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5>Additional Parameters</h5>
+  <table style="width: 100%; text-align: left;" border="1" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td>
+          <b>TagName</b>
+        </td>
+        <td>
+          <b>Attributes</b>
+        </td>
+        <td>
+          <b>Default Value</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>user</td>
+        <td></td>
+        <td></td>
+        <td>The user to connect to the AoSession. This is used if ASAM security is switched on</td>
+      </tr>
+      <tr>
+        <td>pwd</td>
+        <td>e=&quot;[1|0]&quot; Set this attribute to 1 if you do not want to be prompted to give a password
+        <br />c=&quot;[1|0]&quot; Set this attribute to 1 if the given password is crypted</td>
+        <td>e=&quot;0&quot;
+        <br />c=&quot;0&quot;</td>
+        <td>The password to connect to the AOSession. This is used if ASAM security is switched on</td>
+      </tr>
+      <tr>
+        <td>additionalauth</td>
+        <td></td>
+        <td></td>
+        <td>During creation of a new session a set of parameters is handled to the server. It is ',' separated conataining NAME=VALUE. e.g. "abc=1,def=hallo"<br />
+            A documented ASAM ODS parameter is the following:<br />
+            &nbsp;<i>&lt;additionalauth&gt;CREATE_COSESSION_ALLOWED=TRUE&lt;/additionalauth&gt;</i><br />
+            USER and PASSWORD are automatically 
+          added if &lt;user&gt; or &lt;pwd&gt; is used.</td>
+      </tr>
+      <tr>
+        <td>openmode</td>
+        <td></td>
+        <td></td>
+        <td>DEPRECATED: In old ODS documentation a parameter openmode=??? occured. It is 
+          used during creation of a new session in the auth string. Please use "OPENMODE=???" in additionalauth parameter</td>
+      </tr>
+      <tr id="p_cfg">
+        <td>cfg</td>
+        <td>loglevel=&quot;[0...3]&quot; is used to set the loglevel of the plugin. 0 is switched off. Microsofts DbgVIEW.exe can
+        be used to trace the logging output during use of the plugin.</td>
+        <td>loglevel=&quot;0&quot;</td>
+        <td>Name of the logfile that is flushed when the plugin is closed.</td>
+      </tr>
+      <tr>
+        <td>modelaccess</td>
+        <td></td>
+        <td>ApplicationStructureValue</td>
+        <td>[ApplicationStructureValue|ApplicationStructure]
+        <ul>
+          <li><em>ApplicationStructureValue</em>: Receives the application model with one server call.</li>
+          <li><em>ApplicationStructure</em>: Use the OO API to retrieve the model. Because this will cost a lot of server calls it is very slow. Do not use this setting if your server supports <em>ApplicationStructureValue</em></td>
+        </ul>
+      </tr>
+      <tr>
+        <td>geninvsql</td>
+        <td></td>
+        <td></td>
+        <td>Give a filename like &quot;C:\inverse.sql&quot;
+        <br />This optin can be used in combination with ApplicationStructureValue to generate an SQL script template including the
+        missing inverse relations of the model. The script can be examined to see if there are real elements missing in the svcattr
+        or svcref table of the database</td>
+      </tr>
+      <tr>
+        <td>benchmarkcalls</td>
+        <td></td>
+        <td>no</td>
+        <td>[yes|no]
+        <br />To get an impression of how much time is used while comunicating with the server, this parameter can be set to yes.
+        The plugin will dump a time statistic to the logfile which gives you an impression of the time the plugin itself including
+        the server comunication consumed</td>
+      </tr>
+      <tr>
+        <td>cacheentitiesforsession</td>
+        <td></td>
+        <td></td>
+        <td>Sometimes it is useful to call &quot;ODSDialogRefresh srcHandle&quot; to empty the cache of a source because changes on
+        the server should reach DIAdem.
+        <br />It may be useful to exclude some Entity types from this refresh to avoid them being removed from the cache. A very
+        good example is Unit, PhysicalDimension, User. It is not assumed that they will change during one session while the name of
+        a measurement may change.
+        <br />If you exclude them from refresh this does not mean that a new User or Unit will not appear but that you will not get
+        the changes if User Mayer changes the name to Meyer during the session.</td>
+      </tr>
+      <tr>
+        <td>usequerytobrowse</td>
+        <td>asterix=&quot;[yes/no]&quot;
+        <br />If asterix is set to yes, the extended query contains &quot;*&quot; instead of a list of attributes.</td>
+        <td>ext</td>
+        <td>[yes|no|ext]
+        <br />Some servers do not implement the Normal/Extended Query interface of ASAM ODS OO API. On those servers the Object
+        oriented API has to be used. By default the plugin uses an extended query to browse the data. The object oriented interface
+        has proved to be slow and memory consuming on server and client. So if the server does not support the query interface, you
+        have to switch to the object oriented api by setting this option to no. Using an actual ASAM Server there should be no
+        problem in using an Extended Query! The Horiba Stars Server does not support extended queries. Therefore you have to choose
+        OO-API or Normal-Query to browse. Otherwise the browser will be empty!</td>
+      </tr>
+      <tr>
+        <td>globalcommit</td>
+        <td></td>
+        <td>yes</td>
+        <td>[yes|no]
+        <br />Determines if each instance is embedded in an own transaction or if a transaction is opened on the first write access
+        to the server and closed on commit. The default will transmit transactions only on commit. Change this option to
+        &quot;no&quot; if you want more control on when which instance is created.</td>
+      </tr>
+      <tr>
+        <td>setinversereferences</td>
+        <td></td>
+        <td>no</td>
+        <td>[yes|no]
+        <br />An ASAM Ods server normally only expects the parent relation to be set. It is also possible to set the child
+        relations. Because of some problems when both relations are set and because of performace issues, the default behavior is
+        changed to set only the parent relations. Child relations are now ignored by the plugin. If problems occur in the script
+        code you can switch back to the old behavior by setting this setting to &quot;yes&quot;.</td>
+      </tr>
+      <tr>
+        <td>ignorevalueflags</td>
+        <td></td>
+        <td>no</td>
+        <td>[yes|no]
+        <br />If you know that your data does not contain value flags you can switch the plugin to a mode were the value flags are
+        ignored. This is recommended because the Avalon server always returns flag values if they exist or not.</td>
+      </tr>
+      <tr>
+        <td>usevaluematrix</td>
+        <td><ul>
+            <li><b>maxstringsize</b>=&quot;[0..25000]&quot; : The stringsize in characters is used to decrease the chunksize if strings are accessed. This is used because the
+        serialization of strings might blow memory. So it may be possible to retrieve 200000 double values but it may be impossible
+        to retrieve 200000 strings of the length 10000 charcters. The default value 0 is used which means there will be no
+        difference in chunk size for all datatypes.</li>
+        <li><b>maxtransportbytes</b> numeric value that defines the max size of data that should be retrieved from value
+        matrix in one piece. The calculation is done rowcount*columncount*8. The default value is 262144000 (256 MB)</li>
+        </ul></td>
+        <td>0</td>
+        <td>positiv integer number
+        <br />If it is known that the channels might become very long, it is possible to use the ValueMatrix.getValueVector instead
+        of the InstanceElement.getValue method. With this setting you can adjust the block size of the getValueVector method. A
+        good value would be 200000. If this attribute is set to 0 or is missing, the InstanceElement.getValue is used.</td>
+      </tr>
+      <tr>
+        <td id="p_cachemeasurement">cachemeasurement</td>
+        <td></td>
+        <td>metaonly</td>
+        <td>[metaonly|byquery|bydatatypequery|byvaluematrix|no]<br />
+          If a measurement is loaded into DIAdem, the plugin gets an event and loads all necessary data into its cache to speed up loading
+          <ul>
+            <li><em>metaonly</em> : AoMeasurement/AoMeasurementQuantity/AoSubmatrix/AoLocalColumn attributes and relations are retrieved by some queries</li>
+            <li><em>byquery</em> : Uses metaonly and retrieves id/values/generation_parameters/flags of localcolumns by extended queries. The queries are bundled by the datatype of the values and INSET condition with localcolumn ids</li>
+            <li><em>bydatatypequery</em> : Uses metaonly and retrieves id/values/generation_parameters/flags of localcolumns by extended queries. The queries are bundled by the datatype of the values and the submatrix id</li>
+            <li><em>byvaluematrix</em> : Uses metaonly and the Valuematrix is used to get the values and flags of the local_columns of a single submatrix in two server calls</li>
+            <li><em>no</em> : Do not do anything which will result in a lot of server calls to load the measurement</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>attributesbyqueryinterface</td>
+        <td></td>
+        <td>yes</td>
+        <td>[yes|no] If the ... is pressed in the DIAdem query interface, this can be resolved by a user-defined interface or be
+        emulated by the default access. This interface will ignore all changes done to the cache and will return only the server
+        results.
+        <br />If you determine problems when using the ... button with the new plugin, it may be useful to switch it to
+        &#39;no&#39;. But this will slow down the operation.</td>
+      </tr>
+      <tr>
+        <td>contextparameter</td>
+        <td></td>
+        <td></td>
+        <td>This contains a list of string context parameters that are set to the session after the model has been loaded from the
+        server.
+        <br />Example: &#39;ROWS=all;INITIALIZE=yes;DEBUG=no&#39;</td>
+      </tr>
+      <tr>
+        <td>orderbyattributes</td>
+        <td></td>
+        <td></td>
+        <td>This is a list of entity attribute pairs that offer the ability to define one attribute for each entity which should be
+        used as default orderby in each query.
+        <br />Example: &#39;Measurement=name;Channel=id&#39;</td>
+      </tr>
+      <tr>
+        <td>serversupportsunicode</td>
+        <td></td>
+        <td>no</td>
+        <td>[yes|no] If the server supports UNicode and the Oracle database is configured to use UNICODE, the server will tell the
+        client by using the environment variable SERVER_CHARSET=UTF8 that unicode is supported. Using this parameter writing of
+        unicode can be enabled even if the server does not return the context variable.</td>
+      </tr>
+      <tr>
+        <td>blobandbytestreamattributes</td>
+        <td></td>
+        <td>no</td>
+        <td>[yes|no] blob and bytestream attributes are returned as base64 strings. This might cause memory issues. This option
+        allows it to disable blob and bytestream attributes to show up in models if set to 
+        <i>yes</i>. Be aware that the server might only return the blob if usequerytobrowse=no and attributesbyqueryinterface=no is
+        used. Best practice is to open a store twice. Once only to retrieve blob values. Close it afterwards to avoid huge memory
+        usage.</td>
+      </tr>
+      <tr>
+        <td>usegetvalueseqforlc</td>
+        <td></td>
+        <td>yes</td>
+        <td>[yes|no] If values/flags/generation_parameters attributes are retrieved (no additional caching mode active)
+        InstanceElement::getValueSeq is used to retrieve all three attributes with one call. Setting this to &quot;no&quot;
+        retrieves each one of them in a single server call of InstanceElement::getValue</td>
+      </tr>
+      <tr>
+        <td>useattributeinvalidflag</td>
+        <td></td>
+        <td>no</td>
+        <td>[yes|no] The server returns a flag with each attribute value in order to mark them as invalid. If this property is set
+        to &quot;yes&quot;, the attribute stays empty instead of containing the value returned or &quot;NOVALUE&quot; for STrings
+        or NaN for double/float.</td>
+      </tr>
+      <tr>
+        <td>authtoken</td>
+        <td></td>
+        <td></td>
+        <td>
+          <ul>
+            <li><b>GSSTOKEN:</b> To allow a single sign on with kerberos authentification, openMDM uses a special form of password. It starts with the text
+            &#39;GSSTOKEN:&#39; followed by a base64 encoded kerberos ticket generated for a given SPN(&#39;Service Pricipal
+            Name&#39;). To allow this kind of authentification, parameters are specified with this token.
+            <br />e.g. <i>&#39;-spn HTTP/myHost.com&#39;</i> will send a ticket for the specified service principal name.</li>
+            <li><b>CERTTOKEN:</b> To allow a single sign on using a certification card, openMDM uses a special form of password. It starts with the text
+            &#39;CERTTOKEN:&#39; followed by a base64 encoded certificate. To allow this kind of authentification, parameters are specified with this token.
+            <br />e.g. <i>&#39;-mode CERTTOKEN&#39;</i> will send a generated certificate.</li>
+          </ul>
+          By use of <i>&#39;-prefix ABC:&#39;</i> the default token (e.g. <i>&#39;GSSTOKEN:&#39;</i>) is changed to an alternative value.
+        </td>
+      </tr>
+      <tr>
+        <td>basemodelversion</td>
+        <td></td>
+        <td>29</td>
+        <td>USI kernel can be influenced with this parameter.
+        <br />- start_offset &amp; flags_start_offset will become LONGLONG if greater 29.</td>
+      </tr>
+      <tr>
+        <td>supplementenumsbyoocalls</td>
+        <td></td>
+        <td>yes</td>
+        <td>[yes|no] if server does not support AoSession.getEnumerationStructure and AoSession.getEnumerationAttributes OO methods are used to retrieve the enumerations. 
+          This causes a lot of server calls if a lot of application enumeration attributes are used. To avoid this it can be disabled. The D?_ENUM attributes will then show up as DT_LONG. <i>This parameter can only be used in scripts. There is no GUI control.</i></td>
+      </tr>
+      <tr>
+        <td>writemetausingapplelemaccess</td>
+        <td><ul>
+            <li><b>bulk</b>=&quot;yes&quot; : if this attribute is set to 0 'values', 'flags' and 'generation_parameters' are written using InstanceElement::setValue instead updateInstances.</li>
+        </ul></td>
+        <td>no</td>
+        <td>[no|yes] If this is set to yes ApplElemAccess::insertInstances and ApplElemAccess::updateInstances are used instead of InstanceElement::createInstance and InstanceElement::setValue to write data.</td>
+      </tr>
+      <tr>
+        <td>ignoresequenceattributes</td>
+        <td></td>
+        <td>no</td>
+        <td>[no|yes] Sequence attributes are stored in additional database tables. Normal 
+          access always retrieves all attributes. Because sequence attributes are 
+          expensive on server side and most times are not necessary to work it is possible 
+          to disable them in the model. Just the local column has some of them that have 
+          to stay.</td>
+      </tr>
+      <tr>
+        <td>classicmodejoins</td>
+        <td></td>
+        <td>no</td>
+        <td>[no|yes] Since first version of the AOP5 plugin the joins going over an child relation are entered 
+          the wrong way round (not inverted). This has been fixed. If this causes trouble this parameter can be used to
+          set back to old mode.</td>
+      </tr>
+      <tr>
+          <td>createcosession</td>
+          <td></td>
+          <td>no</td>
+          <td>[no|yes] This can be used in combination with an session IOR. Instead of taking ownership of the session, a copy of the session will be created. 
+            Be aware that this is only possible if the original session has the right to create a cosession.</td>
+      </tr>
+      <tr>
+        <td>closesessiononclose</td>
+          <td></td>
+          <td>yes</td>
+          <td>[no|yes] If this parameter is set to no the AoSession::close method is not called. This might be helpful in Boss/worker model. 
+            Be aware that you have to make sure the session is closed to avoid waste of server resources.</td>
+      </tr>
+      <tr>
+        <td>supressunitandquantitymqnrelation</td>
+        <td></td>
+        <td>no</td>
+        <td>[no|yes] When writing to ODS server using dataStore API the measurment_quantities relation is accessed. To avoid this this attribute can be set to yes.</td>
+      </tr>
+  </tbody>
+  </table>
+  <h5>Example:</h5>
+  <pre>
+        &lt;corba typ=&quot;nameserver&quot;&gt;
+                &lt;server port=&quot;900&quot;&gt;AOPServer&lt;/server&gt;
+                &lt;path&gt;database.ASAM-ODS&lt;/path&gt;
+        &lt;/corba&gt;
+        &lt;user&gt;ODS&lt;/user&gt;
+        &lt;pwd e=&quot;1&quot;&gt;ods&lt;/pwd&gt;
+        &lt;cfg loglevel=&quot;0&quot;&gt;C:\AOPLogfile.vbs&lt;/cfg&gt;
+        &lt;benchmarkcalls&gt;yes&lt;/benchmarkcalls&gt;
+        &lt;cacheentitiesforsession&gt;Unit&lt;/cacheentitiesforsession&gt;
+</pre>
+
+  <h4>Connect to an existing session</h4>
+  <pre>
+        &lt;corba typ=&quot;sessionior&quot;&gt;IOR....&lt;/corba&gt;
+        &lt;corba typ=&quot;sessionior&quot;&gt;&lt;path&gt;C:\iorfile.ior&lt;/path&gt;&lt;/corba&gt;
+</pre>
+  <h4>Connect to Server using full qualified corbaname url</h4>
+  <pre>
+        &lt;corba&gt;corbaname::MyAsamServer:2809/NameService#org/asam/ods/Factory.ASAM-ODS&lt;/corba&gt;
+        &lt;user&gt;ODS&lt;/user&gt;
+        &lt;pwd e=&quot;1&quot;&gt;ods&lt;/pwd&gt;
+</pre>
+
+  <h3 id="Instance_Keys">Instance Keys</h3>
+  The AOP5 plugin acceps the following instancekey types.
+
+  <table border="1" cellspacing="2" cellpadding="2" width="100%">
+    <tr><td><b>syntax</b></td><td><b>Example</b></td><td><b>Remarks</b></td></tr>
+    <tr><td>ENTITY_NAME ID_HIGH ID_LOW</td><td>measurement 0 4711</td><td>Results in id query</td></tr>
+    <tr><td>ENTITY_NAME ID</td><td>measurement 9126805504</td><td>Results in id query</td></tr>
+    <tr><td>AID ID_HIGH ID_LOW</td><td>7 0 4711</td><td>Results in id query</td></tr>
+    <tr><td>AID ID</td><td>7 9126805504</td><td>Results in id query</td></tr>
+    <tr><td>ASAMPATH</td><td>/[Environment]PUMA/[Project]AVL/[TestSerie]Crosstest/[Test]Test;1</td><td>Completely resolved by server</td></tr>
+  </table>
+
+  <h3 id="Plugin_Context">Plugin Context</h3>
+  
+  By retrieving context <i>300</i>, some plugin specific information can be retrieved.
+  
+  <h4>Vbs example</h4>
+  <pre>
+        Option Explicit
+
+        dim store : set store = navigator.Display.CurrDataStore.GetDataStore
+        dim context : set context = store.GetContext(300)
+
+        dim oldDebugLevel : oldDebugLevel = context.GetParameter(&quot;DEBUGLEVEL&quot;)
+        &#39;increase loglevel to max
+        call context.SetParameter(&quot;DEBUGLEVEL&quot;, 3, DataTypeInt32)
+        &#39; do some stuff
+        &#39; .....
+
+        call context.SetParameter(&quot;DEBUGLEVEL&quot;, oldDebugLevel, DataTypeInt32)
+</pre>
+  <h4>Context Variables</h4>
+  <p>If an operation (e.g. LoadData) caused internal errors, can be detected by creating a delta.</p>
+  <table border="1" cellspacing="2" cellpadding="2" width="100%">
+    <tr>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Type</b>
+      </td>
+      <td>
+        <b>Writable</b>
+      </td>
+      <td>
+        <b>Description</b>
+      </td>
+    </tr>
+    <tr>
+      <td>DEBUGLEVEL</td>
+      <td>DataTypeInt32</td>
+      <td>true</td>
+      <td>See <em>loglevel</em> of <a href="#p_cfg">cfg</a> parameter for possible values. Can be used to dynamically adjust the debug level of the plugin while a script is executed.</td>
+    </tr>
+    <tr>
+      <td>ODS_LOGFILE</td>
+      <td>DataTypeString</td>
+      <td>true</td>
+      <td>Name of the plugin logfile. See <a href="#p_cfg">cfg</a> parameter.</td>
+    </tr>
+    <tr>
+      <td>ERRORCOUNT</td>
+      <td>DataTypeInt32</td>
+      <td>false</td>
+      <td>Reads the number of errors that occured in the plugin. Whether an operation (e.g. LoadData) caused internal errors can be
+      detected by creating a delta.</td>
+    </tr>
+    <tr>
+      <td>WARNINGCOUNT</td>
+      <td>DataTypeInt32</td>
+      <td>false</td>
+      <td>Reads the number of warnings that occured in the plugin. Whether an operation (e.g. LoadData) caused internal errors can
+      be detected by creating a delta.</td>
+    </tr>
+    <tr>
+      <td>CACHEMEASUREMENT</td>
+      <td>DataTypeString</td>
+      <td>true</td>
+      <td>See <a href="#p_cachemeasurement">cachemeasurement</a> parameter for possible values.</td>
+    </tr>
+    <tr>
+      <td>SESSIONIOR</td>
+      <td>DataTypeString</td>
+      <td>false</td>
+      <td>Get session ior of the current session.</td>
+    </tr>
+    <tr>
+      <td>TOOLFOLDER</td>
+      <td>DataTypeString</td>
+      <td>false</td>
+      <td>Get the folder where AOP5 tools are found. e.g. <em>niasamdownloader.exe</em></td>
+    </tr>
+    <tr>
+      <td>AID</td>
+      <td>DataTypeString</td>
+      <td>false</td>
+      <td>';' separated list of ENTITY=AID pairs. e.g. <em>measurement=12;environment=2</em></td>
+    </tr>
+    <tr>
+      <td>ATTRUNITIDS</td>
+      <td>DataTypeString</td>
+      <td>false</td>
+      <td>';' separated list of ENTITYNAME.ATTRIBUTENAME=UNITID pairs. e.g. <em>measurement.revs=41;measurement.distance=89</em></td>
+    </tr>
+    <tr>
+      <td>SERVERVERSION</td>
+      <td>DataTypeString</td>
+      <td>false</td>
+      <td>Get the version of the AOP5 plugin dll</td>
+    </tr>
+  </table>
+
+  <h3 id="TOKEN_passwords">TOKEN passwords</h3>
+  In OpenMDM different kinds of passwords are used for using single sign on.
+
+  <ul>
+  <li><b>GSSTOKEN</b>: Use additional parameter <pre>&lt;authtoken&gt;-spn HTTP/myHost.com&lt;/authtoken&gt;</pre> to make <i>Service Principal Names</i> known to the plugin.</li>
+  <li><b>CERTTOKEN</b>: Use additional parameter <pre>&lt;authtoken&gt;-mode CERTTOKEN&lt;/authtoken&gt;</pre> to make the plugin generate an CERTTOKEN.</li>
+  </ul>
+
+  <h3 id="Column_Oriented_query">Column Oriented query</h3>
+  With DIAdem 2015 column oriented query (DataStore.GetElementProperties, DataStore.SearchProperties) is supported.
+  If <i>DisableValidation</i> is called it is also alloed to use some prefixes to attribute path.
+  
+  <ul>
+    <li>Aggregates: COUNT, DCOUNT, MIN, MAX, AVG, STDDEV, SUM, DISTINCT</li>
+    <li>Additional: GROUPBY, ORDERBY, ORDERBYDESCENDING, OUTERJOIN</li>
+  </ul>
+  
+  It is also possible to add a virtual result column "NI_USI_INSTANCEKEY" to return instance keys of the result elements. Those can be resolved using DataStore.GetElementByKey 
+  and will also automatically add a GROUPBY to the result columns to avoid duplicates.
+
+  Example:
+  <pre>
+    dim query : Set query = store.CreateQuery(eDataStoreQuery)
+    query.ReturnType = "Kanal"
+    query.Conditions.Add "Kanal", "id", "<>", 0
+
+    set resultColumns = store.CreateResultsColumns
+    resultColumns.DisableValidation
+    resultColumns.Add("Kanal", "ORDERBY(DISTINCT(name))")
+
+    store.SearchProperties(query, resultColumns, 10000)
+    navigator.LoadProperty store.ResultsProperties
+  </pre>
+
+  <h3 id="IOP-SSL">IOP-SSL</h3>
+
+  The used CORBA ORB - OmniORB supports IOP-SSL.
+  If the Connection is set to "URL or IOR" connection can be done using:
+  <pre>corbaname:ssliop:1.2@myServer.company.com:28090/NameService#ODS_INSTANCE_NAME.ASAM-ODS</pre>
+
+  In the connection string it will look like:
+  <pre>&lt;corba&gt;corbaname:ssliop:1.2@myServer.company.com:28090/NameService#ODS_INSTANCE_NAME.ASAM-ODS&lt;/corba&gt;</pre>
+
+  <h4>Browse SSL-IOP nameservice</h4>
+
+  If you want to use the Browse button to figure out <our <i>ODS_INSTANCE_NAME</i> please pick "Nameservice URL" and insert:
+  <pre>corbaloc:ssliop:1.2@myServer.company.com:28090/NameService</pre>
+  afterwards it is possible to use the "..." button to view the content of the CORBA name service.
+
+  <h4>Configuring the certificates</h4>
+
+  Copy the default config file
+  <pre>C:\Program Files\National Instruments\Shared\USI\DataPlugins\AOP5\uspAOP5_omniorb.cfg</pre>
+  to
+  <pre>C:\ProgramData\National Instruments\Shared\USI\Plugins\DataPlugins\AOP5_64\uspAOP5_omniorb_custom.cfg</pre>
+  and adjust it to your needs. The file contains some documentation on the <b>ssl???</b> needed to configure the system.
+  As a minimum you need to provide an <b>sslCAFile</b> containing the required certificates.
+
+  <h4>Relevant configuration entries</h4>
+
+  <table border="1" cellspacing="2" cellpadding="2" width="100%">
+    <tr><th>name</th><th>Description</th></tr>
+    <tr><td>sslCAFile</td><td>Specifies the file containing the SSL Certificate Authority certificate</td></tr>
+    <tr><td>sslKeyFile</td><td>Specifies the file containing the SSL key</td></tr>
+    <tr><td>sslKeyPassword</td><td>Specifies the password to unlock the key</td></tr>
+    <tr><td>sslVerifyMode</td><td>Specifies the verify mode, as given to SSL_CTX_set_verify. Valid values are "none", representing SSL_VERIFY_NONE, and "peer", representing SSL_VERIFY_PEER. If you select peer, additional options "fail" and "once" can also be specified, corresponding to SSL_VERIFY_FAIL_IF_NO_PEER_CERT and SSL_VERIFY_CLIENT_ONCE, respectively.</td></tr>
+  </table>
+
+  <h4>Distribution</h4>
+  
+  Make sure that at least the following two files are distributed to the machines using NI AOP5 Plugin with IOP-SSL
+  <ul>
+    <li>PEM file containing the certificates</li>
+    <li><pre>C:\ProgramData\National Instruments\Shared\USI\Plugins\DataPlugins\AOP5_64\uspAOP5_omniorb_custom.cfg</pre>
+    configured to point to the path of the PEM file.</li>    
+  </ul>
+
+  <h3 id="Change_Log">Change Log</h3>
+  <h4>Build &gt;= 7679</h4>
+  <ul>
+    <li>BUG 1139089: The plugin does not used its installed config file at <pre>C:\Program Files\National Instruments\Shared\USI\DataPlugins\AOP5\uspAOP5_omniorb.cfg</pre></li>
+    <li>Default omniORB config now contains a preconfiguration to a certificate PEM file. It will make IOP-SSL work if no validation is requested by the server.</li>
+  </ul>
+  <h4>Build &gt;= 7679</h4>
+  <ul>
+    <li>BUG 956835: If a column oriented query (DataStore.GetAttributeValues or DataStore.SearchProperties) it might happen that ids are returned of wrong level. e.g. measurement.test.id might return measurement.id depending on the order of attributes in the model.</li>
+  </ul>
+  <h4>Build &gt;= 6601</h4>
+  <ul>
+    <li>uspAOP5_omniorb_custom.cfg can be created beneath uspAOP5_omniorb.cfg to allow persistent changes of the configuration.</li>
+    <li>Fix broken Filter of DIAdem Navigator when filter condition of lower level is added. NI_USI_INSTANCEKEY result clumn will cause groupby to be added to name id query to avoid duplicates.</li>
+  </ul>
+  <h4>Build &gt;= 6418</h4>
+  <ul>
+    <li>Allow new PREFIX in column oriented query. See Column Oriented Prefix.</li>
+  </ul>
+  <h4>Build &gt;= 6012</h4>
+  <ul>
+    <li>writemetausingapplelemaccess parameter introduced to allow write using ApplElemAccess</li>
+    <li>ignoresequenceattributes parameter can be used to disable sequence attributes in the model</li>
+  </ul>
+  <h4>Build &gt;= 5991</h4>
+  <ul>
+    <li>Write BLOB/BYTESTR attributes or AoFile content to server</li>
+    <li>Access extended query directly using QueryStructureExt xml files</li>
+    <li>Write ValueMatrix directly to file</li>
+    <li>Write BYTESTR/BLOB/AoFile directly to file</li>
+    <li>niasamdownloader.exe added in TOOLFOLDER</li>
+    <li>Avoid retrieval of all channels of a single submatrix if channels contains to may data.</li>
+    <li>supplementenumsbyoocalls parameter introduced to avoid enum retrieval using OO calls.</li>
+    <li>Corretly determine SERVER_CHARSET for UTF-8 to make also writing to Unicode supporting server work</li>
+    <li>Also accept "ENTITY_NAME ID" and "AID ID" in additional to the native keys "ENTITY_NAME ID_HIGH ID_LOW"</li>
+    <li>The info context variable 300:"AID" can be used to retrieve a list of the server AIDs.</li>
+    <li>Added <i>additionalauth</i> parameter to easily be capable to define server authentification string.</li>
+    <li>OCX now contains &quot;IOR or URL&quot; which uses <i>corba</i> tag without <i>typ</i> attribute to make it possible to connect with a full qualified corbaname url</li>
+    <li>If connected using sessionior <i>&lt;createcosession&gt;yes&lt;/createcosession&gt;</i> can be used to create a cosession instead of using the given session</li>
+    <li>Added the ability to modify the <a href="#p_cachemeasurement">cachemeasurement</a> parameter by use of an info context parameter</li>
+    <li>Added the ability to modify the logfilename of the plugin using the ODS_LOGFILE context parameter</li>
+    <li>The info context variable 300:"ATTRUNITIDS" can be used to retrieve the list of attributes with unitid assigned</li>
+  </ul>
+  <h4>Build &gt;= 5630</h4>
+  <ul>
+    <li>Fix crash that occured with new Athos version because some columns are returned two times if query submatrices with <i>Normal Query</i>.</li>
+    <li>No longer use joins if one relations are queried with getInstancesExt but directly use foreign key column.</li>
+  </ul>
+  <h4>Build &gt;= 5619</h4>
+  <ul>
+    <li>If a submatrix is loaded instead of a measuremnt, a preload event is used to load data with a query or a submatrix if in
+    query or submatrix mode.</li>
+    <li>Added 
+    <i>basemodelversion</i> to parameter string to influence base model creation.</li>
+  </ul>
+  <h4>Build &gt;= 5601</h4>
+  <ul>
+    <li>
+    <i>USER</i> and 
+    <i>PASSOWRD</i> in auth string of session are now uppercase like described in the ODS specification. Password is now also sent
+    if no user is given.</li>
+    <li>Introduced authtoken parameter.</li>
+    <li>Added authtoken.exe to generate tickets.</li>
+    <li>Intoduced plugin specific context variables to get additional information.</li>
+    <li>cachemeasurement=byquery now uses an INSET query of the localcolumn id instead of the raw_datatype query. This should work
+    in almost any server independent of the existance or assignment of properties.</li>
+  </ul>
+  <h4>Build &gt;= 5579</h4>
+  <ul>
+    <li>Make sure it is possible to write DT_DATE values that have a specified length which is smaller than 23. This lenght is
+    given in the svcattr table of the ASAM Server.</li>
+  </ul>
+  <h4>Build &gt;= 5560</h4>
+  <ul>
+    <li>Change auth string tokens to upper case. (USER, PASSWORD) The actual spec specifies those tokens in upper case. To avoid
+    problems with case sensitive servers we adjusted this to the actual specification.</li>
+  </ul>
+  <h4>Build &gt;= 5556</h4>
+  <ul>
+    <li>Retrieving bulk data by query now uses an inset query with localcolumn ids instead of a datatype based query.
+    &#39;bydatatypequery&#39; can be used to get the old behavior. In addition how_many was adapted to work on more servers.</li>
+    <li>Added additional logging information at different points.</li>
+  </ul>
+  <h4>Build &gt;= 5403</h4>
+  <ul>
+    <li>Implemented useattributeinvalidflag to allow the client to determine if an attribute was not set in the server. Before,
+    this was only possible for string/double/float attributes with the use of replacement values.</li>
+  </ul>
+  <h4>Build &gt;= 5345</h4>
+  <ul>
+    <li>The method store.GetPropertyValues sid only allows the base name of attributes if they had one. Now the same order is
+    picked like all attributes. Fist application then base attributes.</li>
+  </ul>
+  <h4>Build &gt;= 5318</h4>
+  <ul>
+    <li>Handle Usi kernel NotLike queries as org::asam::ods::NOTLIKE or org::asam::ods::CI_NOTLIKE instead of
+    org::asam::ods::CI_NEQ or org::asam::ods::NEQ</li>
+  </ul>
+  <h4>Build &gt;= 5291</h4>
+  <ul>
+    <li>If values/flags/generation_parameters are retrieved from local column, InstanceElement.getValueSeq is now used instead of
+    of InstanceElement.getValue to reduce the number of server calls by three. To avoid the use of this you can use
+    &lt;usegetvalueseqforlc&gt;no&lt;/usegetvalueseqforlc&gt;.</li>
+    <li>Resolve asam path with AOP5 plugin. If an instkey starts with &quot;/[&quot; the plugin now calls
+    ApplicationStructure::getInstanceByAsamPath to resolve this asam path.</li>
+  </ul>
+  <h4>Build &gt;= 5273</h4>
+  <ul>
+    <li>In case an insensitive environment, EQUAL queries, even if on non string properties, where sent as CI_EQ.</li>
+  </ul>
+  <h4>Build &gt;= 5140</h4>
+  <ul>
+    <li>Query for enumeration containing &#39;_&#39; wild card (e.g. DT_STRING) could not be queries by GetElementList.</li>
+  </ul>
+  <h4>Build &gt;= 5081</h4>
+  <ul>
+    <li>BOOLEAN attributes can now be written with the AOP5 dataplugin</li>
+    <li>Added 
+    <i>blobandbytestreamattributes</i> option to enable retrieve of BLOB and BYTESTR attributes.</li>
+    <li>DT_EXTERNALREFERENCE and DS_EXTERNALREFERENCE can now be written with the AOP5 dataplugin</li>
+    <li>Use groupBy of extended query to do the distinct if the ... is pressed.</li>
+    <li>Use MIN and MAX aggregate to determine min max if ... is pressed.</li>
+    <li>Fixed crash that could occure during writing of DS_DATE attributes or DT_DATE measurement quantities.</li>
+  </ul>
+  <h4>Build &gt;= 4973</h4>
+  <ul>
+    <li>Changed log file creation to a line based implementation to give better output.</li>
+    <li>DT_BLOB, DT_BYTESTR, DS_BYTESTR are now serialized in a base64 string. VBS can be used to write it to a file or to perform
+    further other functions.
+    <pre>
+ni_base64:__ni_blobname:BLOBNAME__ni_blobdata:BASE64_STR
+</pre>In a BYTESTR the blobname is missing.</li>
+    <li>omniorb is now configured by a config file. It is stored in
+    <pre>
+\ProgramData\National Instruments\Shared\USI\Plugins\DataPlugins\AOP5\uspAOP5_omniorb.cfg
+</pre>The giopMaxMsgSize is set to 250MB to transport larger channels in one piece, as is possible with the mico based plugin.</li>
+  </ul>
+  <h4>Build &gt;= 4330</h4>
+  <ul>
+    <li>Added orderbyattributes to allow the definition of an attribute for each entity that is used in each query for this entity
+    to get a defined order. This is necessary because of vector attributes. Because vector attributes are stored in a different
+    table, a join is added to the select statement on the server side which leads to shifted results on the oracle side.</li>
+  </ul>
+  <h4>Build &gt;= 4312</h4>
+  <ul>
+    <li>That &lt;usequerytobrowse&gt;yes&lt;/usequerytobrowse&gt; leads to an empty result in an extended Query has been fixed.
+    Emulation mode does not work. If a query is emulated the plugin will in future versions log a warning to the logfile.
+    (introduced with 4070)</li>
+  </ul>
+  <h4>Build &gt;= 4291</h4>
+  <ul>
+    <li>That load of measurement slowed down with DIAdem 2010 AOP5 plugin version (introduced with 4070) has been fixed</li>
+    <li>That &#39;%_&#39; where not usable in OdsInstList and GetElementList with DIAdem 2010 AOP5 plugin version (introduced with
+    4070) has been fixed</li>
+    <li>The appending of openmode to Session parameters where a &#39;,&#39; was missing as a seperator after the password has been
+    fixed</li>
+    <li>That a connection fails at the first try if two different servers (differ in ip) are to be opened has been fixed</li>
+    <li>Implemented interface to speed up use of ... button in DIAdem 2010 query interface</li>
+    <li>If a new server version is available, all application enumerations are retrieved in two server calls</li>
+    <li>Implemented retrieval of bulk data using different access modes if a measurement load event is triggered</li>
+  </ul>
+  <h4>Build &gt;= 4070</h4>
+  <ul>
+    <li>Plugin will only work with USI version &gt;= 1.8</li>
+    <li>Removed xerces dependency from plugin</li>
+    <li>Plugin now logs to logfile immediately. Errors and warnings are also reported for debugging. DbgView can be used to track
+    during work.</li>
+    <li>luginP now supports use of or and brackets in queries.</li>
+    <li>Provides nice description (server(port):path) in top line of browser.</li>
+  </ul>
+  <h4>Build &gt;= 3841</h4>
+  <ul>
+    <li>Performance improvement: If OdsChannelGet is used, the structure measurement, submatrix, localcolumns is retrieved by three
+    server calls and cached to avoid single calls to determine the localcolumns of a measurement quantity.</li>
+  </ul>
+  <h4>Build &gt;= 3728</h4>
+  <ul>
+    <li>Finalized extended query implementation. 
+    <b>The new default uses Extended Query for all queries.</b> If this is not wanted or does not work, the plugin has to be
+    reconfigured to use NormalQuery. This is only suggested for earlier server versions.</li>
+    <li>Added ability to configure the maximal string length in LocalColumn.Values to reduce the chunk size when
+    ValueMatrix.GetValueVector is called.</li>
+    <li>Internal option getaoparameter is removed because it was never used.</li>
+    <li>Fixed bug in writing string and date channels.</li>
+  </ul>
+  <h4>Build &gt;= 3717</h4>
+  <b>ASAM Ods Crosstest 2009 Ingostadt</b>
+  <ul>
+    <li>If you use the valuematrix to retrieve bulk data, DT_BOOLEAN, DT_COMPLEX and DT_DCOMPLEX channels will also be retrieved as
+    in the getValue mode.</li>
+    <li>Application enumerations are also retrieved from the server and displayed correctly in their attributes</li>
+    <li>An error that could occur with ExternalReference attributes is fixed.</li>
+    <li>OdsCountInstances will no longer cause an access violation with the stars server for entities that are not
+    instanciated.</li>
+    <li>Unset enum attributes values no longer cause trouble in retrieve.</li>
+  </ul>
+  <h4>Build &gt;= 3709</h4>
+  <ul>
+    <li>Added usevaluematrix attribute to connection string and advanced dialog box. This makes it possible to switch from
+    InstanceElement.getValue to ValueMatrix.getValueVector which allows chunkwise loading of bulk data. This should help with
+    channels that can not be retrieved in one chunk. valueflags are ignored at the moment!</li>
+  </ul>
+  <h4>Build &gt;= 3675</h4>
+  <ul>
+    <li>low 32bit of LONGLONG is not handled as unsigned which could cause overflows in special cases!</li>
+  </ul>
+  <h4>Build &gt;= 3520</h4>
+  <ul>
+    <li>If LONGLONG data is loaded, the high 32 bit are not handled correctly. This causes big values to be wrong!</li>
+  </ul>
+  <h4>Build &gt;= 3498</h4>
+  <ul>
+    <li>If an invalid flag is returned for string attribute, &quot;NOVALUE&quot; is returned for this attribute.</li>
+  </ul>
+  <h4>Build &gt;= 3482</h4>
+  <ul>
+    <li>If the server determines a NULL value for a double/float attribute, the value 0.0 is usually returned and the flag is
+    invalid. Until now the plugin returned 0.0 for those attributes. Now the 0.0 is replaced by a NaN which is interpreted as
+    NOVALUE by DIAdem which is eqaul to the NULL value of the Database.</li>
+  </ul>
+  <h4>Build &gt;= 3449</h4>
+  <ul>
+    <li>No longer sets inverse relations by default. The advanced dialog box has an option for resetting the behavior. 
+    <b>This change is only relevant for writing applications!</b></li>
+    <li>Added ability to ignore the value flag vector. Because the athos server always returns value flags, the plugin can be told
+    to ignore the value flags if it is known that no value flags were used. This can speed up the loading of bulk data because it
+    reduces the amount of data to be transfered over the network.</li>
+    <li>Enumerations are now written as enumVal, enumSeq if the attrbute is marked as DT_ENUM(30) in the svcattr table. 
+    <b>This change is only relevant for writing applications!</b></li>
+    <li>Accept enumeration sequences and values if sent by the server. Only relevant if your attributes are marked as DT_ENUM(30)
+    in the svcattr table.</li>
+    <li>n-&gt;m Relations will work now.</li>
+  </ul>
+  <h4>Build &gt;= 3057</h4>
+  <ul>
+    <li>Date/Time queries work</li>
+    <li>If a password was not saved, it is now correctly retrieved by the plugin</li>
+  </ul>
+  <h4>Build &gt;= 2458</h4>
+  <ul>
+    <li>If the server marks a reference or an instance as invalid, it is no longer returned to the usi kernel. A logfile entry is
+    made.
+    <br /></li>
+  </ul>
+  <h4>Build &gt;= 2332</h4>
+  <ul>
+    <li>Implemented delete of instances
+    <br /></li>
+  </ul>
+  <h3>FAQ</h3>
+  <ul>
+    <li>
+    <h4>I am connected to an Horiba STARS Server but I can&#39;t browse the tree.</h4>The Stars Server has to be configured to use
+    NormalQuery or OO-API in browse mode to successfully be browsed or worked with.</li>
+    <li>
+    <h4>I have very long measurment quantities and I am not able to import them.</h4>Please go to the advanced dialog bpox and
+    configure the block size for ValueMatrix access. This will cause the plugin to access the data in chunks instead of one
+    piece.</li>
+    <li>
+      <h4>How can I debug the plugin</h4>
+      <ul>
+        <li>Use Microsoft/Sysinternal DbgView to watch the plugin work. Warnings and errors were logged independent on the log
+        settings of the plugin.</li>
+        <li>Use code like the following one to increase the debug level of a HighQSoft Athos server.
+        <pre>
+        dim oldAthosDebugLevel : oldAthosDebugLevel = store.GetContext.GetParameter(&quot;DEBUGLEVEL&quot;)
+        store.GetContext.SetParameter &quot;DEBUGLEVEL&quot;, 10, DataTypeInt32
+        &#39; Do code where the error occures
+        store.GetContext.SetParameter &quot;DEBUGLEVEL&quot;, CInt(oldAthosDebugLevel), DataTypeInt32
+</pre></li>
+        <li>To determine the version of the HighQSoft Athos server, use the following code:
+        <pre>
+MsgBox store.GetContext.GetParameter(&quot;ATHOS_VERSION&quot;)
+</pre></li>
+      </ul>
+    </li>
+    <li>
+    <h4>How can I solve problems with database constraints?</h4>The DataStore.Save method allows a list of entities to be attached.
+    <pre>
+store.Save &quot;PhysicalDimension;Unit;Quantity;NI_MEASUREMENT_TREE&quot;
+</pre>Will make sure that new Units are created before the Quantities before the main hierarchy.</li>
+  </ul></body>
+</html>

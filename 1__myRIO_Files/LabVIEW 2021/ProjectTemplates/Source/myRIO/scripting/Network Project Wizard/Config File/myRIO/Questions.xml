@@ -1,0 +1,508 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>13.0.1</Version>
+<Array>
+<Name>QuestionList</Name>
+<Dimsize>10</Dimsize>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Why do you want to create a network communication system?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>To share values
+You want to share the current temperature, current position, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>1</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>To transmit data
+You want to transmit a signal, command, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>2</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Which type of values do you want to share?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Basic values 
+You want to share numeric, string, Boolean values, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>Shared Variable</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Complex values
+You want to share a picture, waveform, video, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>UDP Data Stream</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Do you want to broadcast your data to one or more myRIOs?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Yes
+In this case, all myRIOs use the same data communication method. You do not have to specify the IP address of each myRIO.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>8</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>No
+In this case, different myRIOs use different data communication methods. You have to specify the IP address of each myRIO. </Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>3</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>When disconnection occurs, do you want to continue your data communication?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Yes
+In this situation, the receiver ignores data loss. You can customize your network communication system to acknowledge data.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>6</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>No
+In this situation, the network communication terminates to ensure that no data is lost.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>4</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>How many endpoints do you want to have in your network communication system? Endpoints refer to both senders and receivers in a network communication.</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>2
+You want to have one sender and one receiver.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>9</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>More than 2
+You want to have multiple senders or receivers.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>5</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Do you want to classify your messages?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Yes
+You want to divide your messages into different categories and process them separately by using different methods.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>Simple TCP Messaging</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>No
+You want to process all messages by using the same method.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>7</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Do you want the receiver to process the message as soon as it arrives?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Yes
+The receiver has to process the message before it receives the next message.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>8</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>No
+The receiver can put all messages in a queue and process them when necessary.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>Queued Message</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Which type of data do you want to transmit?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Continuous data
+You want to transmit a signal, audio, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>TCP Data Stream</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Discrete data
+You want to transmit a command, warning, message, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>TCP Message</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Which type of data do you want to transmit?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Continuous data
+You want to transmit a signal, audio, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>UDP Data Stream</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Discrete data
+You want to transmit a command, warning, message, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>UDP Message</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+</Cluster>
+<Cluster>
+<Name>Question</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Which type of data do you want to transmit?</Val>
+</String>
+<Cluster>
+<Name>AnswerA</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Continuous data
+You want to transmit a signal, audio, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>Network Stream</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+<Cluster>
+<Name>AnswerB</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>Text</Name>
+<Val>Discrete data
+You want to transmit a command, warning, message, and so on.</Val>
+</String>
+<Boolean>
+<Name>ReachSample</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample</Name>
+<Val>Network Stream Message</Val>
+</String>
+<I32>
+<Name>NextQuestion</Name>
+<Val>0</Val>
+</I32>
+</Cluster>
+</Cluster>
+</Array>
+</LVData>

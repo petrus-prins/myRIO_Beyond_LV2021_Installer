@@ -1,0 +1,7 @@
+//// myRIO I2C Channel Tag Type Definition /////
+genericType: myRIO_I2C
+genericTypeName: "myRIO I2C"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

@@ -1,0 +1,27 @@
+﻿AlwaysRemoves: ni-labview-2021-myrio-toolkit-labview-2021-support-x86,
+Architecture: windows_x64
+CompatibilityVersion: 220000
+Depends: ni-compactrio-21.0.0-firmware (>=21.0.0), ni-compactrio-max-support (>=22.5.0), ni-compactrio-runtime (>= 21.0.0), ni-dataplugins-aop5 (>= 21.0.0), ni-labview-2021-myrio-toolkit-realtime-bin (>= 8.0.0), ni-labview-2021-myrio-toolkit-shared-x86 (>= 8.0.0), ni-labview-2021-runtime-engine-x86 (>=21.0.0), ni-license-manager (>= 21.8.0), ni-linux-rt-system-image-22.5.0 (>=22.5.0), ni-lvrt-20.0.0-certmgt (>=20.0.0), ni-lvrt-20.0.0-certstore (>=20.0.0), ni-max (>=21.5.0), ni-mdfsupport (>=21.5.0), ni-metauninstaller (>=21.5.0), ni-rio-21.5.0-realtime-bin (>=21.5.0), ni-rio-fpga-driver (>= 21.5.0), ni-update-service (>= 21.0.0)
+Description: The LabVIEW myRIO Toolkit provides you with tools for creating and deploying applications on the myRIO Student Embedded Device.
+  The LabVIEW myRIO Toolkit is a software add-on for LabVIEW that provides the necessary driver and tools to quickly develop and deploy applications to the myRIO Student Embedded Device. The LabVIEW myRIO Toolkit includes configuration-based Express as well as Advanced I/O VIs for each I/O type on the myRIO device, which helps students quickly prototype ideas and create stand-alone applications.
+DisplayName: LabVIEW myRIO Toolkit
+DisplayVersion: 2021
+Eula: eula-ni-standard
+Homepage: https://www.ni.com
+Maintainer: National Instruments <support@ni.com>
+MessageText-1: LabVIEW myRIO Toolkit LabVIEW 2021 Support Warning
+  If you want to program myRIO with LabVIEW, you must also install LabVIEW and the LabVIEW Real-Time Module.
+OsRequires: >= 10
+OsSupport: WINDOWS_11 WINDOWS_SERVER_2022 WINDOWS_10_64BIT WINDOWS_SERVER_2016_64BIT WINDOWS_SERVER_2019_64BIT
+Package: ni-labview-2021-myrio-toolkit-x86
+Plugin: wininst
+Priority: standard
+Provides: 2570c225-d162-4e1e-b07d-bef2da0e9001 (=8.00.49162)
+Recommends: ni-labview-2021-myrio-toolkit-labview-2021-support-x86 (>=8.0.0)
+ReleaseNotes: 
+  Refer to the NI website at https://www.ni.com/r/myrio-toolkit-rn for installation instructions, supported features and file formats, and other important notices about this product.
+Section: Add-Ons
+StoreProduct: yes
+Suggests: ni-labview-2021-core-x86-en (>= 21.1.2), ni-labview-2021-rt-module-x86-en (>= 21.0.0)
+UserVisible: yes
+Version: 8.0.0.49162-0+f10

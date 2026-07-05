@@ -1,0 +1,7 @@
+//// myRIO AudioIn Block Tag Type Definition /////
+genericType: myRIO_AudioIn_Block
+genericTypeName: "myRIO AudioIn (N Samples)"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

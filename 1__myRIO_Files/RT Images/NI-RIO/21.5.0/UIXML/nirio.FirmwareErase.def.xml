@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item>
+  <group id="settings" weight="0">
+    <command id="erasefirmware" caption="{erasefirmware}" order="50" />
+  </group>
+</item>

@@ -1,0 +1,40 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>10.0f1</Version>
+<Cluster>
+<Name>Device</Name>
+<NumElts>8</NumElts>
+<String>
+<Name>Device Name</Name>
+<Val>Analog input (n samples)</Val>
+</String>
+<String>
+<Name>Peripheral Name</Name>
+<Val>AI (N Samples)</Val>
+</String>
+<String>
+<Name>Title Name</Name>
+<Val>Analog Input</Val>
+</String>
+<String>
+<Name>Weight</Name>
+<Val>1</Val>
+</String>
+<String>
+<Name>Config Pane VI Name</Name>
+<Val>AI Block Config Pane.vi</Val>
+</String>
+<String>
+<Name>Help Topic Name</Name>
+<Val>myrioref_exp_ai.html</Val>
+</String>
+<String>
+<Name>Help File</Name>
+<Val>myrioreference.chm</Val>
+</String>
+<String>
+<Name>Context Help Pin Type</Name>
+<Val>Analog Input (N Samples)</Val>
+</String>
+</Cluster>
+</LVData>

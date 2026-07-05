@@ -1,0 +1,19 @@
+﻿Architecture: windows_x64
+CompatibilityVersion: 210300
+Conflicts: d138a424-3bef-4d70-af92-6b9b577a505d (<<6.9.9)
+Depends: ni-mdfsupport (>=21.5.0), ni-metauninstaller (>=21.5.0), ni-msvcrt-2015 (>=14.1.5)
+Description: NI LabVIEW 2021 myRIO Toolkit Shared Files
+DisplayName: NI LabVIEW 2021 myRIO Toolkit Shared Files
+DisplayVersion: 8.0.0
+Eula: eula-ni-standard
+Homepage: https://www.ni.com
+Maintainer: National Instruments <support@ni.com>
+OsRequires: >= 10
+OsSupport: WINDOWS_10_64BIT WINDOWS_SERVER_2016_64BIT WINDOWS_SERVER_2019_64BIT
+Package: ni-labview-2021-myrio-toolkit-shared-x86
+Plugin: wininst
+Priority: standard
+Provides: d138a424-3bef-4d70-af92-6b9b577a505d (=8.00.49152)
+Replaces: d138a424-3bef-4d70-af92-6b9b577a505d (<<6.9.9)
+Section: Infrastructure
+Version: 8.0.0.49152-0+f0

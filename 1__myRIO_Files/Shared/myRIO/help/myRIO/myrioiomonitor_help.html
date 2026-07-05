@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>myRIO I/O Monitor Help</title>
+
+<style type="text/css">
+<!--
+/***************************************************/
+/* MINIMAL STYLES */
+/* The following section defines styles that every HTML Help project should need. */
+
+/* Specifies White Background color */
+body {background-color:#FFFFFF; font-family:Verdana, sans-serif; font-size:8pt; color: #000000;}
+
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+p { margin-top:6.00pt; margin-bottom:6.00pt;}
+
+br { font-size:4.00pt; }
+
+/* Use H1 for all topic headings. */
+h1 { margin-top:3.00pt; margin-bottom:3.00pt; font-size:150%; font-weight:bold;  }
+
+/* Use H2 for second-level headings. */
+h2 { margin-top:9.00pt; margin-bottom:3.00pt; font-size:125%; font-weight:bold;  }
+
+/* Use H3 for third-level headings. */
+h3 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+/* Use H4 for fourth-level headings. */
+h4 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+h5 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+h6 { margin-top:6.00pt; margin-bottom:3.00pt; font-size:100%; font-weight:bold;  }
+
+/* Use the Body style class for normal paragraphs. */
+p.Body {  }
+
+/* Use the Anchor style class for graphic references on a line by themselves. */
+p.Anchor { font-size:125%;  }
+
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use <br><br> to start the new paragraph within the same set of <li></li> tags. If you need to indent a list within another list, nest the indented list within the first list's set of <ol></ol> or <ul></ul> tags. */
+p.Indent1 { margin-left:12.00pt; margin-bottom:3.00pt;  }
+p.Indent2 { margin-left:24.00pt; margin-bottom:3.00pt;  }
+p.Indent3 { margin-left:36.00pt; margin-bottom:3.00pt;  }
+p.Indent4 { margin-left:48.00pt; margin-bottom:3.00pt;  }
+p.Indent5 { margin-left:60.00pt; margin-bottom:3.00pt;  }
+
+/* Use the LI style for all list items. */
+li { margin-top:3.00pt; margin-bottom:3.00pt; }
+
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+ol { margin-left:22.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; list-style-type: decimal; }
+
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+ol ol {list-style-type:lower-alpha}
+ol ol ol {list-style-type:decimal}
+ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+ol.EquationNum { margin-left:36.00pt; text-indent:0pt; list-style-type: decimal; }
+
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+ol.List-abc { margin-left:22.00pt; text-indent:0pt; list-style-type:lower-alpha; }
+
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+ul { margin-left:22.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; list-style-type: disc; }
+
+/* Use the UL style for bulleted lists. Nested lists will use the bullet types according to the nesting scheme below. */
+ul ul {list-style-image: none;list-style-type: circle}
+ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul {list-style-image: none;list-style-type: circle}
+ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul {list-style-image: none;list-style-type: circle}
+ul ul ul ul ul ul ul {list-style-image:none;list-style-type:disc}
+ul ul ul ul ul ul ul ul ul{list-style-image: none;list-style-type: circle}
+
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+ul.List-Box {list-style-image: none;list-style-type: square}
+
+table { font-size:100%; }
+
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+table.Borderless { border:none; }
+
+/* Use the Bordered style class for tables that need borders. */
+table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+td { vertical-align:top; padding:3px; }
+
+/* Use the Bordered style class for table headings and cells in Bordered or Bordered-Wide tables. */
+.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+td.Icon { width:40px; }
+
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+th { font-weight:bold; padding:3px; }
+
+/* Use the Left-Align style class for table headings and cells that you want to left align instead of center align. */
+.Left-Align { text-align:left; }
+
+/***************************************************/
+/* CHARACTER FORMATS */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* CHARACTER FORMATS Updated to conform with the CSE HTML Validator Pro */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* Use the Dark-Red format for warnings or cautions. */
+.Dark-Red { color: #800000 }
+
+/* Use the Monospace format for code or syntax examples. */
+.Monospace { font-family: "Courier New",monospace; font-size: 100%; }
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+.Monospace-Bold { font-family: "Courier New",monospace; font-weight: bold; font-size: 100%; }
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+.Monospace-Italic { font-family: "Courier New",monospace; font-style: italic; font-size: 100%; }
+
+/* small class */
+.smallFont { font-size:87.5%; }
+
+/* Bold class */
+.Bold { font-weight: bold; }
+
+/* Italic class */
+.Italic { font-style: italic; }
+
+/* Use the Platform format to denote a specific platform. */
+.Platform { color: #0000FF; font-weight: bold; }
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+.Symbol { font-family: Symbol; }
+
+/* Use the Red-text format to call attention to text that needs  information added or edited by techcomm */
+.Red-text {color: #FF0000;}
+
+/* Use the Green-Underline format for the green defintion in the conventions topic */
+.Green-Underline {color: #007700; text-decoration : underline;}
+
+/* Use the glossButton format for the glossary buttons used in the glossary topic */
+.glossButton { font-size:12px; color:black; }
+
+/* Use for text sections and hyphenated words that should not break at line wraps */
+.nobreak{white-space:nowrap}
+
+/* Use for template instructions. */
+.instructions{color:red; font-style:italic}
+
+/*Use for words and text sections that do not need to be localized */
+.DNL { }
+
+/* The following styles define the color of links. */
+a:link { color: #007700 }
+a:visited { color: #7F007F }
+a:link:hover { color: #FF0000 }
+a:link:active { color: #FF0000 }
+
+/***************************************************/
+/* Forms */
+
+form { margin-top:0pt; margin-bottom:3pt; color:black; }
+select { font-size:100%; color:black; }
+
+/*******************************************************/
+/* Margins */
+/* Use these styles for block-level elements inside tables cells or list items where you do not want extra padding at the top or bottom of a cell. */
+.noTopMargin { margin-top:0pt;}
+.noBottomMargin { margin-bottom:0pt;}
+
+/***************************************************/
+/* CODE STYLES */
+/* The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+
+p.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family: "Courier New",monospace;  }
+p.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family: "Courier New",monospace;  }
+p.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family: "Courier New",monospace;  }
+p.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family: "Courier New",monospace;  }
+-->
+</style>
+
+</head>
+
+<body>
+
+<h1><a name="top">myRIO I/O Monitor Help</a></h1>
+<p><a href="#overview">Overview</a></p>
+<p><a href="#launch">Launching the I/O Monitor</a></p>
+<p><a href="#target">Connecting to the myRIO</a></p>
+<p><a href="#IO">Monitoring the Inputs and Outputs</a></p>
+<div style="text-indent: 2em">
+<p><a href="#AIO">Monitoring Analog Inputs and Outputs (AIO)</a></p>
+<p><a href="#DIO">Monitoring Digital Inputs and Outputs (DIO)</a></p>
+<p><a href="#I2C">Communicating with Inter-Integrated Circuit (I2C) Devices</a></p>
+<p><a href="#SPI">Communicating with Serial Peripheral Interface (SPI) Devices</a></p>
+<p><a href="#UART">Communicating with Universal Asynchronous Receiver/Transmitter (UART) Devices</a></p>
+<p><a href="#PWM">Generating Pulse Width Modulation (PWM) Signals</a></p>
+<p><a href="#ENC">Reading Data from the Encoder (ENC)</a></p>
+</div>
+<p><a href="#help">Accessing the myRIO Toolkit Help</a></p>
+<p><a href="#legal">Legal Information</a></p>
+<hr>
+
+
+<h2><a name="overview">Overview</a><a href="#top">&uarr;</a></h2>
+<p class="Body">Use the myRIO I/O Monitor to test and monitor data from the myRIO I/O channels.</p>
+
+<h2><a name="launch">Launching the I/O Monitor</a><a href="#top">&uarr;</a></h2>
+<p class="Body">Launch the myRIO I/O Monitor in one of the following ways:</p>
+<ul>
+<li>In the myRIO USB Monitor, select <strong>Launch the I/O Monitor</strong>.</li>
+<li>In the LabVIEW <strong>Getting Started</strong> window, click the <strong>Set Up and Explore</strong> link and select <strong>Launch the I/O Monitor</strong>.</li>
+<li>In the <strong>Project Explorer</strong> window of a myRIO project, right-click a myRIO target and select <strong>Launch IO Monitor</strong> from the shortcut menu.</li>
+</ul>
+
+<h2><a name="target">Connecting to the myRIO</a><a href="#top">&uarr;</a></h2>
+<p class="Body">Connect to the myRIO in one of the following ways:</p>
+<ul>
+<li>USB cable</li>
+<li>Wireless network</li>
+<li>myRIO IP address or hostname</li>
+</ul>
+<p class="Body"><strong>Note</strong>&nbsp;&nbsp;To learn about connecting to and configuring a wireless network for the myRIO, launch LabVIEW, click the <strong>Set Up and Explore</strong> link, and select <strong>Configure WiFi</strong>.</p>
+
+<h2><a name="IO">Monitoring the Inputs and Outputs</a><a href="#top">&uarr;</a></h2>
+<p class="Body">Use the configuration pages in the myRIO I/O Monitor to test and monitor the inputs to and outputs from the myRIO I/O channels as follows:</p>
+<ul>
+<li>Acquire and generate analog signals</li>
+<li>Acquire and generate digital signals</li>
+<li>Communicate data through the following protocols:
+<ul>
+<li>Inter-Integrated Circuit (I2C)</li>
+<li>Serial Peripheral Interface (SPI)</li>
+<li>Universal Asynchronous Receiver/Transmitter (UART)</li>
+</ul>
+</li>
+<li>Generate Pulse Width Modulation (PWM) signals</li>
+<li>Read data from the encoder (ENC)</li>
+</ul>
+<p class="Body">Click the icons on the menu bar to switch between configuration pages. When you switch between configuration pages, you lose the configuration on the previous page. The following figure shows the menu bar.</p>
+<img src="images\iomonitor_channels.png" alt="">
+
+<!--begin child: roborioiomonitor_help.html-->
+<h3><a name="AIO">Monitoring Analog Inputs and Outputs (AIO)</a><a href="#top">&uarr;</a></h3>
+<p class="Body">Use the <strong>AIO</strong> configuration page to monitor analog signals by completing the following steps:</p>
+<ol>
+    <li>Select an I/O connector from the <strong>Connector</strong> pull&#8209;down menu. The connection diagram changes as you switch between different I/O connectors.</li>
+    <li>Click a blue pinout (<img src="images\iomonitor_pinout.png" alt="">) on the connection diagram to select an available channel. The selected analog output pinouts appear in the <strong>AO</strong> list and the analog input pinouts appear in the <strong>AI</strong> list. The analog values display as waveforms in <strong>AO Graph</strong> and <strong>AI Graph</strong>.
+<p class="Body">By default, analog outputs display as sine waveforms with an amplitude of 1.25 volts. The following figure shows the default <span class="Monospace">A/AO0</span>.</p>
+  <img src="images/iomonitor_aio.png" alt=""></li>
+    <li>Change <strong>Amp (V)</strong> and view the sine waveforms in <strong>AO Graph</strong>.</li>
+    <li>(Optional) To view analog outputs in direct current (DC) voltages, select <strong>DC Voltage</strong> from the <strong>Output Type</strong> pull&#8209;down menu in the <strong>AO</strong> list. In <strong>AO Graph</strong>, the waveforms change to lines representing the DC voltages.</li>
+    <li>(Optional) Change <strong>DC Value</strong> and view the DC voltage in <strong>AO Graph</strong>.</li>
+</ol>
+<!--end child: roborioiomonitor_help.html-->
+
+<h3><a name="DIO">Monitoring Digital Inputs and Outputs (DIO)</a><a href="#top">&uarr;</a></h3>
+<p class="Body">Use the <strong>DIO</strong> configuration page to monitor digital signals by completing the following steps:</p>
+<ol>
+    <li>Select an I/O connector from the <strong>Connector</strong> pull&#8209;down menu.</li>
+        <li>Click a blue pinout on the connection diagram to select an available channel. The selected pinouts appear in the <strong>DIO</strong> list. The myRIO I/O Monitor enables Boolean controls for the selected pinouts.
+    <p class="Body">Use the Boolean controls to specify reading or writing digital values. By default, the Boolean controls are in the <strong>Read</strong> mode, which means the myRIO I/O Monitor reads digital values.</p></li>
+    <li>To write digital values, select <strong>Write</strong> from the pull&#8209;down menu of the Boolean controls. The Boolean controls display as switch controls with a value 0, which means the myRIO I/O Monitor writes digital values on the logic low voltage level.</li>
+    <li>To write digital values on the logic high voltage level, toggle the switch controls to 1.
+    <p class="Body">In the following figure, the <span class="Monospace">A/DIO0</span> channel is in the <strong>Read</strong> mode, the <span class="Monospace">A/DIO1</span> channel in <strong>Write</strong> with the value 0, and the <span class="Monospace">A/DIO2</span> channel in <strong>Write</strong> with the value 1.</p>
+    <img src="images/iomonitor_dio.png" alt=""></li>
+</ol>
+<p class="Body"><strong>Note</strong>&nbsp;&nbsp;If you select more than 20 pinouts, a vertical scrollbar displays on the right edge of this configuration page. Use the scrollbar to view the hidden controls.</p>
+    
+
+<h3><a name="I2C">Communicating with Inter-Integrated Circuit (I2C) Devices</a><a href="#top">&uarr;</a></h3>
+<p class="Body">Use the <strong>I2C</strong> configuration page to communicate between the myRIO and an I2C slave device. The myRIO works as an I2C master device.</p>
+<h4>Writing Data to I2C Devices</h4>
+<p class="Body">Complete the following steps to write data to an I2C slave device.</p>
+<ol>
+    <li>Select an I/O connector from the <strong>Connector</strong> pull&#8209;down menu.
+        <p class="Body"><strong>Note</strong>&nbsp;&nbsp;You do not need to click the pinouts on the connection diagram. The myRIO I/O Monitor selects the pinouts related to I2C for you.</p></li>
+    <li>Select <strong>Write</strong> or <strong>Write/Read</strong> from the <strong>Mode</strong> pull&#8209;down menu. In the <strong>Write/Read</strong> mode, the myRIO I/O Monitor writes data to an I2C slave device and then reads data from the I2C slave device.</li>
+    <li>If you select the <strong>Write/Read</strong> mode, specify <strong>Byte Count</strong> to set the number of bytes of data to read from the I2C slave device.
+    <p class="Body"><strong>Note</strong>&nbsp;&nbsp;The myRIO I/O Monitor disables <strong>Byte Count</strong> in the <strong>Write</strong> mode.</p></li>
+    <li>Select the data transfer rate from the <strong>Speed</strong> pull&#8209;down menu.</li>
+    <li>Enter the address of your I2C slave device in <strong>Slave Address (7-bit)</strong>. You must specify the address in 7 bits.</li>
+    <li>Enter the data to write, in hexadecimal, in the <strong>Values to Write (in Hexadecimal)</strong> text box.</li>
+    <li>Click any empty space on this configuration page to preview the values to write. The <strong>Data</strong> waveform displays the signals on the data line (SDA). The <strong>Clock</strong> waveform displays the signals on the clock line (SCL).
+    <p class="Body">The following figure shows the data and clock signals after you enter <span class="Monospace">DFDF</span> in <strong>Values to Write (in Hexadecimal)</strong>.</p>
+  <img src="images/iomonitor_i2c.png" alt=""></li>
+    <li>Click <strong>Write</strong> to write data to the I2C slave device.
+	<p class="Body"><strong>Note</strong>&nbsp;&nbsp;Clicking <strong>Clear</strong> only wipes the data to write from this configuration page and does not affect the data written to the I2C slave device.</p></li>
+</ol>
+
+<h4>Reading Data from I2C Devices</h4>
+<p class="Body">To read data from an I2C slave device, select <strong>Read</strong>, <strong>Write/Read</strong>, or <strong>Continuously Read</strong> from the <strong>Mode</strong> pull&#8209;down menu.</p>
+
+
+<h3><a name="SPI">Communicating with Serial Peripheral Interface (SPI) Devices</a><a href="#top">&uarr;</a></h3>
+<p class="Body">Use the <strong>SPI</strong> configuration page to communicate between the myRIO and an SPI slave device. The myRIO works as an SPI master device.</p>
+<!--begin child: roborioiomonitor_help.html-->
+<h4>Writing Data to SPI Devices</h4>
+<p class="Body">Complete the following steps to write data to an SPI slave device.</p>
+<ol>
+    <li>Select an I/O connector from the <strong>Connector</strong> pull&#8209;down menu.</li>
+    <li>Select <strong>Write</strong> or <strong>Write/Read</strong> from the <strong>Mode</strong> pull&#8209;down menu.
+    <p class="Body"><strong>Note</strong>&nbsp;&nbsp;You do not need to set <strong>Frame Count</strong> in the <strong>Write</strong> and <strong>Write/Read</strong> modes. <strong>Frame Count</strong> specifies the number of frames of data to read from the SPI slave device.</p></li>
+    <li>Enter the frequency of the clock signal that your SPI slave device requires in <strong>Frequency</strong>.</li>
+    <li>Set the number of bits that make up a single SPI transmission frame in <strong>Frame Length</strong>. The default is 8.</li>
+    <li>(Optional) To control a chip select pin of the SPI slave device, select the <strong>Choose a DIO pin as the chip select pin</strong> checkbox and choose a pinout from the pull&#8209;down menu.</li>
+    <li>Enter the data to write, in hexadecimal, in the <strong>Frames to Write (in Hexadecimal)</strong> text box.</li>
+    <li>Click any empty space on this configuration page to preview the frames to write. The <strong>Data</strong> waveform displays the signals on the data line (MOSI). The <strong>Clock</strong> waveform displays the signals on the clock line (SCLK).
+    <p class="Body">The following figure shows the data and clock signals after you enter <span class="Monospace">1231 5123 12</span> in <strong>Frames to Write (in Hexadecimal)</strong>.</p>
+    <img src="images/iomonitor_spi.png" alt="">
+    </li>
+    <li>Click <strong>Write</strong> to write data to the SPI slave device.    
+	<p class="Body"><strong>Note</strong>&nbsp;&nbsp;Clicking <strong>Clear</strong> only wipes the frames to write from this configuration page and does not affect the frames written to the SPI slave device.</p></li>
+</ol>
+<h4>Reading Data from SPI Devices</h4>
+<p class="Body">To read data from an SPI slave device, select <strong>Read</strong>, <strong>Write/Read</strong>, or <strong>Continuously Read</strong> from the <strong>Mode</strong> pull&#8209;down menu.</p>
+<!--end child: roborioiomonitor_help.html-->
+
+<h3><a name="UART">Communicating with Universal Asynchronous Receiver/Transmitter (UART) Devices</a><a href="#top">&uarr;</a></h3>
+<p class="Body">Use the <strong>UART</strong> configuration page to communicate between the myRIO and a UART device.</p>
+<p class="Body">To enable UART, you must install NI-VISA and NI-VISA Server on your myRIO. Use Measurement &amp; Automation Explorer (MAX) or run the <strong>Getting Started with myRIO</strong> wizard to install software on the myRIO. <br><br>Complete the following steps to install software on the myRIO using MAX:</p>
+              <ol>
+                <li>In MAX, expand <strong>Remote Systems</strong> in the configuration tree and then expand your myRIO target.</li>
+                  <li>Right-click <strong>Software</strong> and click <strong>Add/Remove Software</strong> to launch the <strong>LabVIEW Real-Time Software Wizard</strong>.</li>
+                  <li>Select the recommended software set for the myRIO.</li>
+                  <li>Click <strong>Next</strong>.</li>
+                  <li>Select NI-VISA and NI-VISA Server.</li>
+                  <li>Follow the instructions on the screen to finish the installation.</li>
+              </ol>
+
+<h4>Writing Data to UART Devices</h4>
+<p class="Body">Complete the following steps to write data to a UART device.</p>
+<ol>
+  <li>Select an I/O connector from the <strong>Connector</strong> pull&#8209;down menu. </li>
+    <li>Select <strong>Write</strong> from the <strong>Mode</strong> pull&#8209;down menu.</li>
+    <li>Set the baud rate, data bits, stop bits, and parity for communicating with the UART device. The configuration settings depend on the UART device you use.</li>
+    <li>Enter character strings in <strong>Characters to Write</strong>.</li>
+    <li>Click <strong>Write</strong> to write data to the UART device.</li>
+</ol>
+<h4>Reading Data from UART Devices</h4>
+<p class="Body">To read data from a UART device, select <strong>Read</strong> or <strong>Continuously Read</strong> from the <strong>Mode</strong> pull&#8209;down menu.</p>
+
+<h3><a name="PWM">Generating Pulse Width Modulation (PWM) Signals</a><a href="#top">&uarr;</a></h3>
+<p class="Body">Use the <strong>PWM/ENC</strong> configuration page to generate PWM signals by completing the following steps:</p>
+<!--begin child: roborioiomonitor_help.html-->
+<ol>
+    <li>Select an I/O connector from the <strong>Connector</strong> pull&#8209;down menu.</li>
+    <li>Click a blue PWM pinout on the connection diagram to select an available PWM channel. The selected pinouts appear in the <strong>PWM</strong> list. The PWM output signals display in <strong>PWM Graph</strong>.
+<p class="Body">By default, the PWM outputs return a frequency of 1,000 Hz and a duty cycle of 0.5. The duty cycle specifies the percentage of time the PWM signal remains high over one PWM cycle. The following figure shows the default <span class="Monospace">PWM0</span> and <span class="Monospace">PWM1</span>. The two signals overlap because the frequency and duty cycles are the same.</p>
+<img src="images/iomonitor_pwm.png" alt=""></li>
+    <li>Drag the slider or enter a value in the text box in <strong>Duty Cycle (0-1)</strong> to change the duty cycle. The PWM signals in <strong>PWM Graph</strong> change as the duty cycle varies. The following figure shows that the duty cycle of <span class="Monospace">PWM0</span> changes to 0.3 and the duty cycle of <span class="Monospace">PWM1</span> remains 0.5.<br><br>
+    <img src="images/iomonitor_pwm2.png" alt=""></li>
+    <li>Enter the frequency value in <strong>Frequency (Hz)</strong> to change the frequency of the PWM signal. The PWM signals in <strong>PWM Graph</strong> change as the frequency varies. The following figure shows that the frequency of <span class="Monospace">PWM0</span> remains 1,000 Hz and the frequency of <span class="Monospace">PWM1</span> changes to 4,000 Hz.<br><br>
+    <img src="images/iomonitor_pwm3.png" alt=""></li>
+</ol>
+
+
+<h3><a name="ENC">Reading Data from the Encoder (ENC)</a><a href="#top">&uarr;</a></h3>
+<p class="Body">Use the <strong>PWM/ENC</strong> configuration page to read data and decode signals from an encoder by completing the following steps:</p>
+<ol>
+    <li>Select an I/O connector from the <strong>Connector</strong> pull&#8209;down menu.</li>
+    <li>Click a blue ENC pinout on the connection diagram to select an available ENC channel. The <strong>Encoder Configuration</strong> dialog box appears.</li>
+    <li>In the <strong>Encoder Configuration</strong> dialog box, select the type of output signals that your encoder generates in the <strong>Encoder output signal type</strong> section.</li>
+    <li>(Optional) If you want to reset the encoder tick counter to zero, select the <strong>Reset counter before starting</strong> checkbox.</li>
+    <li>Click <strong>OK</strong>. The encoder pinout appears in the <strong>Encoder</strong> list. The encoder signal displays in <strong>Encoder Graph</strong>.
+<p class="Body">The value of <strong>Counter</strong> accumulates, representing the number of ticks read from the encoder since the last counter reset. The value of <strong>Counter</strong> ranges from &#8209;2,147,483,648 to 2,147,483,647.</p></li>
+    <li>(Optional) Click <strong>Configuration</strong> (<img src="images/iomonitor_enc_config.png" alt="">) to reconfigure the encoder.</li>
+</ol>
+<p class="Body"><strong>Note</strong>&nbsp;&nbsp;The <strong>Overflow?</strong> indicator returns TRUE when the value of the counter goes from the maximum value to the minimum value or from the minimum value to the maximum value. In this case, you must reset the encoder using the <strong>Encoder Configuration</strong> dialog box.</p>
+<!--end child: roborioiomonitor_help.html-->
+
+<h2><a name="help">Accessing the myRIO Toolkit Help</a><a href="#top">&uarr;</a></h2>
+<p class="Body">Refer to the <cite>LabVIEW Help</cite>, accessible by selecting <strong>Help&#0187;LabVIEW Help</strong> from LabVIEW, for information about the myRIO Toolkit. If you do not have LabVIEW installed, visit <a href="http://digital.ni.com/express.nsf/bycode/rdbp02">ni.com/manuals</a> and search for the <cite>myRIO Toolkit Help</cite>.</p>
+
+
+
+<!--Important Information-->
+<hr>
+
+<h2><a name="legal">Legal Information</a></h2>
+<!--Copyright-->
+<p><strong>Copyright</strong></p>
+<p>&#0169; 2015 National Instruments. All rights reserved.</p>
+
+<p>Under the copyright laws, this publication may not be reproduced or transmitted in any form, electronic or mechanical, including photocopying, recording, storing in an information retrieval system, or translating, in whole or in part, without the prior written consent of National Instruments Corporation.</p>
+
+<p>National Instruments respects the intellectual property of others, and we ask our users to do the same.  NI software is protected by copyright and other intellectual property laws.  Where NI software may be used to reproduce software or other materials belonging to others, you may use NI software only to reproduce materials that you may reproduce in accordance with the terms of any applicable license or other legal restriction.</p>
+
+<p><strong>End-User License Agreements and Third-Party Legal Notices</strong></p>
+<p>You can find end-user license agreements (EULAs) and third-party legal notices in the following locations after installation:</p>
+<ul>
+<li>Notices are located in the <span class="Monospace">&lt;National Instruments&gt;\_Legal Information</span> and <span class="Monospace">&lt;National Instruments&gt;</span> directories.</li> 
+<li>EULAs are located in the <span class="Monospace">&lt;National Instruments&gt;\Shared\MDF\Legal\license</span> directory.</li>
+<li>Review <span class="Monospace">&lt;National Instruments&gt;\_Legal Information.txt</span> for information on including legal information in installers built with NI products.</li>
+</ul>
+<p><strong>U.S. Government Restricted Rights</strong></p>
+<p>If you are an agency, department, or other entity of the United States Government (&quot;Government&quot;), the use, duplication, reproduction, release, modification, disclosure or transfer of the technical data included in this manual is governed by the Restricted Rights provisions under Federal Acquisition Regulation 52.227-14 for civilian agencies and Defense Federal Acquisition Regulation Supplement Section 252.227-7014 and 252.227-7015 for military agencies.</p>
+
+<p><strong>IVI Foundation Copyright Notice</strong></p>
+
+<p><span class="DNL">Content from the IVI specifications reproduced with permission from the IVI Foundation.</span></p>
+
+<p><span class="DNL">The IVI Foundation and its member companies make no warranty of any kind with regard to this material, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The IVI Foundation and its member companies shall not be liable for errors contained herein or for incidental or consequential damages in connection with the furnishing, performance, or use of this material.</span></p>
+
+
+<!--Trademarks-->
+<p><strong>Trademarks</strong></p>
+
+<p>Refer to the <em><span class="DNL">NI Trademarks and Logo Guidelines</span></em> at <a href="http://digital.ni.com/express.nsf/bycode/rdtrad" target="_blank"><span class="DNL">ni.com/trademarks</span></a> for information on <span class="DNL">National Instruments</span> trademarks. Other product and company names mentioned herein are trademarks or trade names of their respective companies.</p>
+
+<!--Patents-->
+<p><strong>Patents</strong></p>
+<p>For patents covering the National Instruments products/technology, refer to the appropriate location: <strong>Help&#0187;Patents</strong> in your software, the <span class="Monospace">patents.txt</span> file on your media, or the <em>National Instruments Patent Notice</em> at <a href="http://digital.ni.com/express.nsf/bycode/rdlv17" target="_blank">ni.com/patents</a>.</p>
+
+<p>375331A-01</p>
+
+
+</body>
+</html>

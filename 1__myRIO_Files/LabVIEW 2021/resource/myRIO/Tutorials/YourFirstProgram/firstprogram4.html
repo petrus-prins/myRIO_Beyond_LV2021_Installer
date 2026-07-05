@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Getting Started with myRIO Programming</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<![if !IE]>
+<link rel="stylesheet" type="text/css" href="../common/tutoriallayout.css"/>  
+<![endif]>
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="../common/IEtutoriallayout.css"/> 
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="../common/IEtutoriallayout.css"/> 
+<![endif]-->
+
+<!--[if gte IE 8]> 
+<link rel="stylesheet" type="text/css" href="../common/IE8tutoriallayout.css"/> 
+<![endif]--> 
+	
+</head>
+ 
+<body>
+<div id="wrapper">
+<div id="header">
+</div>
+
+<ul id="globalnav">
+  <li><a href="../myriotutorials.html">Home</a></li>
+  <li><a href="firstprogram1.html" class="here">Creating Your First myRIO Application</a>
+ <ul>
+      <li><a href="firstprogram1.html">Tutorial:&nbsp;&nbsp;&nbsp;1</a></li>
+      <li><a href="firstprogram2.html">&nbsp;&nbsp;2</a></li>
+      <li><a href="firstprogram3.html">&nbsp;&nbsp;3</a></li>
+	  <li><a href="firstprogram4.html" class="here">&nbsp;&nbsp;4</a></li>
+    </ul>
+</li>
+  <li><a href="../ConfigureWiFi/configurewifi1.html">Configuring a Wireless Network on the myRIO</a></li>
+</ul>
+
+
+<div id="content">
+
+<h2>Part 4: Controlling the User Button</h2>
+
+<p class="Body">This part of the tutorial teaches you how to control the user button on the myRIO. Before starting this part, make sure you have completed the previous parts of the tutorial.</p>
+
+<table>
+	<tr>
+		<td valign="top"><img src="images/buttonexpvi.gif" alt=""/></td>
+		<td valign="top">
+			<ol>
+				<li>On the block diagram of the Main VI, select <strong>View&#0187;Functions Palette</strong> to display the Functions palette.</li>
+                <li>Navigate to <strong>Functions&#0187;myRIO</strong> to locate the Button Express VI.</li>
+				<li>Click the Button Express VI and add this VI to the Main Loop in the Main VI.</li>
+                <li>In the configuration dialog box of the Button Express VI, click <strong>OK</strong> to enable controlling the user button.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="images/buttonbd.gif" alt=""/></td>
+		<td valign="top">
+			<ol start="5">
+                <li>Right-click the <strong>Value</strong> output of the Button Express VI and select <strong>Create&#0187;Indicator</strong> to create a Boolean indicator for the user button. The TRUE and FALSE states of the Boolean indicator represent the ON and OFF states of the user button.</li>
+                <li>Rename the <strong>Value</strong> indicator to <strong>Button</strong>.</li>
+                <li>(Optional) Add error checking for the Button Express VI.</li>
+                <li>Press &lt;Ctrl-E&gt; to switch to the front panel of the Main VI.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"><img src="images/buttonfp.gif" alt=""/></td>
+		<td valign="top">
+			<ol start="9">
+				<li>Click <strong>Run</strong>.</li>
+				<li>Press the user button on the myRIO and observe the state change of the <strong>Button</strong> indicator.</li>
+				<li>Click <strong>Stop</strong>.</li>
+				<li>Select <strong>File&#0187;Save</strong> to save the VI.</li>
+			</ol>
+		</td>
+	</tr>
+</table>
+
+
+<p class="Body">Congratulations! You have successfully created a myRIO application that controls all the myRIO onboard devices. You're ready to get started with creating applications of your own.</p>
+
+<p class="Body">The following are some resources that you might find helpful as you create your own applications:</p>
+<ul>
+	<li><i>myRIO Toolkit Help</i>&#8212;Provides conceptual information about myRIO programming in LabVIEW and reference information about the myRIO VIs. To access this help file, select <strong>Help&#0187;LabVIEW Help</strong> in LabVIEW and navigate to the <strong>myRIO Toolkit</strong> book.</li>
+	<li>Templates and sample projects&#8212;Templates provide starting points for useful design patterns. Sample projects demonstrate working applications based on these templates. You can customize templates and sample projects according to your application needs. Select <strong>File&#0187;Create Project</strong> from LabVIEW to display the <strong>Create Project</strong> dialog box. Look for the templates and sample projects under the <strong>myRIO</strong> categories.</li>
+     <li>Online Resources&#8212;Refer to <a href="http://www.ni.com/learn-myrio" target="_blank">ni.com/learn-myrio</a> for videos and more tutorials about RIO programming.</li>
+</ul>		 
+		            
+<p align="center"><a href="firstprogram3.html" style="text-decoration:none;"><img src="../common/noloc_backarrow.gif" title="previous" border="0" alt=""/>&nbsp;&nbsp;&nbsp;Previous</a></p>
+
+<br />
+
+</div>
+
+
+<div id="footer">
+&#0169; 2013&ndash;2015 National Instruments. All rights reserved.
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<binding sysexpert="ni-rio">
+   <!-- Bind only for local FPGA items (not system) -->
+   <!-- Any of mxSysAttrTag_ServiceType0 through N == mxSysServiceType_LocalFpga -->
+   <eq sysattr="17014784" count="17010688" value="9"/>
+</binding>

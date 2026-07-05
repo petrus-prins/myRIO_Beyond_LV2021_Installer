@@ -1,0 +1,7 @@
+//// myRIO AO Continuous Tag Type Definition /////
+genericType: myRIO_AO_Continuous
+genericTypeName: "myRIO AO Continuous"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

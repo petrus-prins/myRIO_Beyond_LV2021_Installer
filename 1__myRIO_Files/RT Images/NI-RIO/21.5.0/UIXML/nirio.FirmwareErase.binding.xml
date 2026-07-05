@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<binding sysexpert="ni-rio">
+   <and>
+      <!-- sysattr=FirmwareSupportUpdate -->
+      <eq sysattr="17080320" value="true" />
+      <not>
+         <!-- Make sure the service type (17014784) is not local system (4)-->
+         <eq sysattr="17014784" count="17010688" value="4" />
+      </not>
+   </and>
+</binding>

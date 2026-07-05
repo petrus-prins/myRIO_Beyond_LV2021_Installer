@@ -1,0 +1,7 @@
+//// myRIO AI Block Tag Type Definition /////
+genericType: myRIO_AI_Block
+genericTypeName: "myRIO AI (N Samples)"
+RCversion: 4
+objtype: Tag
+library: myrio_iocontrols.*
+librarypath: "<nishared>:\myRIO"

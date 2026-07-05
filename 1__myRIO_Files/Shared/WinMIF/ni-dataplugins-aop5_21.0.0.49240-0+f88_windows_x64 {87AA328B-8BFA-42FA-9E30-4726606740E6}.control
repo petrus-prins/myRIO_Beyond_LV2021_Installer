@@ -1,0 +1,43 @@
+﻿Architecture: windows_x64
+CompatibilityVersion: 210000
+Conflicts: 76c5a1fb-6d44-a455-703a-e98bbfcb69a1 (<<17.0.16647)
+Depends: ni-mdfsupport (>=21.0.0), ni-metauninstaller (>=21.0.0), ni-msvcrt-2015 (>=14.1.5)
+Description: The ASAM Standards DataPlugin for AOP5 supports reading, writing, importing, and exporting of ASAM operational data store (ODS) data objects.
+Description-de: ASAM Standards DataPlugin für AOP5 unterstützt das Lesen, Schreiben, Importieren und Exportieren von ASAM-ODS-Datenobjekten (Operational Data Store).
+Description-fr: Le DataPlugin de normes ASAM pour AOP5 prend en charge la lecture, l'écriture, l'importation et l'exportation d'objets de données de banques de données opérationnelles (ODS) ASAM.
+Description-ja: ASAM Standards DataPlugin - AOP5用は、ASAMオペレーショナルデータストア (ODS) データオブジェクトの読み取り、書き込み、インポート、およびエクスポートをサポートします。
+Description-ko: AOP5용 ASAM 표준 DataPlugin은 ASAM 운용 데이터 저장소(ODS) 데이터 객체의 읽기, 쓰기, 반입 및 반출을 지원합니다.
+Description-zh-CN: 用于AOP5的ASAM Standards DataPlugin支持读取、写入、导入和导出ASAM操作数据存储(ODS)数据对象。
+DisplayName: ASAM e.V. DataPlugin for AOP5
+DisplayName-de: ASAM e.V. DataPlugin für AOP5
+DisplayName-fr: DataPlugin ASAM e.V. pour AOP5
+DisplayName-ja: ASAM e.V. DataPlugin - AOP5用
+DisplayName-ko: ASAM e.V. DataPlugin - AOP5 지원
+DisplayName-zh-CN: ASAM e.V. DataPlugin - 用于AOP5
+DisplayVersion: 21.0.0
+Eula: eula-ni-standard
+Homepage: https://www.ni.com
+Maintainer: National Instruments <support@ni.com>
+OsRequires: >= 10
+OsSupport: WINDOWS_10_64BIT WINDOWS_SERVER_2016_64BIT WINDOWS_SERVER_2019_64BIT
+Package: ni-dataplugins-aop5
+Plugin: wininst
+Priority: standard
+Provides: 76c5a1fb-6d44-a455-703a-e98bbfcb69a1 (=21.00.49240), 7d8169d2-eccc-49f5-9e79-4632c12673d0 (=21.00.49240)
+ReleaseNotes: 
+  Refer to the NI website at https://www.ni.com/r/dp_aop5_doc for installation instructions, known issues, bug fixes, compatibility information, and other important notices about this product.
+ReleaseNotes-de: 
+  Auf der NI-Website https://www.ni.com/r/dp_aop5_doc finden Sie wichtige Hinweise zu diesem Produkt, darunter Informationen zur Installation, zu bekannten Problemen, zu Fehlerkorrekturen und zur Kompatibilität.
+ReleaseNotes-fr: 
+  Reportez-vous au site Web de NI à l'adresse https://www.ni.com/r/dp_aop5_doc pour obtenir les instructions d'installation, des informations sur les problèmes connus, les corrections de bugs, la compatibilité ainsi que d'autres informations importantes concernant ce produit.
+ReleaseNotes-ja: 
+  インストール手順、既知の問題、バグ修正、互換性情報、およびこの製品に関するその他の重要な注意事項については、NI Webサイト (https://www.ni.com/r/dp_aop5_doc) を参照してください。
+ReleaseNotes-ko: 
+  이 제품에 대한 설치 방법, 알려진 유의사항, 버그 수정, 호환성 정보, 기타 중요한 알림사항은 NI 웹사이트(https://www.ni.com/r/dp_aop5_doc)를 참조하십시오.
+ReleaseNotes-zh-CN: 
+  关于安装说明、已知问题、错误修正、兼容信息以及本产品的其他重要说明，请参阅NI网站上的https://www.ni.com/r/dp_aop5_doc。
+Replaces: 76c5a1fb-6d44-a455-703a-e98bbfcb69a1 (<<17.0.16647)
+Section: Add-Ons
+StoreProduct: yes
+UserVisible: yes
+Version: 21.0.0.49240-0+f88

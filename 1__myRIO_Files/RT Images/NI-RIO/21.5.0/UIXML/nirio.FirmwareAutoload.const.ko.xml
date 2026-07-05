@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<uistrings>
+	<str name="viautoload">펌웨어 자동로드 셋팅</str> 
+	<str name="noautoload">자동로드하지 않음</str> 
+	<str name="rebootautoload">재부팅 시 자동로드</str> 
+	<str name="powerupautoload">전원 가동 시 자동로드</str> 
+</uistrings>

@@ -1,0 +1,17 @@
+﻿Architecture: windows_x64
+CompatibilityVersion: 210300
+Depends: ni-libusb-19.0.0-realtime-bin (>=19.0.0), ni-mdfsupport (>=21.5.0), ni-metauninstaller (>=21.5.0)
+Description: myRIO Toolkit RT Support
+DisplayName: NI LabVIEW 2021 myRIO Toolkit RT Support
+DisplayVersion: 8.0.0
+Eula: eula-ni-rt-usb, eula-ni-standard
+Homepage: https://www.ni.com
+Maintainer: National Instruments <support@ni.com>
+OsRequires: >= 10
+OsSupport: WINDOWS_10_64BIT WINDOWS_SERVER_2016_64BIT WINDOWS_SERVER_2019_64BIT
+Package: ni-labview-2021-myrio-toolkit-realtime-bin
+Plugin: wininst
+Priority: standard
+Provides: a9d6d38e-46fa-4fc4-8827-9ddba0d1e892 (=8.00.49152)
+Section: Infrastructure
+Version: 8.0.0.49152-0+f0

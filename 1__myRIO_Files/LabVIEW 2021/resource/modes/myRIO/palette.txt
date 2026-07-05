@@ -1,0 +1,3 @@
+[LabVIEW]
+Functions="Programming;Measurement I/O;Instrument I/O;Vision and Motion;Mathematics;Signal Processing;Data Communication;Connectivity;Control Design & Simulation;Express;Favorites;Select a VI...;Real-Time;FPGA Interface;Robotics;myRIO;"
+Controls="Modern;Silver;Select a Control...;"
