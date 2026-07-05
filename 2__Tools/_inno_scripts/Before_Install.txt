@@ -1,4 +1,8 @@
-Please select your desired LabVIEW directory for installation. 
+Please select your desired LabVIEW 202x directory for installation. 
 For Example:
 
 C:\Program Files (x86)\National Instruments\LabVIEW 2022
+or
+C:\Program Files (x86)\National Instruments\LabVIEW 2026
+etc.
+

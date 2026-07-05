@@ -21,7 +21,7 @@ There is an example myRIO LED + Accelerometer test program (LV2022Q3) included.
 Uninstall:
 ==========
 The uninstaller files can be found in the the BASE Labview Folder you selected during installation 
-For Example: C:\Program Files (x86)\National Instruments\LabVIEW 2022\unins000.exe
+For Example: C:\Program Files (x86)\National Instruments\LabVIEW 2022\myRIO_Installer\unins000.exe
 (Also uninstallable in Add/Remove programs in Windows.)
 
 Why:

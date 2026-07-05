@@ -1,18 +1,21 @@
 Installation Instructions:
 ==========================
- Run myRIO_Beyond_LV2021_Installer.exe
+ Run myRIO_Installer.exe
  This will install the myRIO 2021 SP1 files into any selected LabVIEW installation.
  
  For Example select your BASE folder as this: 
  C:\Program Files (x86)\National Instruments\LabVIEW 2022
+ or 
+ C:\Program Files (x86)\National Instruments\LabVIEW 2026
  
-Uninstall:
+ 
 ==========
+Uninstall:
  
- The uninstaller files can be found in the the BASE Labview Folder you selected during installation
+ The uninstaller files can be found in the the Labview Folder\myRIO_Installer
  
  Example: 
- C:\Program Files (x86)\National Instruments\LabVIEW 2022\unins000.exe
+ C:\Program Files (x86)\National Instruments\LabVIEW 2022\myRIO_Installer\unins000.exe
  
  This installer idea came about after I read some posts on the NI Community (2026-06-21):
  
