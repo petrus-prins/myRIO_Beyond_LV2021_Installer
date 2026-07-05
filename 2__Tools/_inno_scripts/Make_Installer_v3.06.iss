@@ -54,7 +54,7 @@ Source: "E:\3__Test_myRIO\2___FPGA_Factory_Defaults_myRIO_Project\*"; DestDir: "
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Run]
-Filename: "explorer.exe"; Parameters: """{app}\{#MyAppName}\myRIO_Test_Project\"""; Description: "Open myRIO Test Example Folder"; Flags: postinstall shellexec skipifsilent
+Filename: "explorer.exe"; Parameters: """{app}\{#MyAppName}"""; Description: "Open myRIO Test Example Folder"; Flags: postinstall shellexec skipifsilent
 
 
 
