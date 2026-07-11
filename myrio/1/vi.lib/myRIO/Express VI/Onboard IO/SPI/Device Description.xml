@@ -1,0 +1,32 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>10.0f1</Version>
+<Cluster>
+<Name>Device</Name>
+<NumElts>5</NumElts>
+<String>
+<Name>Device Name</Name>
+<Val>SPI</Val>
+</String>
+<String>
+<Name>Peripheral Name</Name>
+<Val>SPI</Val>
+</String>
+<String>
+<Name>Title Name</Name>
+<Val>SPI</Val>
+</String>
+<String>
+<Name>Config Pane VI Name</Name>
+<Val>SPI Config Pane.vi</Val>
+</String>
+<String>
+<Name>Help Topic Name</Name>
+<Val>myrioref_exp_spi.html</Val>
+</String>
+<String>
+<Name>Help File</Name>
+<Val>myrioreference.chm</Val>
+</String>
+</Cluster>
+</LVData>

@@ -1,0 +1,99 @@
+<MetaData>
+	<ProjectTemplate>
+		<Title localize="yes">myRIO Project</Title>
+		<Description localize="yes">Creates a new project for controlling your myRIO. This template uses code written with the LabVIEW myRIO Toolkit.</Description>
+		<Filters localize="yes">Templates:myRIO</Filters>
+		<Keywords localize="yes">myRIO;wizard</Keywords>
+		<LocationPath>myRIO/myRIO Project</LocationPath>
+		<ProjectPath>myRIO v1.1/myRIO Project.lvproj</ProjectPath>
+		>
+		<ListboxImagePath>images/myRIO Project.png</ListboxImagePath>
+		<DocumentationPath>myRIO v1.1/documentation/myRIO Project Documentation.html</DocumentationPath>
+		<MetaDataClass>../scripting/myRIOMetaDataObj/myRIOMetaDataObj.lvclass</MetaDataClass>
+		<CustomVIMode>AfterPage2NoUI</CustomVIMode>
+		<CustomVIPath>../scripting/myRIOMetaDataObj/PostCopyScripting.vi</CustomVIPath>
+		<SortPriority>510</SortPriority>
+		<DefaultFPGAPersonality>Default</DefaultFPGAPersonality>
+		<CustomizedFPGAPersonality>False</CustomizedFPGAPersonality>
+		<SupportedFPGAPersonalities>Default,High Throughput</SupportedFPGAPersonalities>
+	</ProjectTemplate>
+	<ProjectTemplate>
+		<Title localize="yes">myRIO Custom FPGA Project</Title>
+		<Description localize="yes">Facilitates customizing the myRIO FPGA personality. This template uses code written with the LabVIEW FPGA Module.</Description>
+		<Filters localize="yes">Templates:myRIO</Filters>
+		<Keywords localize="yes">myRIO;wizard</Keywords>
+		<LocationPath>myRIO/Custom FPGA Project</LocationPath>
+		<ProjectPath>myRIO v1.1/myRIO Project.lvproj</ProjectPath>
+		>
+		<ListboxImagePath>images/myRIO Custom FPGA Project.png</ListboxImagePath>
+		<DocumentationPath>myRIO v1.1/documentation/myRIO Custom FPGA Project Documentation.html</DocumentationPath>
+		<MetaDataClass>../scripting/myRIOMetaDataObj/myRIOMetaDataObj.lvclass</MetaDataClass>
+		<CustomVIMode>AfterPage2NoUI</CustomVIMode>
+		<CustomVIPath>../scripting/myRIOMetaDataObj/PostCopyScripting.vi</CustomVIPath>
+		<SortPriority>520</SortPriority>
+		<DefaultFPGAPersonality>Default</DefaultFPGAPersonality>
+		<CustomizedFPGAPersonality>True</CustomizedFPGAPersonality>
+		<SupportedFPGAPersonalities>Default,High Throughput</SupportedFPGAPersonalities>
+	</ProjectTemplate>
+	<ProjectTemplate>
+		<Title localize="yes">Clap Sensor (myRIO)</Title>
+		<Description localize="yes">Implements a clap sensor. This sample project uses code written with the LabVIEW myRIO Toolkit.</Description>
+		<Filters localize="yes">Sample Projects:myRIO</Filters>
+		<Keywords localize="yes">myRIO</Keywords>
+		<LocationPath>myRIO/Clap sensor</LocationPath>
+		<ProjectPath>myRIO v1.1/Clap sensor.lvproj</ProjectPath>
+		>
+		<ListboxImagePath>images/Clap Sensor Project.png</ListboxImagePath>
+		<DocumentationPath>myRIO v1.1/documentation/Clap Sensor Documentation.html</DocumentationPath>
+		<MetaDataClass>../scripting/myRIOMetaDataObj/myRIOMetaDataObj.lvclass</MetaDataClass>
+		<CustomVIMode>AfterPage2NoUI</CustomVIMode>
+		<CustomVIPath>../scripting/myRIOMetaDataObj/PostCopyScripting.vi</CustomVIPath>
+		<EnvironmentMode/>
+		<SortPriority>810</SortPriority>
+		<HidePrefix>True</HidePrefix>
+		<DefaultFPGAPersonality>Default</DefaultFPGAPersonality>
+		<CustomizedFPGAPersonality>False</CustomizedFPGAPersonality>
+		<SupportedFPGAPersonalities>Default,High Throughput</SupportedFPGAPersonalities>
+	</ProjectTemplate>
+	<ProjectTemplate>
+		<Title localize="yes">Motion Sensor (myRIO)</Title>
+		<Description localize="yes">Implements a motion sensor. This sample project uses code written with the LabVIEW myRIO Toolkit.</Description>
+		<Filters localize="yes">Sample Projects:myRIO</Filters>
+		<Keywords localize="yes">myRIO</Keywords>
+		<LocationPath>myRIO/Motion sensor</LocationPath>
+		<ProjectPath>myRIO v1.1/Motion Sensor.lvproj</ProjectPath>
+		>
+		<ListboxImagePath>images/Motion Sensor Project.png</ListboxImagePath>
+		<DocumentationPath>myRIO v1.1/documentation/Motion Sensor Documentation.html</DocumentationPath>
+		<MetaDataClass>../scripting/myRIOMetaDataObj/myRIOMetaDataObj.lvclass</MetaDataClass>
+		<CustomVIMode>AfterPage2NoUI</CustomVIMode>
+		<CustomVIPath>../scripting/myRIOMetaDataObj/PostCopyScripting.vi</CustomVIPath>
+		<EnvironmentMode/>
+		<SortPriority>820</SortPriority>
+		<HidePrefix>True</HidePrefix>
+		<DefaultFPGAPersonality>Default</DefaultFPGAPersonality>
+		<SupportedFPGAPersonalities>Default,High Throughput</SupportedFPGAPersonalities>
+		<CustomizedFPGAPersonality>False</CustomizedFPGAPersonality>
+	</ProjectTemplate>
+	<ProjectTemplate>
+		<Title localize="yes">Network Communication (myRIO)</Title>
+		<Description localize="yes">Implements a network communication. This sample project uses code written with the LabVIEW myRIO Toolkit.</Description>
+		<Filters localize="yes">Sample Projects:myRIO</Filters>
+		<Keywords localize="yes">myRIO;network communication</Keywords>
+		<LocationPath>myRIO/scripting</LocationPath>
+		<ProjectPath/>
+		<ListboxImagePath>Network Project Wizard/images/myRIO/myRIO Network.png</ListboxImagePath>
+		<DocumentationPath>Network Project Wizard/doc/myRIO/Network Communication Documentation.html</DocumentationPath>
+		<MetaDataClass>../scripting/myRIOMetaDataObj/myRIOMetaDataObj.lvclass</MetaDataClass>
+		<CustomVIMode>AfterPage1</CustomVIMode>
+		<CustomVIPath>Network Project Wizard/Project Wizard Caller.vi</CustomVIPath>
+		<SampleCustomVIPath>../scripting/myRIOMetaDataObj/PostCopyScripting.vi</SampleCustomVIPath>
+		<EnvironmentMode/>
+		<SortPriority>840</SortPriority>
+		<HidePrefix>True</HidePrefix>
+		<LabelLocalizations/>
+		<DefaultFPGAPersonality>Default</DefaultFPGAPersonality>
+		<CustomizedFPGAPersonality>False</CustomizedFPGAPersonality>
+		<SupportedFPGAPersonalities>Default,High Throughput</SupportedFPGAPersonalities>
+	</ProjectTemplate>
+</MetaData>

@@ -1,0 +1,800 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>13.0.1</Version>
+<Array>
+<Name>Item List 2</Name>
+<Dimsize>16</Dimsize>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Latest Value</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Latest Value</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val></Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>1</Dimsize>
+<String>
+<Name>String</Name>
+<Val>Shared Variable</Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Reads the latest value or status, such as the current temperature, position, and so on.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>1</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Data Stream</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Data Stream</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val></Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>2</Dimsize>
+<String>
+<Name>String</Name>
+<Val>Connection 1</Val>
+</String>
+<String>
+<Name>String</Name>
+<Val>No Connection 1</Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Transmits a large amount of data continuously, such as a signal, an audio, a video, and so on.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>1</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Message</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Message</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val></Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>2</Dimsize>
+<String>
+<Name>String</Name>
+<Val>Connection 2</Val>
+</String>
+<String>
+<Name>String</Name>
+<Val>No Connection 2</Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Sends messages that may appear in different circumstances, such as commands, warning messages, pop-up messages, and so on.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>1</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Connection 1</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Connection-Based</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Data Stream</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>2</Dimsize>
+<String>
+<Name>String</Name>
+<Val>Network Stream</Val>
+</String>
+<String>
+<Name>String</Name>
+<Val>TCP Data Stream</Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Creates a connection-based communication. This type of data communication method establishes a connection before communication, which prevents data loss. However, if disconnection occurs, the communication will terminate.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>No Connection 1</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Not Connection-Based</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Data Stream</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>1</Dimsize>
+<String>
+<Name>String</Name>
+<Val>UDP Data Stream</Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Creates a not Connection-Based communication. This type of data communication method sends data at anytime. If data loss occurs, the receiver may not be aware of this loss. However, you can customize your sample project to acknowledge data.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Connection 2</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Connection-Based</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Message</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>3</Dimsize>
+<String>
+<Name>String</Name>
+<Val>Network Stream Message</Val>
+</String>
+<String>
+<Name>String</Name>
+<Val>Simple TCP Messaging</Val>
+</String>
+<String>
+<Name>String</Name>
+<Val>TCP Message</Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Creates a connection-based communication. This type of data communication method establishes a connection before communication, which prevents data loss. However, if disconnection occurs, the communication will terminate. </Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>No Connection 2</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Not Connection-Based</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Message</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>2</Dimsize>
+<String>
+<Name>String</Name>
+<Val>Queued Message</Val>
+</String>
+<String>
+<Name>String</Name>
+<Val>UDP Message</Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Creates a not Connection-Based communication. This type of data communication method sends data at anytime. If data loss occurs, the receiver may not be aware of this loss. However, you can customize your sample project to acknowledge data.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val></Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>0</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Shared Variable</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Shared Variable</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Latest Value</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use shared variables to read the latest myRIO user button status from a LabVIEW application running on the host computer.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>SharedVariable.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>Shared Variable\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>Shared Variable Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Network Stream</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Network Stream</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Connection 1</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use network streams to continuously stream values from a LabVIEW application running on the host computer to the myRIO.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>NetworkStream.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>Network Streams\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>Network Stream Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>TCP Data Stream</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>TCP Data Stream</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Connection 1</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use Transmission Control Protocol (TCP) to continuously stream values from the host computer to the myRIO.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>TCPDataStream.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>TCP Data Stream\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>TCP Data Stream Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>UDP Data Stream</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>UDP Data Stream</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>No Connection 1</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use User Datagram Protocol (UDP) to continuously broadcast values from the host computer to the myRIO.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>UDPDataStream.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>UDP Broadcast\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>UDP Data Stream Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Network Stream Message</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Network Stream Message</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Connection 2</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use network streams to transmit messages from a LabVIEW application running on the host computer to the myRIO.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>NetworkStreamMessage.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>Network Stream Message\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>Network Stream Message Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>TCP Message</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>TCP Message</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Connection 2</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use Transmission Control Protocol (TCP) to transmit messages from the host computer to one or more myRIOs.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>TCPMessage.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>TCP Multiple Connection\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>TCP Message Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Simple TCP Messaging</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Simple TCP Messaging</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>Connection 2</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use Transmission Control Protocol (TCP) to transmit messages from the host computer to the myRIO.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>SimpleTCPMessaging.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>Simple STM\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>Simple TCP Messaging Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>UDP Message</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>UDP Message</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>No Connection 2</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use User Datagram Protocol (UDP) to broadcast messages on demand from the host computer to the myRIO.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>UDPMessage.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>UDP Message\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>UDP Message Documentation.html</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Item Info</Name>
+<NumElts>10</NumElts>
+<String>
+<Name>Tag Name</Name>
+<Val>Queued Message</Val>
+</String>
+<String>
+<Name>Text</Name>
+<Val>Queued Message</Val>
+</String>
+<String>
+<Name>Parent Tag</Name>
+<Val>No Connection 2</Val>
+</String>
+<Array>
+<Name>Children Tags</Name>
+<Dimsize>0</Dimsize>
+<String>
+<Name>String</Name>
+<Val></Val>
+</String>
+</Array>
+<String>
+<Name>Description</Name>
+<Val>Demonstrates how to use a queued message handler to transmit messages from the host computer to the myRIO.</Val>
+</String>
+<String>
+<Name>Pic Name</Name>
+<Val>QueuedMessage.png</Val>
+</String>
+<Boolean>
+<Name>Is Root</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Is Leaf</Name>
+<Val>1</Val>
+</Boolean>
+<String>
+<Name>Sample Folder Name</Name>
+<Val>Queued Message\myRIO v1.1</Val>
+</String>
+<String>
+<Name>Documentation Name</Name>
+<Val>Queued Message Documentation.html</Val>
+</String>
+</Cluster>
+</Array>
+</LVData>

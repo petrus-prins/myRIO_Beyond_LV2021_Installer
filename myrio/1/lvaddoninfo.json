@@ -1,0 +1,6 @@
+{
+    "AddonName": "myRIO_Addon",
+    "ApiVersion": "v1",
+    "MinimumSupportedLVVersion": "22.0",
+	"SupportedBitness": "32"
+}

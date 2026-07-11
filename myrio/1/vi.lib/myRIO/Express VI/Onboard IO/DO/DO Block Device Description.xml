@@ -1,0 +1,40 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>10.0f1</Version>
+<Cluster>
+<Name>Device</Name>
+<NumElts>8</NumElts>
+<String>
+<Name>Device Name</Name>
+<Val>Digital output (n samples)</Val>
+</String>
+<String>
+<Name>Peripheral Name</Name>
+<Val>DO (N Samples)</Val>
+</String>
+<String>
+<Name>Title Name</Name>
+<Val>Digital Output</Val>
+</String>
+<String>
+<Name>Weight</Name>
+<Val>1</Val>
+</String>
+<String>
+<Name>Config Pane VI Name</Name>
+<Val>DO Block Config Pane.vi</Val>
+</String>
+<String>
+<Name>Help Topic Name</Name>
+<Val>myrioref_exp_do.html</Val>
+</String>
+<String>
+<Name>Help File</Name>
+<Val>myrioreference.chm</Val>
+</String>
+<String>
+<Name>Context Help Pin Type</Name>
+<Val>Digital Output (N Samples)</Val>
+</String>
+</Cluster>
+</LVData>
