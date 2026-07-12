@@ -1,27 +1,27 @@
 
-myRIO_Beyond_LV2021_Installer:
-=============================
+myRIO_Installer: (V3.07)
+====================================
 This is a tool to install the original myRIO 2021 SP1 Toolkit Files into any existing LabVIEW Installation.
-I tested it on LabVIEW 2022 Q3 (32 Bit). (Rumours have it that this can work on 32 and 64 bit LV2022-LV2026)  
+I tested it on LabVIEW 2022 Q3 (32 Bit) AND LabVIEW 2026 Q1 (32 Bit)
 
 Installation Instructions:
 ==========================
-Run myRIO_Beyond_LV2021_Installer.exe
+Run myRIO_Installer.exe
 This will install the myRIO 2021 SP1 files into any selected LabVIEW installation.
 
 For Example: Select your BASE Installation folder as: 
-C:\Program Files (x86)\National Instruments\LabVIEW 2022
+C:\Program Files (x86)\National Instruments\LabVIEW 2026
 
 * Remember to update your myRIO to the latest firmware available for your selected LabVIEW Installation before loading any projects.
 NOTE: (myRIO 1950 units seem to become myRIO 1900 units - i.e no WIFI after the 2022Q3 firmware upgrade). 
-This makes sense as NI announced extended support for myRIO 1900 only.
+This makes sense as NI announced extended support for myRIO 1900 only. (So use the myRIO 1900 FW for your 1950 units as well)
 
 There is an example myRIO LED + Accelerometer test program (LV2022Q3) included. 
  
 Uninstall:
 ==========
 The uninstaller files can be found in the the BASE Labview Folder you selected during installation 
-For Example: C:\Program Files (x86)\National Instruments\LabVIEW 2022\myRIO_Installer\unins000.exe
+For Example: C:\Program Files (x86)\National Instruments\LabVIEW 202x\myRIO_Installer\unins000.exe
 (Also uninstallable in Add/Remove programs in Windows.)
 
 Why:
